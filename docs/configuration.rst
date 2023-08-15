@@ -1,1 +1,1 @@
-../../ttl2html-doc/docs/configuration.rst
+../ttl2html-doc/docs/configuration.rst

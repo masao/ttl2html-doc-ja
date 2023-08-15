@@ -1,1 +1,1 @@
-../../ttl2html-doc/docs/usage.rst
+../ttl2html-doc/docs/usage.rst
