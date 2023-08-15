@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Masao Takaku
+# This file is distributed under the same license as the ttl2html package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ttl2html \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-15 16:03+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../index.rst:2
+msgid "Welcome to ttl2html documentation!"
+msgstr ""
+
+#: ../../index.rst:4
+msgid "**ttl2html** is a static site generator for Linked Data."
+msgstr ""
+
+#: ../../index.rst:6
+msgid ""
+"This tool accepts RDF/Turtle format as input to generate the "
+"corresponding HTML files."
+msgstr ""
+
+#: ../../index.rst:8
+msgid ""
+"The Linked Data Principle [TBL_2006]_ suggests that identifying things as"
+" HTTP URIs (resources) and resolving them on the Web is important. This "
+"tool helps to generate a website for a Linked Data dataset and publish it"
+" on the Web."
+msgstr ""
+
+#: ../../index.rst:11
+msgid ""
+"Check out the :doc:`usage` and :doc:`configuration` section for further "
+"information, including how to :ref:`installation` the project."
+msgstr ""
+
+#: ../../index.rst:16
+msgid "This project is under active development."
+msgstr ""
+
+#: ../../index.rst:19
+msgid "Contents"
+msgstr ""
+
+#: ../../index.rst:27
+msgid "See also"
+msgstr ""
+
+#: ../../index.rst:29
+msgid ""
+"There is another tool **xlsx2shape** to describe a dataset schema using "
+"SHACL. See :doc:`xlsx2shape` for details."
+msgstr ""
+
+#: ../../index.rst:32
+msgid ""
+"This tool is based on experiences from publishing Japanese Textbook LOD "
+"dataset [JP-TEXTBOOK_2017]_."
+msgstr ""
+
+#: ../../index.rst:35
+msgid "References"
+msgstr ""
+
+#: ../../index.rst:37
+msgid ""
+"Tim-Berner Lee (2006). \"Linked Data\". "
+"https://www.w3.org/DesignIssues/LinkedData.html"
+msgstr ""
+
+#: ../../index.rst:38
+msgid ""
+"Egusa & M. Takaku (2017). \"Japanese Textbook LOD\". https://w3id.org/jp-"
+"textbook/"
+msgstr ""
+

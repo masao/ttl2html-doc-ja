@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Masao Takaku
+# This file is distributed under the same license as the ttl2html package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ttl2html \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-15 16:03+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../usage.rst:2
+msgid "Usage"
+msgstr ""
+
+#: ../../usage.rst:7
+msgid "Installation"
+msgstr ""
+
+#: ../../usage.rst:9
+msgid "To use ttl2html, first install it using Rubygems:"
+msgstr ""
+
+#: ../../usage.rst:16
+msgid "Command line usage"
+msgstr ""
+
+#: ../../usage.rst:18
+msgid ""
+"First, you must create a configuration file named ``config.yml`` with a "
+"YAML format. One required key for the configuration is ``base_uri``:"
+msgstr ""
+
+#: ../../usage.rst:25
+msgid ""
+"With this configuration file, you can execute a command on the dataset "
+"file(s) :"
+msgstr ""
+
+#: ../../usage.rst:31
+msgid "The command parses the dataset file(s) and generate HTML files."
+msgstr ""
+
+#: ../../usage.rst:35
+msgid "Command line options"
+msgstr ""
+
+#: ../../usage.rst:41
+msgid "The command ``ttl2html`` accepts the following options:"
+msgstr ""
+
+#: ../../usage.rst:43
+msgid ""
+"``--config file``: Read the configuration file from file (Default: "
+"``config.yml``)."
+msgstr ""
+
