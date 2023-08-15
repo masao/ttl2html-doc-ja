@@ -2,7 +2,7 @@
 host = https://www.transifex.com
 
 [o:ttl2html:p:ttl2html:r:configuration]
-file_filter            = locale/<lang>/LC_MESSAGES/configuration.po
+file_filter            = locales/<lang>/LC_MESSAGES/configuration.po
 source_file            = _build/gettext/configuration.pot
 type                   = PO
 minimum_perc           = 0
@@ -10,7 +10,7 @@ replace_edited_strings = false
 keep_translations      = false
 
 [o:ttl2html:p:ttl2html:r:index]
-file_filter            = locale/<lang>/LC_MESSAGES/index.po
+file_filter            = locales/<lang>/LC_MESSAGES/index.po
 source_file            = _build/gettext/index.pot
 type                   = PO
 minimum_perc           = 0
@@ -18,7 +18,7 @@ replace_edited_strings = false
 keep_translations      = false
 
 [o:ttl2html:p:ttl2html:r:usage]
-file_filter            = locale/<lang>/LC_MESSAGES/usage.po
+file_filter            = locales/<lang>/LC_MESSAGES/usage.po
 source_file            = _build/gettext/usage.pot
 type                   = PO
 minimum_perc           = 0
