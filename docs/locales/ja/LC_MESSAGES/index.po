@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../index.rst:2
 msgid "Welcome to ttl2html documentation!"
-msgstr ""
+msgstr "ttl2htmlのマニュアルへようこそ!"
 
 #: ../../index.rst:4
 msgid "**ttl2html** is a static site generator for Linked Data."
