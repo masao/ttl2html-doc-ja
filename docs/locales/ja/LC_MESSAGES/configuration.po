@@ -49,6 +49,8 @@ msgid ""
 "dataset. It requires SHACL documentation within the dataset. By default, the"
 " filename ``about.html`` is used."
 msgstr ""
+"``about_file``: "
+"指定された名前のファイルにスキーマ説明を出力する。データセット内にSHACL記述が存在するときのみ有効。指定しない場合、デフォルトのファイル名は``about.html``が使われる。"
 
 #: ../../configuration.rst:25
 msgid ""
@@ -74,6 +76,8 @@ msgid ""
 " the prefix for the target resources, and only the matched URIs with the "
 "prefix are picked up for the generation."
 msgstr ""
+"``base_uri``: (必須) "
+"データセット用のベースURIを指定します。ベースURIは出力されるファイル群に対する接頭辞とみなし、先頭一致したURIリソースのみが生成の対象となります。"
 
 #: ../../configuration.rst:29
 msgid ""
@@ -95,22 +99,27 @@ msgid ""
 "resource to which the ``schema:workExample`` property of the resource in "
 "question is specified can be used as a navigation resource."
 msgstr ""
+"``breadcrumbs``: "
+"複数のリソースを階層化したパンくずリストを作るための設定。当該リソースの上位階層リソースまたは関連リソースにあたるプロパティをリストとして定義します。下記の例では``schema:hasPart``プロパティ、``jp-"
+"cos:couseOfStudy``プロパティそれぞれの順でもし存在すれば、当該リソースの上位階層とみなしてナビゲーションメニューを構築します。また、パンくずリスト上の表示ラベルはデフォルトでは「タイトル」を用いますが、``label``キーが指定されていれば、当該``label``キーに指定されたプロパティ値をパンくずリンクの表示文字列として用いることができます。また、``inverse``キーがある場合は、当該リソースのプロパティを述語としてもつリソースを上位階層とみなします。また、空ノード等で多段階の関係をまたいだリソースを指定することもできます。その場合、``property``キーにリストを追加してその下位アイテムにも同様に``property``キーを追加します。下記の例では、当該リソースの``schema:workExample``プロパティ指定先リソースのさらに``schema:isPartOf``プロパティ先のリソースをナビゲーションリソースとして用いることができます。"
 
 #: ../../configuration.rst:42
 msgid ""
 "``copyright_year``: Copyright year statement displayed at the footer along "
 "with the ``admin_name`` parameter above."
-msgstr ""
+msgstr "``copyright_year``: 上記``admin_name``と一緒に出力する著作権表示年を指定します。"
 
 #: ../../configuration.rst:43
 msgid "``css_file``: The path of the CSS stylesheet file to use locally."
-msgstr ""
+msgstr "``css_file``: ローカルで用いるCSSスタイルシートファイルのパスを指定します。"
 
 #: ../../configuration.rst:44
 msgid ""
 "``custom_css``: Specify the code snippet of the CSS stylesheet (e.g. "
 "``nav.navbar {background-color: pink} ``)."
 msgstr ""
+"``custom_css``: CSSスタイルシートのコードを直接指定します（例: ``nav.navbar { background-color: "
+"pink }``）。"
 
 #: ../../configuration.rst:45
 msgid ""
@@ -118,6 +127,8 @@ msgid ""
 "Analytics](https://analytics.google.com).:: YAML google_analytics: "
 "G-XXXXXXXXXXXX"
 msgstr ""
+"``google_analytics``: `Googleアナリティクス <https://analytics.google.com>`_ "
+"による利用統計用の設定コードを指定します。 "
 
 #: ../../configuration.rst:48
 msgid ""
