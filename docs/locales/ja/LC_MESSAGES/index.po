@@ -42,6 +42,8 @@ msgid ""
 "helps to generate a website for a Linked Data dataset and publish it on the "
 "Web."
 msgstr ""
+"『リンクト・データ原則』 [TBL_2006]_ は、事物をHTTP "
+"URIリソースにより識別し、そのリソースをウェブ上で解決可能とすることの重要性を唱えています。本ツールは、リンクト・データデータセット用のウェブサイトを構築し公開するツールです。"
 
 #: ../../index.rst:11
 msgid ""
