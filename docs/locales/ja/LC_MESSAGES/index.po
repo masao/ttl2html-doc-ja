@@ -27,7 +27,7 @@ msgstr "ttl2htmlのマニュアルにようこそ!"
 
 #: ../../index.rst:4
 msgid "**ttl2html** is a static site generator for Linked Data."
-msgstr "**ttl2html**はリンクト・データ用の静的サイト生成ツールです。"
+msgstr "**ttl2html** はリンクト・データ用の静的サイト生成ツールです。"
 
 #: ../../index.rst:6
 msgid ""
