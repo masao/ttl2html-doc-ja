@@ -50,43 +50,49 @@ msgid ""
 "Check out the :doc:`usage` and :doc:`configuration` section for further "
 "information, including how to :ref:`installation` the project."
 msgstr ""
+":ref:`installation` など、詳しい使い方と設定方法については :doc:`usage`, :doc:`configuration` "
+"をご覧ください。"
 
 #: ../../index.rst:16
 msgid "This project is under active development."
-msgstr ""
+msgstr "本プロジェクトは活発に開発中です。"
 
 #: ../../index.rst:19
 msgid "Contents"
-msgstr ""
+msgstr "目次"
 
 #: ../../index.rst:27
 msgid "See also"
-msgstr ""
+msgstr "関連情報"
 
 #: ../../index.rst:29
 msgid ""
 "There is another tool **xlsx2shape** to describe a dataset schema using "
 "SHACL. See :doc:`xlsx2shape` for details."
 msgstr ""
+"SHACLを使ってデータセットのスキーマ記述を行うためのツール**xlsx2shape**も提供しています。詳細は :doc:`xlsx2shape` "
+"をご覧ください。"
 
 #: ../../index.rst:32
 msgid ""
 "This tool is based on experiences from publishing Japanese Textbook LOD "
 "dataset [JP-TEXTBOOK_2017]_."
-msgstr ""
+msgstr "このツールの開発は、教科書LODデータセット [JP-TEXTBOOK_2017]_ の開発と公開における経験に基づいています。"
 
 #: ../../index.rst:35
 msgid "References"
-msgstr ""
+msgstr "参照文献"
 
 #: ../../index.rst:37
 msgid ""
 "Tim-Berner Lee (2006). \"Linked Data\". "
 "https://www.w3.org/DesignIssues/LinkedData.html"
 msgstr ""
+"Tim-Berner Lee (2006). \"Linked Data\". "
+"https://www.w3.org/DesignIssues/LinkedData.html"
 
 #: ../../index.rst:38
 msgid ""
 "Egusa & M. Takaku (2017). \"Japanese Textbook LOD\". https://w3id.org/jp-"
 "textbook/"
-msgstr ""
+msgstr "教育データ研究会. (2017). \"教科書LOD\". https://w3id.org/jp-textbook/"

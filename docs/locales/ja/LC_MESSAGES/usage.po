@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the ttl2html package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Masao Takaku <tmasao@acm.org>, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-16 01:12+0900\n"
 "PO-Revision-Date: 2023-08-15 16:16+0000\n"
+"Last-Translator: Masao Takaku <tmasao@acm.org>, 2023\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,46 +23,48 @@ msgstr ""
 
 #: ../../usage.rst:2
 msgid "Usage"
-msgstr ""
+msgstr "使い方"
 
 #: ../../usage.rst:7
 msgid "Installation"
-msgstr ""
+msgstr "インストール方法"
 
 #: ../../usage.rst:9
 msgid "To use ttl2html, first install it using Rubygems:"
-msgstr ""
+msgstr "ttl2htmlを使うには、まずRubygemsをつかって以下のようにインストールしてください:"
 
 #: ../../usage.rst:16
 msgid "Command line usage"
-msgstr ""
+msgstr "コマンドライン実行方法"
 
 #: ../../usage.rst:18
 msgid ""
 "First, you must create a configuration file named ``config.yml`` with a YAML"
 " format. One required key for the configuration is ``base_uri``:"
 msgstr ""
+"まず始めに、実行時に使うディレクトリ上に``config.yml``というファイル名の設定ファイルが必要です。このファイル内における設定項目では1つの設定項目``base_uri``だけが必須で、他の設定項目は任意オプションとなっています。"
+" 以下のように、設定項目とその値を指定します:"
 
 #: ../../usage.rst:25
 msgid ""
 "With this configuration file, you can execute a command on the dataset "
 "file(s) :"
-msgstr ""
+msgstr "上記の設定ファイルを作成したら、以下のようにデータセットのRDF/Turtle形式のファイルを引数に指定して、コマンドを実行します:"
 
 #: ../../usage.rst:31
 msgid "The command parses the dataset file(s) and generate HTML files."
-msgstr ""
+msgstr "コマンドが正常に終了すれば、HTMLファイル群が生成されます。"
 
 #: ../../usage.rst:35
 msgid "Command line options"
-msgstr ""
+msgstr "コマンドラインオプション"
 
 #: ../../usage.rst:41
 msgid "The command ``ttl2html`` accepts the following options:"
-msgstr ""
+msgstr "コマンド``ttl2html``では以下のオプション引数を指定できます:"
 
 #: ../../usage.rst:43
 msgid ""
 "``--config file``: Read the configuration file from file (Default: "
 "``config.yml``)."
-msgstr ""
+msgstr "``--config file``: 設定ファイルをfileから読み込みます (Default: ``config.yml``)"
