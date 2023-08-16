@@ -42,10 +42,13 @@ All configuration keys available are documeted as follows:
 * ``copyright_year``: Copyright year statement displayed at the footer along with the ``admin_name`` parameter above.
 * ``css_file``: The path of the CSS stylesheet file to use locally.
 * ``custom_css``: Specify the code snippet of the CSS stylesheet (e.g. ``nav.navbar {background-color: pink} ``).
-* ``google_analytics``: Google tracking code for usage statistics by [Google Analytics](https://analytics.google.com).:: YAML
-  google_analytics: G-XXXXXXXXXXXX
+* ``google_analytics``: Google tracking code for usage statistics by `Google Analytics <https://analytics.google.com>`_.
 
-* ``google_custom_search_id``: Specify the search engine ID for setting up a site search form using [Google Custom Search](https://developers.google.com/custom-search). .
+  .. code-block:: YAML
+
+    google_analytics: G-XXXXXXXXXXXX
+
+* ``google_custom_search_id``: Specify the search engine ID for setting up a site search form using `Google Custom Search <https://developers.google.com/custom-search>`_.
 
   .. code-block:: YAML
 
@@ -61,7 +64,7 @@ All configuration keys available are documeted as follows:
 
     navbar_class: navbar-dark bg-dark
 
-* ``ogp``: Specify [OGP (Open Graph Protocol)](https://ogp.me) settings if you have additional logo settings for social networking sites, etc. You can specify ``ogp:image``, ``ogp:type``, etc.
+* ``ogp``: Specify `OGP (Open Graph Protocol) <https://ogp.me>`_ settings if you have additional logo settings for social networking sites, etc. You can specify ``ogp:image``, ``ogp:type``, etc.
 
   .. code-block:: YAML
 
@@ -80,7 +83,7 @@ All configuration keys available are documeted as follows:
       - https://example.org/BookShape
 
 * ``site_title``: Main title for the whole website.
-* ``template_dir``: Local template directory to find a template file. Default template files are available at [here](https://github.com/masao/ttl2html/tree/master/templates). To overwrite the contents of the original template, copy the original file to the directory specified here and rewrite it.
+* ``template_dir``: Local template directory to find a template file. Default template files are available at `here <https://github.com/masao/ttl2html/tree/master/templates>`_. To overwrite the contents of the original template, copy the original file to the directory specified here and rewrite it.
 * ``title_property``: Specified URI is regarded as a title property for the resource. In default, a title is matched with the following properties:
 
   * https://www.w3.org/TR/rdf-schema/#label

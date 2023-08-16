@@ -26,7 +26,7 @@ With this configuration file, you can execute a command on the dataset file(s) :
 
 .. code-block:: console
 
-   ttl2html dataset.ttl
+   $ ttl2html dataset.ttl
 
 The command parses the dataset file(s) and generate HTML files.
 
@@ -36,7 +36,7 @@ Command line options
 
 .. code-block:: console
    
-   ttl2html --config test.yml dataset.ttl
+   $ ttl2html --config test.yml dataset.ttl
 
 The command ``ttl2html`` accepts the following options:
 

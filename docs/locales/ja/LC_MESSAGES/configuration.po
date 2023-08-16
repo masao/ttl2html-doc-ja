@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-16 01:12+0900\n"
+"POT-Creation-Date: 2023-08-16 15:22+0900\n"
 "PO-Revision-Date: 2023-08-15 16:16+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2023\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -58,10 +58,13 @@ msgid ""
 "array of link items with two keys ``href`` and ``label``. e.g. ``[ { "
 "\"href\": \"http://example.org\", \"label\": \"Link\" } ]``"
 msgstr ""
+"``additional_link``: メニューに置かれる追加的なリンク。``href``, "
+"``label``の2つのキーを持つ各リンク情報を配列として設定できます。例: ``[ { \"href\": "
+"\"http://example.org\", \"label\": \"Link\" } ]``"
 
 #: ../../configuration.rst:26
 msgid "``admin_name``: Name of the dataset publisher displayed at the footer."
-msgstr ""
+msgstr "``admin_name``: フッタ―に表示するデータ提供管理者の名称。"
 
 #: ../../configuration.rst:27
 msgid ""
@@ -69,6 +72,8 @@ msgid ""
 "contents in ``about.html``. The default is ``false``, which means no table "
 "of contents."
 msgstr ""
+"``about_toc``: ``about.html``ページ内に目次を出力するかどうかを ``true`` / "
+"``false``で指定します。デフォルトでは``false``で、目次は出力しません。"
 
 #: ../../configuration.rst:28
 msgid ""
@@ -123,122 +128,142 @@ msgstr ""
 
 #: ../../configuration.rst:45
 msgid ""
-"``google_analytics``: Google tracking code for usage statistics by [Google "
-"Analytics](https://analytics.google.com).:: YAML google_analytics: "
-"G-XXXXXXXXXXXX"
+"``google_analytics``: Google tracking code for usage statistics by `Google "
+"Analytics <https://analytics.google.com>`_."
 msgstr ""
-"``google_analytics``: `Googleアナリティクス <https://analytics.google.com>`_ "
-"による利用統計用の設定コードを指定します。 "
+"``google_analytics``: `Googleアナリティクス "
+"<https://analytics.google.com>`_.による利用統計用の設定コードを指定します。"
 
-#: ../../configuration.rst:48
+#: ../../configuration.rst:51
 msgid ""
 "``google_custom_search_id``: Specify the search engine ID for setting up a "
-"site search form using [Google Custom "
-"Search](https://developers.google.com/custom-search). ."
+"site search form using `Google Custom Search "
+"<https://developers.google.com/custom-search>`_."
 msgstr ""
+"``google_custom_search_id``: `Googleカスタム検索 "
+"<https://developers.google.com/custom-"
+"search>`_.を利用したサイト内検索フォームを設置するための検索エンジンIDを指定します。"
 
-#: ../../configuration.rst:54
+#: ../../configuration.rst:57
 msgid "``javascript_file``: The path of the JavaScript file to use locally."
-msgstr ""
+msgstr "``javascript_file``: ローカルで用いるJavaScriptファイルのパスを指定します。"
 
-#: ../../configuration.rst:55
+#: ../../configuration.rst:58
 msgid "``labels``: Mappings for the custom property labels."
-msgstr ""
+msgstr "``labels``: 個別プロパティの出力ラベル名を指定します。プロパティURIをキーとし、ラベル名称を値とする形式で指定します。"
 
-#: ../../configuration.rst:56
+#: ../../configuration.rst:59
 msgid ""
 "``locale``: Locale name for the output messages. Default: ``en`` (e.g. "
 "``ja``, ``en``)"
-msgstr ""
+msgstr "``locale``: 出力メッセージの言語指定。デフォルトは ``en`` （例: ``ja``, ``en``）"
 
-#: ../../configuration.rst:57
+#: ../../configuration.rst:60
 msgid ""
 "``logo``: The logo image file to be displayed on the menu. Specify the file "
 "path or URL."
-msgstr ""
+msgstr "``logo``: トップメニューに表示するロゴ。ファイルパスまたはURLを指定する。"
 
-#: ../../configuration.rst:58
+#: ../../configuration.rst:61
 msgid ""
 "``navbar_class``: Specifies the class setting for displaying the navigation "
 "bar at the top of the screen. If not specified, ``navbar-light`` is used. "
 "Use this if you want to specify a black background color as follows:"
 msgstr ""
+"``navbar_class``: 画面上部に配置するナビゲーションバーの表示用クラス設定を指定します。指定がなければ ``navbar-light``"
+" が指定されたものとみなします。以下のように黒色系の背景色を指定したい場合に用います:"
 
-#: ../../configuration.rst:64
+#: ../../configuration.rst:67
 msgid ""
-"``ogp``: Specify [OGP (Open Graph Protocol)](https://ogp.me) settings if you"
-" have additional logo settings for social networking sites, etc. You can "
+"``ogp``: Specify `OGP (Open Graph Protocol) <https://ogp.me>`_ settings if "
+"you have additional logo settings for social networking sites, etc. You can "
 "specify ``ogp:image``, ``ogp:type``, etc."
 msgstr ""
+"``ogp``: Specify `OGP (Open Graph Protocol) <https://ogp.me>`_ "
+"設定を指定します。SNS等で用いるための追加のロゴ設定などがあれば、こちらを指定してください。``ogp:image``, "
+"``ogp:type``などの指定が可能です。"
 
-#: ../../configuration.rst:72
+#: ../../configuration.rst:75
 msgid "``output_dir``: Output directory for the dataset."
-msgstr ""
+msgstr "``output_dir``: 出力ディレクトリを指定します。"
 
-#: ../../configuration.rst:73
+#: ../../configuration.rst:76
 msgid ""
 "``output_turtle``: Whether to output the RDF/Turtle format file "
 "corresponding to each resource URI, as ``true`` / ``false``. Default is "
 "``true`` (i.e. output RDF/Turtle format files)."
 msgstr ""
+"``output_turtle``: 各リソースURIに対応するRDF/Turtle形式のファイルを出力するかどうかを ``true`` / "
+"``false`` で指定します。デフォルトは ``true`` です（つまりRDF/Turtle形式を出力します）。"
 
-#: ../../configuration.rst:74
+#: ../../configuration.rst:77
 msgid ""
 "``shape_orders``: controls the order in which resource descriptions are "
 "output to about.html. The descriptions are output in the order of the "
 "resource shapes listed here. If not set, the default is alphabetical order "
 "of shape URIs. Set as a list, as in the following example:"
 msgstr ""
+"``shape_orders``: "
+"``about.html``に出力されるリソース説明の順序を制御する。ここに一覧されたリソースシェイプの順に説明が出力される。設定されない場合、デフォルトではシェイプURIのアルファベット順に出力される。以下の例のようにリストとして設定する:"
 
-#: ../../configuration.rst:82
+#: ../../configuration.rst:85
 msgid "``site_title``: Main title for the whole website."
-msgstr ""
+msgstr "``site_title``: ウェブサイト全体のメインタイトルを指定します。"
 
-#: ../../configuration.rst:83
+#: ../../configuration.rst:86
 msgid ""
 "``template_dir``: Local template directory to find a template file. Default "
-"template files are available at "
-"[here](https://github.com/masao/ttl2html/tree/master/templates). To "
-"overwrite the contents of the original template, copy the original file to "
-"the directory specified here and rewrite it."
+"template files are available at `here "
+"<https://github.com/masao/ttl2html/tree/master/templates>`_. To overwrite "
+"the contents of the original template, copy the original file to the "
+"directory specified here and rewrite it."
 msgstr ""
+"``template_dir``: ローカルのテンプレートディレクトリ。未指定の場合はカレントディレクトリ内の ``templates/`` "
+"ディレクトリを用いる。なお、テンプレートを上書きするには、`標準のテンプレートファイル群  "
+"<https://github.com/masao/ttl2html/tree/master/templates>`_のうち必要なファイルをローカルのテンプレートディレクトリにコピーしてきて、内容を書き換えること。"
 
-#: ../../configuration.rst:84
+#: ../../configuration.rst:87
 msgid ""
 "``title_property``: Specified URI is regarded as a title property for the "
 "resource. In default, a title is matched with the following properties:"
 msgstr ""
-
-#: ../../configuration.rst:86
-msgid "https://www.w3.org/TR/rdf-schema/#label"
-msgstr ""
-
-#: ../../configuration.rst:87
-msgid "http://purl.org/dc/terms/title"
-msgstr ""
-
-#: ../../configuration.rst:88
-msgid "http://purl.org/dc/elements/1.1/title"
-msgstr ""
+"``title_property``: "
+"指定したURIをタイトルとして指定します。指定されていない場合、もしくは指定したプロパティが存在しない場合は以下のプロパティの存在を走査して、その値をタイトルとみなします:"
 
 #: ../../configuration.rst:89
-msgid "http://schema.org/name"
-msgstr ""
+msgid "https://www.w3.org/TR/rdf-schema/#label"
+msgstr "https://www.w3.org/TR/rdf-schema/#label"
 
 #: ../../configuration.rst:90
-msgid "http://www.w3.org/2004/02/skos/core#prefLabel"
-msgstr ""
+msgid "http://purl.org/dc/terms/title"
+msgstr "http://purl.org/dc/terms/title"
+
+#: ../../configuration.rst:91
+msgid "http://purl.org/dc/elements/1.1/title"
+msgstr "http://purl.org/dc/elements/1.1/title"
 
 #: ../../configuration.rst:92
+msgid "http://schema.org/name"
+msgstr "http://schema.org/name"
+
+#: ../../configuration.rst:93
+msgid "http://www.w3.org/2004/02/skos/core#prefLabel"
+msgstr "http://www.w3.org/2004/02/skos/core#prefLabel"
+
+#: ../../configuration.rst:95
 msgid ""
 "``top_additional_property``: For each set of resources expanded by "
 "``top_class`` setting, specify a list of additional sub-hierarchies to be "
 "expanded. The properties that make up the sub-hierarchy are specified as a "
 "list."
 msgstr ""
+"``top_additional_property``: "
+"``top_class``設定で展開されるリソース群に対して、追加でサブ階層として展開されるべきリストを指定する。サブ階層を構成するプロパティをリストとして指定する。"
 
-#: ../../configuration.rst:93
+#: ../../configuration.rst:96
 msgid ""
 "``top_class``: Specified URI is the class of the records listed in the top "
 "page. By default, this tool does not generate the top page."
 msgstr ""
+"``top_class``: "
+"トップページに表示すべきレコード一覧に対応するクラスURIを指定する。デフォルトでは指定無しとし、トップページは生成しない。"
