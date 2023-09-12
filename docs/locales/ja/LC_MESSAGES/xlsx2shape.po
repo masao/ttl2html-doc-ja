@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Masao Takaku
+# This file is distributed under the same license as the ttl2html package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ttl2html \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-12 14:12+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../xlsx2shape.rst:2
+msgid "xlsx2shape"
+msgstr ""
+
+#: ../../xlsx2shape.rst:4
+msgid ""
+"This tool **xlsx2shape** is an application profile generator for Linked "
+"Data using SHACL."
+msgstr ""
+
+#: ../../xlsx2shape.rst:6
+msgid ""
+"This tool accepts MS Excel format as a description of Metadata model "
+"(Aplication Profile) through SHACL validation schema. It allows metadata "
+"publishers to describe and validate their own metadata, as wel as to "
+"publish the application profile on the web by using the ttl2html tool."
+msgstr ""
+
+#: ../../xlsx2shape.rst:10
+msgid "Features"
+msgstr ""
+
+#: ../../xlsx2shape.rst:12
+msgid ""
+"Describe an application profile in MS Excel file with SHACL shape "
+"expression schema."
+msgstr ""
+
+#: ../../xlsx2shape.rst:13
+msgid "Convert a description in MS Excel into SHACL schema."
+msgstr ""
+
+#: ../../xlsx2shape.rst:16
+msgid "Usage"
+msgstr ""
+
+#: ../../xlsx2shape.rst:18
+msgid ""
+"At first, you need to describe your own schema into MS Excel file. An "
+"example of Excel file is available at `example.xlsx "
+"<https://github.com/masao/ttl2html/blob/master/spec/example/example.xlsx?raw=true>`_."
+" In the Excel file, each sheet represents each node type, and describes "
+"property structures and constraints on the node."
+msgstr ""
+
+#: ../../xlsx2shape.rst:21
+msgid ""
+"Once you get an Excel file, you can use the command line tool "
+"``xlsx2shape`` with argument of spreadsheet file(s)."
+msgstr ""
+
+#: ../../xlsx2shape.rst:27
+msgid ""
+"The command parses spreadsheets and generate a SHACL format for "
+"validation in RDF/Turtle."
+msgstr ""
+
+#: ../../xlsx2shape.rst:30
+msgid "History"
+msgstr ""
+
+#: ../../xlsx2shape.rst:32
+msgid ""
+"This tool is based on experiences from publishing Japanese Textbook LOD "
+"dataset [JP-TEXTBOOK_2017]_."
+msgstr ""
+

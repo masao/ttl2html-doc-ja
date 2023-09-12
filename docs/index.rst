@@ -23,6 +23,11 @@ Contents
    usage
    configuration
 
+.. toctree::
+   :hidden:
+
+   xlsx2shape
+
 See also
 --------
 
