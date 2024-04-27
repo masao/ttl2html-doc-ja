@@ -29,7 +29,7 @@ msgstr "xlsx2shape"
 msgid ""
 "This tool **xlsx2shape** is an application profile generator for Linked Data"
 " using SHACL."
-msgstr ""
+msgstr "このツール**xlsx2shape**は、SHACLを用いたLinked Data用のアプリケーション・プロファイル生成ツールです。"
 
 #: ../../xlsx2shape.rst:6
 msgid ""
@@ -38,6 +38,8 @@ msgid ""
 "publishers to describe and validate their own metadata, as wel as to publish"
 " the application profile on the web by using the ttl2html tool."
 msgstr ""
+"このツールは、メタデータモデル（アプリケーションプロファイル）の記述となるMS "
+"Excel形式を入力として、SHACL検証スキーマを実現します。メタデータ提供者は、自身が提供するメタデータモデルを記述し、メタデータ内容を検証できると同時に、ttl2htmlツールを使用して、アプリケーションプロファイルをウェブ上で公開することができます。"
 
 #: ../../xlsx2shape.rst:10
 msgid "Features"
