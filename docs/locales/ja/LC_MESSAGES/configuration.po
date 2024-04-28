@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-28 19:15+0900\n"
+"POT-Creation-Date: 2024-04-28 19:31+0900\n"
 "PO-Revision-Date: 2023-08-15 16:16+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -283,13 +283,3 @@ msgid ""
 msgstr ""
 "``uri_mappings``: "
 "URIに対応するローカルファイルを出力する際、出力ファイル名に操作を加える場合に使用します。例えば、1つのディレクトリ内に大量のファイルが出力されるようなLODデータセットに対応させる場合に、先頭数文字と残りの文字数とで、ディレクトリ毎に保存先が別れたファイル群となるように指定できます。下記の例は、15桁の英数字からなるURIパスを先頭2文字と残りに分けて、2文字フォルダ毎に出力するように指定する例です。"
-
-#: ../../configuration.rst:103
-msgid "uri_mappings:"
-msgstr "uri_mappings:"
-
-#: ../../configuration.rst:102
-msgid "regexp: !ruby/regexp /^(\\d\\w\\w)(\\w{13})$/ path: '\\1/\\2'"
-msgstr ""
-"regexp: !ruby/regexp /^(\\d\\w\\w)(\\w{13})$/\n"
-"path: '\\1/\\2'"

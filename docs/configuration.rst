@@ -95,10 +95,9 @@ All configuration keys available are documeted as follows:
 * ``top_additional_property``: For each set of resources expanded by ``top_class`` setting, specify a list of additional sub-hierarchies to be expanded. The properties that make up the sub-hierarchy are specified as a list.
 * ``top_class``: Specified URI is the class of the records listed in the top page. By default, this tool does not generate the top page.
 * ``uri_mappings``: If you want to change the output file names when outputting local files corresponding to a URI, use this setting. You can specify the patterns for the part of paths in a URI and then determine how the matched part of the path has to be changed. For example, when outputting many files in a single directory, you can specify a pattern for the first few characters and the rest of the filename so that each directory contains a separate set of files with different destinations. The example below specifies that a URI path consisting of 15 alphanumeric characters is divided into the first two characters and the rest of the path. Hence, the output files are placed for each two-character directory.
-
+  
   .. code-block:: YAML
-
-  uri_mappings:
-    - regexp: !ruby/regexp /^(\d\w\w)(\w{13})$/
-      path: '\1/\2'
-
+  
+    uri_mappings:
+      - regexp: !ruby/regexp /^(\d\w\w)(\w{13})$/
+        path: '\1/\2'
