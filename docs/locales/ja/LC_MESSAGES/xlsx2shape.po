@@ -29,7 +29,7 @@ msgstr "xlsx2shape"
 msgid ""
 "This tool **xlsx2shape** is an application profile generator for Linked Data"
 " using SHACL."
-msgstr "このツール**xlsx2shape**は、SHACLを用いたLinked Data用のアプリケーション・プロファイル生成ツールです。"
+msgstr "このツール **xlsx2shape** は、SHACLを用いたLinked Data用のアプリケーション・プロファイル生成ツールです。"
 
 #: ../../xlsx2shape.rst:6
 msgid ""
@@ -49,15 +49,15 @@ msgstr "機能"
 msgid ""
 "Describe an application profile in MS Excel file with SHACL shape expression"
 " schema."
-msgstr ""
+msgstr "SHACLスキーマ記述を加えたMS Excelファイルを使ってアプリケーションプロファイルを記述できます。"
 
 #: ../../xlsx2shape.rst:13
 msgid "Convert a description in MS Excel into SHACL schema."
-msgstr ""
+msgstr "MS Excelに記述したスキーマ情報をSHACLスキーマに変換できます。"
 
 #: ../../xlsx2shape.rst:16
 msgid "Usage"
-msgstr ""
+msgstr "使用方法"
 
 #: ../../xlsx2shape.rst:18
 msgid ""
@@ -67,25 +67,30 @@ msgid ""
 " In the Excel file, each sheet represents each node type, and describes "
 "property structures and constraints on the node."
 msgstr ""
+"まず、使用したいスキーマをMS Excelファイルに記述する必要があります。Excelファイルの例は `example.xlsx "
+"<https://github.com/masao/ttl2html/blob/master/spec/example/example.xlsx?raw=true>`_"
+" にあります。エクセルファイルでは、各シートが各ノードタイプをあらわし、各ノードが持つプロパティ構造と制約を記述します。"
 
 #: ../../xlsx2shape.rst:21
 msgid ""
 "Once you get an Excel file, you can use the command line tool ``xlsx2shape``"
 " with argument of spreadsheet file(s)."
 msgstr ""
+"エクセルファイルへの記述が終わったら、そのスプレッドシートファイル（複数可）を引数に指定して、コマンドラインツール ``xlsx2shape`` "
+"を使います。"
 
 #: ../../xlsx2shape.rst:27
 msgid ""
 "The command parses spreadsheets and generate a SHACL format for validation "
 "in RDF/Turtle."
-msgstr ""
+msgstr "``xlsx2shape`` コマンドはスプレッドシート内の記述を解析し、RDFの検証用のSHACL形式ファイルを生成します。"
 
 #: ../../xlsx2shape.rst:30
 msgid "History"
-msgstr ""
+msgstr "履歴"
 
 #: ../../xlsx2shape.rst:32
 msgid ""
 "This tool is based on experiences from publishing Japanese Textbook LOD "
 "dataset [JP-TEXTBOOK_2017]_."
-msgstr ""
+msgstr "このツールは、教科書LODデータセット[JP-TEXTBOOK_2017]_の公開、提供の経験に基づいて開発されました。"
