@@ -13,8 +13,10 @@ author = 'Masao Takaku'
 
 language = 'ja'
 
+master_doc = 'index'
+
 extensions = [
-    'sphinx.ext.duration',
+#    'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
