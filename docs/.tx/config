@@ -1,5 +1,5 @@
 [main]
-host = https://www.transifex.com
+host = https://app.transifex.com
 
 [o:ttl2html:p:ttl2html:r:configuration]
 file_filter = locales/<lang>/LC_MESSAGES/configuration.po
@@ -24,7 +24,6 @@ type = PO
 keep_translations = false
 minimum_perc = 0
 replace_edited_strings = false
-keep_translations      = false
 
 [o:ttl2html:p:ttl2html:r:xlsx2shape]
 file_filter            = locales/<lang>/LC_MESSAGES/xlsx2shape.po
