@@ -11,10 +11,6 @@ This tool helps to generate a website for a Linked Data dataset and publish it o
 Check out the :doc:`usage` and :doc:`configuration` section for further information, including
 how to :ref:`installation` the project.
 
-.. note::
-
-   This project is under active development.
-
 Contents
 --------
 
