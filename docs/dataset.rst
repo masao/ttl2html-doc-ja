@@ -13,7 +13,7 @@ The following table lists the metadata vocabularies and their namespaces used in
    :header:  "Metadata vocabulary", "Prefix", "Namespace URI"
    :widths: auto
 
-   `DCMI Metadata Terms <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/>`_, dct:, http://purl.org/dc/terms/abstract
+   `DCMI Metadata Terms <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/>`_, dct:, http://purl.org/dc/terms/
    `FOAF (Friend of a Friend) Vocabulary <http://xmlns.com/foaf/spec/>`_, foaf:, http://xmlns.com/foaf/0.1/
    `VoID (Vocabulary of Interlinked Datasets) <http://www.w3.org/TR/void/>`_, void:, http://rdfs.org/ns/void#
    `PAV (Provenance Authoring and Versioning ontology) <https://pav-ontology.github.io/pav/>`_, pav:, http://purl.org/pav/

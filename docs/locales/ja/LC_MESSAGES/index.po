@@ -50,6 +50,8 @@ msgid ""
 "Check out the :doc:`usage` and :doc:`configuration` sections for further "
 "information, including how to :ref:`installation` the project."
 msgstr ""
+":ref:`installation` など、詳しい使い方と設定方法については :doc:`usage`, :doc:`configuration` "
+"をご覧ください。"
 
 #: ../../index.rst:15
 msgid "Contents"
