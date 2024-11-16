@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2023, Masao Takaku
+# Copyright (C) 2023-2024, Masao Takaku
 # This file is distributed under the same license as the ttl2html package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-16 11:51+0900\n"
+"POT-Creation-Date: 2024-11-16 12:02+0900\n"
 "PO-Revision-Date: 2024-11-16 02:16+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -32,7 +32,8 @@ msgid ""
 " tool. The tool then displays this information on the main and about pages, "
 "providing a clear overview for users who are about to utilize the dataset."
 msgstr ""
-"``ttl2html``では、データセット全体に関する情報（データセットのタイトルや作者、リリース日やデータサイズ等）をRDFで記述し、本ツールへの入力とすることにより、トップページおよびaboutページにおいて、データセットを利用しようとするユーザに対して分かりやすい情報として示すことができます。"
+"``ttl2html`` "
+"では、データセット全体に関する情報（データセットのタイトルや作者、リリース日やデータサイズ等）をRDFで記述し、本ツールへの入力とすることにより、トップページおよびaboutページにおいて、データセットを利用しようとするユーザに対して分かりやすい情報として示すことができます。"
 
 #: ../../dataset.rst:6
 msgid ""
@@ -267,7 +268,9 @@ msgid ""
 " the ``foaf:Project`` class, and the information of each member is linked "
 "from that resource with the ``foaf:member`` property."
 msgstr ""
-"データセットの提供者に関わる連絡先情報を明示するため、FOAF語彙を使って記述できます。以下のようなプロパティ項目を使って記述できます。なお、提供者が複数名から構成される場合は、全体の連絡先を表現するリソースを``foaf:Project``クラスのリソースとして表現したうえで、そのリソースから各構成メンバーの情報を``foaf:member``プロパティでリンクすることで表現します。"
+"データセットの提供者に関わる連絡先情報を明示するため、FOAF語彙を使って記述できます。以下のようなプロパティ項目を使って記述できます。なお、提供者が複数名から構成される場合は、全体の連絡先を表現するリソースを"
+" ``foaf:Project`` クラスのリソースとして表現したうえで、そのリソースから各構成メンバーの情報を ``foaf:member`` "
+"プロパティでリンクすることで表現します。"
 
 #: ../../dataset.rst:53
 msgid ""
@@ -364,7 +367,10 @@ msgid ""
 "resources are linked using the ``pav:hasVersion`` properties. The following "
 "properties can be used to describe metadata for each version resource:"
 msgstr ""
-"最新のバージョン情報を示すリソースは、データセット全体を示すリソースから``pav:hasCurrentVersion``プロパティを使ってリンクされ、さらに、最新ではなくなった各履歴バージョン情報のリソースは、データセット全体を示すリソースから``pav:hasCurrentVersion``プロパティを使ってリンクされることを想定します。各バージョン情報のメタデータは下記のプロパティ項目を使って記述します。"
+"最新のバージョン情報を示すリソースは、データセット全体を示すリソースから ``pav:hasCurrentVersion`` "
+"プロパティを使ってリンクされ、さらに、最新ではなくなった各履歴バージョン情報のリソースは、データセット全体を示すリソースから "
+"``pav:hasCurrentVersion`` "
+"プロパティを使ってリンクされることを想定します。各バージョン情報のメタデータは下記のプロパティ項目を使って記述します。"
 
 #: ../../dataset.rst:80
 msgid "Properties for Version History Information"
