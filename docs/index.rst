@@ -8,7 +8,7 @@ This tool accepts RDF/Turtle format as input to generate the corresponding HTML 
 The Linked Data Principle [TBL_2006]_ suggests that identifying things as HTTP URIs (resources) and resolving them on the Web is important.
 This tool helps to generate a website for a Linked Data dataset and publish it on the Web.
 
-Check out the :doc:`usage` and :doc:`configuration` section for further information, including
+Check out the :doc:`usage` and :doc:`configuration` sections for further information, including
 how to :ref:`installation` the project.
 
 Contents
@@ -18,6 +18,7 @@ Contents
 
    usage
    configuration
+   dataset
 
 .. toctree::
    :hidden:
