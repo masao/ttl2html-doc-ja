@@ -41,7 +41,7 @@ All configuration keys available are documeted as follows:
 
 * ``copyright_year``: Copyright year statement displayed at the footer along with the ``admin_name`` parameter above.
 * ``css_file``: The path of the CSS stylesheet file to use locally.
-* ``custom_css``: Specify the code snippet of the CSS stylesheet (e.g. ``nav.navbar {background-color: pink} ``).
+* ``custom_css``: Specify the code snippet of the CSS stylesheet (e.g. ``nav.navbar {background-color: pink}``).
 * ``google_analytics``: Google tracking code for usage statistics by `Google Analytics <https://analytics.google.com>`_.
 
   .. code-block:: YAML

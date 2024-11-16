@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2023, Masao Takaku
+# Copyright (C) 2023-2024, Masao Takaku
 # This file is distributed under the same license as the ttl2html package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-30 14:34+0900\n"
+"POT-Creation-Date: 2024-11-16 12:12+0900\n"
 "PO-Revision-Date: 2023-08-15 16:16+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -129,7 +129,7 @@ msgstr "``css_file``: ローカルで用いるCSSスタイルシートファイ�
 #: ../../configuration.rst:44
 msgid ""
 "``custom_css``: Specify the code snippet of the CSS stylesheet (e.g. "
-"``nav.navbar {background-color: pink} ``)."
+"``nav.navbar {background-color: pink}``)."
 msgstr ""
 "``custom_css``: CSSスタイルシートのコードを直接指定します（例: ``nav.navbar { background-color: "
 "pink }``）。"
