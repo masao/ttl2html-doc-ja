@@ -239,23 +239,23 @@ msgstr ""
 
 #: ../../configuration.rst:156
 msgid "https://www.w3.org/TR/rdf-schema/#label"
-msgstr ""
+msgstr "https://www.w3.org/TR/rdf-schema/#label"
 
 #: ../../configuration.rst:157
 msgid "http://purl.org/dc/terms/title"
-msgstr ""
+msgstr "http://purl.org/dc/terms/title"
 
 #: ../../configuration.rst:158
 msgid "http://purl.org/dc/elements/1.1/title"
-msgstr ""
+msgstr "http://purl.org/dc/elements/1.1/title"
 
 #: ../../configuration.rst:159
 msgid "http://schema.org/name"
-msgstr ""
+msgstr "http://schema.org/name"
 
 #: ../../configuration.rst:160
 msgid "http://www.w3.org/2004/02/skos/core#prefLabel"
-msgstr ""
+msgstr "http://www.w3.org/2004/02/skos/core#prefLabel"
 
 #: ../../configuration.rst:164
 msgid ""
