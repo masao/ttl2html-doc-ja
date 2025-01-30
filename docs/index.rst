@@ -18,6 +18,7 @@ Contents
 
    usage
    configuration
+   limitations
    dataset
 
 .. toctree::
