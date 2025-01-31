@@ -2,10 +2,10 @@
 # Copyright (C) 2023-2024, Masao Takaku
 # This file is distributed under the same license as the ttl2html package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Masao Takaku <tmasao@acm.org>, 2025
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -26,56 +26,28 @@ msgid "Limitations of This Tool"
 msgstr "本ツールの制限事項"
 
 #: ../../limitations.rst:4
-msgid ""
-"Please note that \"ttl2html\" has specific limitations that are important to"
-" consider. Knowing these points can help you make informed decisions and "
-"maximize the tool's effectiveness."
-msgstr ""
-"ttl2htmlには以下のような制限事項があります。これらの点に留意いただくことにより、データセット公開のためのヒントが得られ、本ツールの機能を十分に活かすことができます。"
+msgid "Please note that \"ttl2html\" has specific limitations that are important to consider. Knowing these points can help you make informed decisions and maximize the tool's effectiveness."
+msgstr "ttl2htmlには以下のような制限事項があります。これらの点に留意いただくことにより、データセット公開のためのヒントが得られ、本ツールの機能を十分に活かすことができます。"
 
 #: ../../limitations.rst:7
 msgid "URI designs"
 msgstr "URI設計"
 
 #: ../../limitations.rst:9
-msgid ""
-"ttl2html is designed to generate files that directly reflect the URI "
-"structure of the original Linked Data dataset. Essentially, it assumes that "
-"the URI structure of each target resource corresponds one-to-one with the "
-"directory hierarchy and file groups of a static website."
-msgstr ""
-"ttl2htmlにおいて生成されるファイル群は、元のLinked "
-"DataデータセットにおけるURI構造をそのまま反映させることを意図しており、基本的に、対象となる各リソースのURI構造が、静的なウェブサイトのディレクトリ階層、ファイル群と一対一で対応することを想定しています。"
+msgid "ttl2html is designed to generate files that directly reflect the URI structure of the original Linked Data dataset. Essentially, it assumes that the URI structure of each target resource corresponds one-to-one with the directory hierarchy and file groups of a static website."
+msgstr "ttl2htmlにおいて生成されるファイル群は、元のLinked DataデータセットにおけるURI構造をそのまま反映させることを意図しており、基本的に、対象となる各リソースのURI構造が、静的なウェブサイトのディレクトリ階層、ファイル群と一対一で対応することを想定しています。"
 
 #: ../../limitations.rst:11
-msgid ""
-"As a result, URI structures that specify parts of a URI resource using a "
-"hash symbol (#), such as https://example.org/resource/#linked-data, are not "
-"supported. In such cases, avoiding the hash symbol is recommended, and "
-"instead, a directory hierarchy separated by slashes (/), such as "
-"https://example.org/resource/linked-data, is utilized."
-msgstr ""
-"このため、ハッシュ記号  (#) を用いて、URIリソースの部分を指定するようなURI構造（例えば "
-"https://example.org/resource/#linked-data "
-"といった形式）には対応していません。この場合、ハッシュ記号は避けて、スラッシュ記号 (/) で区切るディレクトリ階層に対応するようなURI構造（例えば "
-"https://example.org/resource/linked-data といった形式）を使うことをお勧めします。"
+msgid "As a result, URI structures that specify parts of a URI resource using a hash symbol (#), such as https://example.org/resource/#linked-data, are not supported. In such cases, avoiding the hash symbol is recommended, and instead, a directory hierarchy separated by slashes (/), such as https://example.org/resource/linked-data, is utilized."
+msgstr "このため、ハッシュ記号  (#) を用いて、URIリソースの部分を指定するようなURI構造（例えば https://example.org/resource/#linked-data といった形式）には対応していません。この場合、ハッシュ記号は避けて、スラッシュ記号 (/) で区切るディレクトリ階層に対応するようなURI構造（例えば https://example.org/resource/linked-data といった形式）を使うことをお勧めします。"
 
 #: ../../limitations.rst:13
-msgid ""
-"Similarly, URI structures that specify resources as parameters using a "
-"question mark (?), such as https://example.org/resource?id=1, are also not "
-"supported and should be avoided."
-msgstr ""
-"同様に、クエリ記号 (?) でパラメータとしてリソースを指定するようなURI構造（例えば "
-"https://example.org/resource?id=1 といった形式）にも対応していないため、避けてください。"
+msgid "Similarly, URI structures that specify resources as parameters using a question mark (?), such as https://example.org/resource?id=1, are also not supported and should be avoided."
+msgstr "同様に、クエリ記号 (?) でパラメータとしてリソースを指定するようなURI構造（例えば https://example.org/resource?id=1 といった形式）にも対応していないため、避けてください。"
 
 #: ../../limitations.rst:15
-msgid ""
-"Additionally, a URI structure includes URI resources that end with a slash "
-"(/) and those that do not. In that case, it becomes difficult to distinguish"
-" them on a static website, and thus, they are not supported. For example:"
-msgstr ""
-"また、スラッシュ記号（/）で終わるURIリソースとスラッシュ記号を付与しないようなURIリソースが同時に存在するURI構造（以下の例）があるときには、静的サイト上でこれらを区別することが難しいため、対応していません。"
+msgid "Additionally, a URI structure includes URI resources that end with a slash (/) and those that do not. In that case, it becomes difficult to distinguish them on a static website, and thus, they are not supported. For example:"
+msgstr "また、スラッシュ記号（/）で終わるURIリソースとスラッシュ記号を付与しないようなURIリソースが同時に存在するURI構造（以下の例）があるときには、静的サイト上でこれらを区別することが難しいため、対応していません。"
 
 #: ../../limitations.rst:17
 msgid "https://example.org/foo"
@@ -94,46 +66,21 @@ msgid "Limitations on the Number of Files and Directories"
 msgstr "ファイル数、ディレクトリ数の制約"
 
 #: ../../limitations.rst:25
-msgid ""
-"ttl2html generates static HTML files corresponding to resource URIs. If the "
-"number of generated resources is enormous, issues may arise, including "
-"failures in file generation."
-msgstr ""
-"ttl2htmlでは、リソースURIに対応するHTMLファイル群を静的ファイルとして生成します。生成されるリソース群が非常に多数にのぼる場合には、不具合が発生したり、ファイル生成できない場合がありますので、注意してください。"
+msgid "ttl2html generates static HTML files corresponding to resource URIs. If the number of generated resources is enormous, issues may arise, including failures in file generation."
+msgstr "ttl2htmlでは、リソースURIに対応するHTMLファイル群を静的ファイルとして生成します。生成されるリソース群が非常に多数にのぼる場合には、不具合が発生したり、ファイル生成できない場合がありますので、注意してください。"
 
 #: ../../limitations.rst:27
-msgid ""
-"First, the file system used on your server has limits on the number of files"
-" and directories that can be created."
+msgid "First, the file system used on your server has limits on the number of files and directories that can be created."
 msgstr "まず、お使いのサーバ上で用いているファイルシステムには、生成しうるファイル数やディレクトリ数には制限があります。"
 
 #: ../../limitations.rst:29
-msgid ""
-"These limitations vary depending on the file system in use, so please check "
-"the restrictions of your OS and file system. For example, the NTFS file "
-"system used in standard Windows environments supports approximately 4.29 "
-"billion files, while the Apple File System (APFS) used in macOS supports up "
-"to approximately nine quintillion files."
-msgstr ""
-"この制約は、お使いのファイルシステムごとに異なりますので、使っているOSやファイルシステムの制限を確認してください。例えば、Windows標準のNTFSファイルシステムでは約42億9496万ファイルまでが保持しうるファイル数の上限であり、MacOS標準のApple"
-" Filesystem (APFS) では約90京ファイルが上限です。"
+msgid "These limitations vary depending on the file system in use, so please check the restrictions of your OS and file system. For example, the NTFS file system used in standard Windows environments supports approximately 4.29 billion files, while the Apple File System (APFS) used in macOS supports up to approximately nine quintillion files."
+msgstr "この制約は、お使いのファイルシステムごとに異なりますので、使っているOSやファイルシステムの制限を確認してください。例えば、Windows標準のNTFSファイルシステムでは約42億9496万ファイルまでが保持しうるファイル数の上限であり、MacOS標準のApple Filesystem (APFS) では約90京ファイルが上限です。"
 
 #: ../../limitations.rst:31
-msgid ""
-"Furthermore, if your dataset contains many resources within the same "
-"directory, in such cases, an excessive number of files may be generated "
-"under a single directory, potentially causing issues such as slower access "
-"times depending on the file system structure. If the number of files exceeds"
-" tens of thousands, it is advisable to implement countermeasures."
-msgstr ""
-"さらに、多くのLODデータセットでは、同一のディレクトリ下に多くのリソースが配置されることがありますが、このような構成の場合、当該ディレクトリ下に大量のファイルが生成されることになり、ファイルシステムの構成によってはアクセスが遅くなる等の問題が発生することが起きる場合があります。おおよそ数万ファイルを超えるような場合には、回避策の適用をお勧めします。"
+msgid "Furthermore, if your dataset contains many resources within the same directory, in such cases, an excessive number of files may be generated under a single directory, potentially causing issues such as slower access times depending on the file system structure. If the number of files exceeds tens of thousands, it is advisable to implement countermeasures."
+msgstr "さらに、多くのLODデータセットでは、同一のディレクトリ下に多くのリソースが配置されることがありますが、このような構成の場合、当該ディレクトリ下に大量のファイルが生成されることになり、ファイルシステムの構成によってはアクセスが遅くなる等の問題が発生することが起きる場合があります。おおよそ数万ファイルを超えるような場合には、回避策の適用をお勧めします。"
 
 #: ../../limitations.rst:33
-msgid ""
-"To mitigate this issue, use the `uri_mappings` configuration option to "
-"divide the generated files into multiple directories (see: "
-":confval:`uri_mappings`)."
-msgstr ""
-"こうした問題を回避する場合には、設定項目 `uri_mappings` "
-"を使って、各URIリソースから実際に生成されるファイル名をいくつかのディレクトリに分割して保存されるようにしましょう（参照: :ref:`config-"
-"uri_mappings`）。"
+msgid "To mitigate this issue, use the `uri_mappings` configuration option to divide the generated files into multiple directories (see: :confval:`uri_mappings`)."
+msgstr "こうした問題を回避する場合には、設定項目 `uri_mappings` を使って、各URIリソースから実際に生成されるファイル名をいくつかのディレクトリに分割して保存されるようにしましょう（参照: :ref:`config-uri_mappings`）。"
