@@ -2,10 +2,10 @@
 # Copyright (C) 2023-2024, Masao Takaku
 # This file is distributed under the same license as the ttl2html package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Masao Takaku <tmasao@acm.org>, 2025
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -26,9 +26,7 @@ msgid "Configuration"
 msgstr "設定ファイル"
 
 #: ../../configuration.rst:4
-msgid ""
-"You can setup several options on the configuration file, ``config.yml`` "
-"(default)."
+msgid "You can setup several options on the configuration file, ``config.yml`` (default)."
 msgstr "設定ファイル（デフォルトでは ``config.yml`` ）にて、以下のような設定項目を指定できます:"
 
 #: ../../configuration.rst:6
@@ -48,22 +46,12 @@ msgid "Default"
 msgstr ""
 
 #: ../../configuration.rst:27
-msgid ""
-"Specified filename is used for documenting schemas of the dataset. It "
-"requires SHACL documentation within the dataset. By default, the filename "
-"``about.html`` is used."
-msgstr ""
-"指定された名前のファイルにスキーマ説明を出力する。データセット内にSHACL記述が存在するときのみ有効。指定しない場合、デフォルトのファイル名は "
-"``about.html`` が使われる。"
+msgid "Specified filename is used for documenting schemas of the dataset. It requires SHACL documentation within the dataset. By default, the filename ``about.html`` is used."
+msgstr "指定された名前のファイルにスキーマ説明を出力する。データセット内にSHACL記述が存在するときのみ有効。指定しない場合、デフォルトのファイル名は ``about.html`` が使われる。"
 
 #: ../../configuration.rst:31
-msgid ""
-"Addional links displayed at the top menu. Specify an array of link items "
-"with two keys ``href`` and ``label``. e.g. ``[ { \"href\": "
-"\"http://example.org\", \"label\": \"Link\" } ]``"
-msgstr ""
-"メニューに置かれる追加的なリンク。``href``, ``label`` の2つのキーを持つ各リンク情報を配列として設定できます。例: ``[ { "
-"\"href\": \"http://example.org\", \"label\": \"Link\" } ]``"
+msgid "Addional links displayed at the top menu. Specify an array of link items with two keys ``href`` and ``label``. e.g. ``[ { \"href\": \"http://example.org\", \"label\": \"Link\" } ]``"
+msgstr "メニューに置かれる追加的なリンク。``href``, ``label`` の2つのキーを持つ各リンク情報を配列として設定できます。例: ``[ { \"href\": \"http://example.org\", \"label\": \"Link\" } ]``"
 
 #: ../../configuration.rst:35
 msgid "Name of the dataset publisher displayed at the footer."
@@ -74,56 +62,19 @@ msgid "Type"
 msgstr ""
 
 #: ../../configuration.rst:41
-msgid ""
-"``true`` / ``false`` to specify whether to output a table of contents in "
-"``about.html``. The default is ``false``, which means no table of contents."
-msgstr ""
-"``about.html`` ページ内に目次を出力するかどうかを ``true`` / ``false`` で指定します。デフォルトでは "
-"``false`` で、目次は出力しません。"
+msgid "``true`` / ``false`` to specify whether to output a table of contents in ``about.html``. The default is ``false``, which means no table of contents."
+msgstr "``about.html`` ページ内に目次を出力するかどうかを ``true`` / ``false`` で指定します。デフォルトでは ``false`` で、目次は出力しません。"
 
 #: ../../configuration.rst:45
-msgid ""
-"**[required]** Base URI for the dataset. Base URI is considered as the "
-"prefix for the target resources, and only the matched URIs with the prefix "
-"are picked up for the generation."
-msgstr ""
-"**[必須]** "
-"データセット用のベースURIを指定します。ベースURIは出力されるファイル群に対する接頭辞とみなし、先頭一致したURIリソースのみが生成の対象となります。"
+msgid "**[required]** Base URI for the dataset. Base URI is considered as the prefix for the target resources, and only the matched URIs with the prefix are picked up for the generation."
+msgstr "**[必須]** データセット用のベースURIを指定します。ベースURIは出力されるファイル群に対する接頭辞とみなし、先頭一致したURIリソースのみが生成の対象となります。"
 
 #: ../../configuration.rst:49
-msgid ""
-"Configuration for creating a hierarchical breadcrumb list of multiple "
-"resources. Define a list of properties that are higher level resources or "
-"related resources of the resource. In the example below, the "
-"``schema:hasPart`` and ``jp-cos:hasOfStudy`` properties, if present, "
-"respectively, are used to construct the navigation menu by considering "
-"resources linked from the current resource to be higher-level resources. The"
-" default display label on the breadcrumb list is \"title\", but if the "
-"``label`` attribute is defined, the value of the property defined in the "
-"``label`` attribute can be used as a breadcrumb link. Also, if the "
-"``inverse`` attribute is present, then the resource being transitioned to as"
-" a property to the current resource is considered to be a higher level. It "
-"is also possible to specify a resource that spans a multi-level relationship"
-" with an empty node, etc. In that case, add a list to the ``property`` "
-"attribute and add a ``property`` attribute to its subordinate items as well."
-" At the end of the example below, the ``schema:isPartOf`` property of the "
-"resource to which the ``schema:workExample`` property of the resource in "
-"question is specified can be used as a navigation resource."
-msgstr ""
-"複数のリソースを階層化したパンくずリストを作るための設定。当該リソースの上位階層リソースまたは関連リソースにあたるプロパティをリストとして定義します。下記の例では"
-" ``schema:hasPart`` プロパティ、 ``jp-cos:couseOfStudy`` "
-"プロパティそれぞれの順でもし存在すれば、当該リソースの上位階層とみなしてナビゲーションメニューを構築します。また、パンくずリスト上の表示ラベルはデフォルトでは「タイトル」を用いますが、"
-" ``label`` キーが指定されていれば、当該 ``label`` "
-"キーに指定されたプロパティ値をパンくずリンクの表示文字列として用いることができます。また、 ``inverse`` "
-"キーがある場合は、当該リソースのプロパティを述語としてもつリソースを上位階層とみなします。また、空ノード等で多段階の関係をまたいだリソースを指定することもできます。その場合、"
-" ``property`` キーにリストを追加してその下位アイテムにも同様に ``property`` キーを追加します。下記の例では、当該リソースの "
-"``schema:workExample`` プロパティ指定先リソースのさらに ``schema:isPartOf`` "
-"プロパティ先のリソースをナビゲーションリソースとして用いることができます。"
+msgid "Configuration for creating a hierarchical breadcrumb list of multiple resources. Define a list of properties that are higher level resources or related resources of the resource. In the example below, the ``schema:hasPart`` and ``jp-cos:hasOfStudy`` properties, if present, respectively, are used to construct the navigation menu by considering resources linked from the current resource to be higher-level resources. The default display label on the breadcrumb list is \"title\", but if the ``label`` attribute is defined, the value of the property defined in the ``label`` attribute can be used as a breadcrumb link. Also, if the ``inverse`` attribute is present, then the resource being transitioned to as a property to the current resource is considered to be a higher level. It is also possible to specify a resource that spans a multi-level relationship with an empty node, etc. In that case, add a list to the ``property`` attribute and add a ``property`` attribute to its subordinate items as well. At the end of the example below, the ``schema:isPartOf`` property of the resource to which the ``schema:workExample`` property of the resource in question is specified can be used as a navigation resource."
+msgstr "複数のリソースを階層化したパンくずリストを作るための設定。当該リソースの上位階層リソースまたは関連リソースにあたるプロパティをリストとして定義します。下記の例では ``schema:hasPart`` プロパティ、 ``jp-cos:couseOfStudy`` プロパティそれぞれの順でもし存在すれば、当該リソースの上位階層とみなしてナビゲーションメニューを構築します。また、パンくずリスト上の表示ラベルはデフォルトでは「タイトル」を用いますが、 ``label`` キーが指定されていれば、当該 ``label`` キーに指定されたプロパティ値をパンくずリンクの表示文字列として用いることができます。また、 ``inverse`` キーがある場合は、当該リソースのプロパティを述語としてもつリソースを上位階層とみなします。また、空ノード等で多段階の関係をまたいだリソースを指定することもできます。その場合、 ``property`` キーにリストを追加してその下位アイテムにも同様に ``property`` キーを追加します。下記の例では、当該リソースの ``schema:workExample`` プロパティ指定先リソースのさらに ``schema:isPartOf`` プロパティ先のリソースをナビゲーションリソースとして用いることができます。"
 
 #: ../../configuration.rst:64
-msgid ""
-"Copyright year statement displayed at the footer along with the "
-"``admin_name`` parameter above."
+msgid "Copyright year statement displayed at the footer along with the ``admin_name`` parameter above."
 msgstr "上記 ``admin_name`` と一緒に出力する著作権表示年を指定します。"
 
 #: ../../configuration.rst:68
@@ -131,24 +82,16 @@ msgid "The path of the CSS stylesheet file to use locally."
 msgstr "ローカルで用いるCSSスタイルシートファイルのパスを指定します。"
 
 #: ../../configuration.rst:72
-msgid ""
-"Specify the code snippet of the CSS stylesheet (e.g. ``nav.navbar "
-"{background-color: pink}``)."
+msgid "Specify the code snippet of the CSS stylesheet (e.g. ``nav.navbar {background-color: pink}``)."
 msgstr "CSSスタイルシートのコードを直接指定します（例: ``nav.navbar { background-color: pink }``）。"
 
 #: ../../configuration.rst:76
-msgid ""
-"Google tracking code for usage statistics by `Google Analytics "
-"<https://analytics.google.com>`_."
+msgid "Google tracking code for usage statistics by `Google Analytics <https://analytics.google.com>`_."
 msgstr "`Googleアナリティクス <https://analytics.google.com>`_ による利用統計用の設定コードを指定します。"
 
 #: ../../configuration.rst:84
-msgid ""
-"Specify the search engine ID for setting up a site search form using `Google"
-" Custom Search <https://developers.google.com/custom-search>`_."
-msgstr ""
-"`Googleカスタム検索 <https://developers.google.com/custom-search>`_ "
-"を利用したサイト内検索フォームを設置するための検索エンジンIDを指定します。"
+msgid "Specify the search engine ID for setting up a site search form using `Google Custom Search <https://developers.google.com/custom-search>`_."
+msgstr "`Googleカスタム検索 <https://developers.google.com/custom-search>`_ を利用したサイト内検索フォームを設置するための検索エンジンIDを指定します。"
 
 #: ../../configuration.rst:92
 msgid "The path of the JavaScript file to use locally."
@@ -159,83 +102,44 @@ msgid "Mappings for the custom property labels."
 msgstr "個別プロパティの出力ラベル名を指定します。プロパティURIをキーとし、ラベル名称を値とする形式で指定します。"
 
 #: ../../configuration.rst:100
-msgid ""
-"Locale name for the output messages. Default: ``en`` (e.g. ``ja``, ``en``)"
+msgid "Locale name for the output messages. Default: ``en`` (e.g. ``ja``, ``en``)"
 msgstr "出力メッセージの言語指定。デフォルトは ``en`` （例: ``ja``, ``en``）"
 
 #: ../../configuration.rst:104
-msgid ""
-"The logo image file to be displayed on the menu. Specify the file path or "
-"URL."
+msgid "The logo image file to be displayed on the menu. Specify the file path or URL."
 msgstr "トップメニューに表示するロゴ。ファイルパスまたはURLを指定する。"
 
 #: ../../configuration.rst:108
-msgid ""
-"Specifies the class setting for displaying the navigation bar at the top of "
-"the screen. If not specified, ``navbar-light`` is used. Use this if you want"
-" to specify a black background color as follows:"
-msgstr ""
-"画面上部に配置するナビゲーションバーの表示用クラス設定を指定します。指定がなければ ``navbar-light`` "
-"が指定されたものとみなします。以下のように黒色系の背景色を指定したい場合に用います:"
+msgid "Specifies the class setting for displaying the navigation bar at the top of the screen. If not specified, ``navbar-light`` is used. Use this if you want to specify a black background color as follows:"
+msgstr "画面上部に配置するナビゲーションバーの表示用クラス設定を指定します。指定がなければ ``navbar-light`` が指定されたものとみなします。以下のように黒色系の背景色を指定したい場合に用います:"
 
 #: ../../configuration.rst:116
-msgid ""
-"Specify `OGP (Open Graph Protocol) <https://ogp.me>`_ settings if you have "
-"additional logo settings for social networking sites, etc. You can specify "
-"``ogp:image``, ``ogp:type``, etc."
-msgstr ""
-"`OGP (Open Graph Protocol) <https://ogp.me>`_ "
-"設定を指定します。SNS等で用いるための追加のロゴ設定などがあれば、こちらを指定してください。``ogp:image``, ``ogp:type`` "
-"などの指定が可能です。"
+msgid "Specify `OGP (Open Graph Protocol) <https://ogp.me>`_ settings if you have additional logo settings for social networking sites, etc. You can specify ``ogp:image``, ``ogp:type``, etc."
+msgstr "`OGP (Open Graph Protocol) <https://ogp.me>`_ 設定を指定します。SNS等で用いるための追加のロゴ設定などがあれば、こちらを指定してください。``ogp:image``, ``ogp:type`` などの指定が可能です。"
 
 #: ../../configuration.rst:126
-msgid ""
-"Output directory for the dataset. If not specified, the current working "
-"directory is used for the outputs."
+msgid "Output directory for the dataset. If not specified, the current working directory is used for the outputs."
 msgstr "静的ファイル群を生成するディレクトリを指定します。何も指定されていない場合は現在の作業ディレクトリに生成したファイル群を出力します。"
 
 #: ../../configuration.rst:132
-msgid ""
-"Whether to output the RDF/Turtle format file corresponding to each resource "
-"URI, as ``true`` / ``false``. Default is ``true`` (i.e. output RDF/Turtle "
-"format files)."
-msgstr ""
-"各リソースURIに対応するRDF/Turtle形式のファイルを出力するかどうかを ``true`` / ``false`` で指定します。デフォルトは "
-"``true`` です（つまりRDF/Turtle形式を出力します）。"
+msgid "Whether to output the RDF/Turtle format file corresponding to each resource URI, as ``true`` / ``false``. Default is ``true`` (i.e. output RDF/Turtle format files)."
+msgstr "各リソースURIに対応するRDF/Turtle形式のファイルを出力するかどうかを ``true`` / ``false`` で指定します。デフォルトは ``true`` です（つまりRDF/Turtle形式を出力します）。"
 
 #: ../../configuration.rst:136
-msgid ""
-"This configuration option controls the order in which resource descriptions "
-"are output to about.html. The descriptions are output in the order of the "
-"resource shapes listed here. If not set, the default is alphabetical order "
-"of shape URIs. Set as a list, as in the following example:"
-msgstr ""
-"``about.html`` "
-"に出力されるリソース説明の順序を制御する。ここに一覧されたリソースシェイプの順に説明が出力される。設定されない場合、デフォルトではシェイプURIのアルファベット順に出力される。以下の例のようにリストとして設定する:"
+msgid "This configuration option controls the order in which resource descriptions are output to about.html. The descriptions are output in the order of the resource shapes listed here. If not set, the default is alphabetical order of shape URIs. Set as a list, as in the following example:"
+msgstr "``about.html`` に出力されるリソース説明の順序を制御する。ここに一覧されたリソースシェイプの順に説明が出力される。設定されない場合、デフォルトではシェイプURIのアルファベット順に出力される。以下の例のようにリストとして設定する:"
 
 #: ../../configuration.rst:146
 msgid "Main title for the whole website."
 msgstr "ウェブサイト全体のメインタイトルを指定します。"
 
 #: ../../configuration.rst:150
-msgid ""
-"Local template directory to find a template file. Default template files are"
-" available at `here "
-"<https://github.com/masao/ttl2html/tree/master/templates>`_. To overwrite "
-"the contents of the original template, copy the original file to the "
-"directory specified here and rewrite it."
-msgstr ""
-"ローカルのテンプレートディレクトリ。未指定の場合はカレントディレクトリ内の ``templates/`` "
-"ディレクトリを用いる。なお、テンプレートを上書きするには、`標準のテンプレートファイル群 "
-"<https://github.com/masao/ttl2html/tree/master/templates>`_ "
-"のうち必要なファイルをローカルのテンプレートディレクトリにコピーしてきて、内容を書き換えること。"
+msgid "Local template directory to find a template file. Default template files are available at `here <https://github.com/masao/ttl2html/tree/master/templates>`_. To overwrite the contents of the original template, copy the original file to the directory specified here and rewrite it."
+msgstr "ローカルのテンプレートディレクトリ。未指定の場合はカレントディレクトリ内の ``templates/`` ディレクトリを用いる。なお、テンプレートを上書きするには、`標準のテンプレートファイル群 <https://github.com/masao/ttl2html/tree/master/templates>`_ のうち必要なファイルをローカルのテンプレートディレクトリにコピーしてきて、内容を書き換えること。"
 
 #: ../../configuration.rst:154
-msgid ""
-"Specified URI is regarded as a title property for the resource. In default, "
-"a title is matched with the following properties:"
-msgstr ""
-"指定したURIをタイトル用のプロパティとして指定します。指定されていない場合、もしくは指定したプロパティが存在しない場合は、以下のプロパティが存在するか確認し、もしあれば、その値をタイトルとみなします:"
+msgid "Specified URI is regarded as a title property for the resource. In default, a title is matched with the following properties:"
+msgstr "指定したURIをタイトル用のプロパティとして指定します。指定されていない場合、もしくは指定したプロパティが存在しない場合は、以下のプロパティが存在するか確認し、もしあれば、その値をタイトルとみなします:"
 
 #: ../../configuration.rst:156
 msgid "https://www.w3.org/TR/rdf-schema/#label"
@@ -258,31 +162,13 @@ msgid "http://www.w3.org/2004/02/skos/core#prefLabel"
 msgstr "http://www.w3.org/2004/02/skos/core#prefLabel"
 
 #: ../../configuration.rst:164
-msgid ""
-"For each set of resources expanded by ``top_class`` setting, specify a list "
-"of additional sub-hierarchies to be expanded. The properties that make up "
-"the sub-hierarchy are specified as a list."
-msgstr ""
-"``top_class`` "
-"設定で展開されるリソース群に対して、追加でサブ階層として展開されるべきリストを指定する。サブ階層を構成するプロパティをリストとして指定する。"
+msgid "For each set of resources expanded by ``top_class`` setting, specify a list of additional sub-hierarchies to be expanded. The properties that make up the sub-hierarchy are specified as a list."
+msgstr "``top_class`` 設定で展開されるリソース群に対して、追加でサブ階層として展開されるべきリストを指定する。サブ階層を構成するプロパティをリストとして指定する。"
 
 #: ../../configuration.rst:168
-msgid ""
-"Specified URI is the class of the records listed in the top page. By "
-"default, this tool does not generate the top page."
+msgid "Specified URI is the class of the records listed in the top page. By default, this tool does not generate the top page."
 msgstr "トップページに表示すべきレコード一覧に対応するクラスURIを指定する。デフォルトでは指定無しとし、トップページは生成しない。"
 
 #: ../../configuration.rst:172
-msgid ""
-"If you want to change the output file names when outputting local files "
-"corresponding to a URI, use this setting. You can specify the patterns for "
-"the part of paths in a URI and then determine how the matched part of the "
-"path has to be changed. For example, when outputting many files in a single "
-"directory, you can specify a pattern for the first few characters and the "
-"rest of the filename so that each directory contains a separate set of files"
-" with different destinations. The example below specifies that a URI path "
-"consisting of 16 alphanumeric characters is divided into the first three "
-"characters and the rest of the path. Hence, the output files are placed for "
-"each two-character directory."
-msgstr ""
-"URIに対応するローカルファイルを出力する際、出力ファイル名に操作を加える場合に使用します。例えば、1つのディレクトリ内に大量のファイルが出力されるようなLODデータセットに対応させる場合に、先頭数文字と残りの文字数とで、ディレクトリ毎に保存先が別れたファイル群となるように指定できます。下記の例は、16桁の英数字からなるURIパスを先頭3文字と残りに分けて、3文字フォルダ毎に出力するように指定する例です。"
+msgid "If you want to change the output file names when outputting local files corresponding to a URI, use this setting. You can specify the patterns for the part of paths in a URI and then determine how the matched part of the path has to be changed. For example, when outputting many files in a single directory, you can specify a pattern for the first few characters and the rest of the filename so that each directory contains a separate set of files with different destinations. The example below specifies that a URI path consisting of 16 alphanumeric characters is divided into the first three characters and the rest of the path. Hence, the output files are placed for each two-character directory."
+msgstr "URIに対応するローカルファイルを出力する際、出力ファイル名に操作を加える場合に使用します。例えば、1つのディレクトリ内に大量のファイルが出力されるようなLODデータセットに対応させる場合に、先頭数文字と残りの文字数とで、ディレクトリ毎に保存先が別れたファイル群となるように指定できます。下記の例は、16桁の英数字からなるURIパスを先頭3文字と残りに分けて、3文字フォルダ毎に出力するように指定する例です。"

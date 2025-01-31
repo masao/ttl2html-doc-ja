@@ -30,4 +30,4 @@ These limitations vary depending on the file system in use, so please check the 
 
 Furthermore, if your dataset contains many resources within the same directory, in such cases, an excessive number of files may be generated under a single directory, potentially causing issues such as slower access times depending on the file system structure. If the number of files exceeds tens of thousands, it is advisable to implement countermeasures.
 
-To mitigate this issue, use the `uri_mappings` configuration option to divide the generated files into multiple directories (see: :confval:`uri_mappings`.).
+To mitigate this issue, use the `uri_mappings` configuration option to divide the generated files into multiple directories (see: :confval:`uri_mappings`).

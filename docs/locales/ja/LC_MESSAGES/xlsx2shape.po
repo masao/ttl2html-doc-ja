@@ -2,10 +2,10 @@
 # Copyright (C) 2023, Masao Takaku
 # This file is distributed under the same license as the ttl2html package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Masao Takaku <tmasao@acm.org>, 2024
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -26,29 +26,19 @@ msgid "xlsx2shape"
 msgstr "xlsx2shape"
 
 #: ../../xlsx2shape.rst:4
-msgid ""
-"This tool **xlsx2shape** is an application profile generator for Linked Data"
-" using SHACL."
+msgid "This tool **xlsx2shape** is an application profile generator for Linked Data using SHACL."
 msgstr "このツール **xlsx2shape** は、SHACLを用いたLinked Data用のアプリケーション・プロファイル生成ツールです。"
 
 #: ../../xlsx2shape.rst:6
-msgid ""
-"This tool accepts MS Excel format as a description of Metadata model "
-"(Aplication Profile) through SHACL validation schema. It allows metadata "
-"publishers to describe and validate their own metadata, as wel as to publish"
-" the application profile on the web by using the ttl2html tool."
-msgstr ""
-"このツールは、メタデータモデル（アプリケーションプロファイル）の記述となるMS "
-"Excel形式を入力として、SHACL検証スキーマを実現します。メタデータ提供者は、自身が提供するメタデータモデルを記述し、メタデータ内容を検証できると同時に、ttl2htmlツールを使用して、アプリケーションプロファイルをウェブ上で公開することができます。"
+msgid "This tool accepts MS Excel format as a description of Metadata model (Aplication Profile) through SHACL validation schema. It allows metadata publishers to describe and validate their own metadata, as wel as to publish the application profile on the web by using the ttl2html tool."
+msgstr "このツールは、メタデータモデル（アプリケーションプロファイル）の記述となるMS Excel形式を入力として、SHACL検証スキーマを実現します。メタデータ提供者は、自身が提供するメタデータモデルを記述し、メタデータ内容を検証できると同時に、ttl2htmlツールを使用して、アプリケーションプロファイルをウェブ上で公開することができます。"
 
 #: ../../xlsx2shape.rst:10
 msgid "Features"
 msgstr "機能"
 
 #: ../../xlsx2shape.rst:12
-msgid ""
-"Describe an application profile in MS Excel file with SHACL shape expression"
-" schema."
+msgid "Describe an application profile in MS Excel file with SHACL shape expression schema."
 msgstr "SHACLスキーマ記述を加えたMS Excelファイルを使ってアプリケーションプロファイルを記述できます。"
 
 #: ../../xlsx2shape.rst:13
@@ -60,29 +50,15 @@ msgid "Usage"
 msgstr "使用方法"
 
 #: ../../xlsx2shape.rst:18
-msgid ""
-"At first, you need to describe your own schema into MS Excel file. An "
-"example of Excel file is available at `example.xlsx "
-"<https://github.com/masao/ttl2html/blob/master/spec/example/example.xlsx?raw=true>`_."
-" In the Excel file, each sheet represents each node type, and describes "
-"property structures and constraints on the node."
-msgstr ""
-"まず、使用したいスキーマをMS Excelファイルに記述する必要があります。Excelファイルの例は `example.xlsx "
-"<https://github.com/masao/ttl2html/blob/master/spec/example/example.xlsx?raw=true>`_"
-" にあります。エクセルファイルでは、各シートが各ノードタイプをあらわし、各ノードが持つプロパティ構造と制約を記述します。"
+msgid "At first, you need to describe your own schema into MS Excel file. An example of Excel file is available at `example.xlsx <https://github.com/masao/ttl2html/blob/master/spec/example/example.xlsx?raw=true>`_. In the Excel file, each sheet represents each node type, and describes property structures and constraints on the node."
+msgstr "まず、使用したいスキーマをMS Excelファイルに記述する必要があります。Excelファイルの例は `example.xlsx <https://github.com/masao/ttl2html/blob/master/spec/example/example.xlsx?raw=true>`_ にあります。エクセルファイルでは、各シートが各ノードタイプをあらわし、各ノードが持つプロパティ構造と制約を記述します。"
 
 #: ../../xlsx2shape.rst:21
-msgid ""
-"Once you get an Excel file, you can use the command line tool ``xlsx2shape``"
-" with argument of spreadsheet file(s)."
-msgstr ""
-"エクセルファイルへの記述が終わったら、そのスプレッドシートファイル（複数可）を引数に指定して、コマンドラインツール ``xlsx2shape`` "
-"を使います。"
+msgid "Once you get an Excel file, you can use the command line tool ``xlsx2shape`` with argument of spreadsheet file(s)."
+msgstr "エクセルファイルへの記述が終わったら、そのスプレッドシートファイル（複数可）を引数に指定して、コマンドラインツール ``xlsx2shape`` を使います。"
 
 #: ../../xlsx2shape.rst:27
-msgid ""
-"The command parses spreadsheets and generate a SHACL format for validation "
-"in RDF/Turtle."
+msgid "The command parses spreadsheets and generate a SHACL format for validation in RDF/Turtle."
 msgstr "``xlsx2shape`` コマンドはスプレッドシート内の記述を解析し、RDFの検証用のSHACL形式ファイルを生成します。"
 
 #: ../../xlsx2shape.rst:30
@@ -90,7 +66,5 @@ msgid "History"
 msgstr "履歴"
 
 #: ../../xlsx2shape.rst:32
-msgid ""
-"This tool is based on experiences from publishing Japanese Textbook LOD "
-"dataset [JP-TEXTBOOK_2017]_."
+msgid "This tool is based on experiences from publishing Japanese Textbook LOD dataset [JP-TEXTBOOK_2017]_."
 msgstr "このツールは、教科書LODデータセット [JP-TEXTBOOK_2017]_ の公開、提供の経験に基づいて開発されました。"

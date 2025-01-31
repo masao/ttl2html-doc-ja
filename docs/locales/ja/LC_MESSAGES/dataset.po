@@ -2,10 +2,10 @@
 # Copyright (C) 2023-2024, Masao Takaku
 # This file is distributed under the same license as the ttl2html package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Masao Takaku <tmasao@acm.org>, 2024
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -26,29 +26,15 @@ msgid "Dataset information"
 msgstr "データセット情報"
 
 #: ../../dataset.rst:4
-msgid ""
-"In ``ttl2html``, you can include details about the entire dataset (e.g., "
-"title, author, release date, data size) in RDF format and input it into this"
-" tool. The tool then displays this information on the main and about pages, "
-"providing a clear overview for users who are about to utilize the dataset."
-msgstr ""
-"``ttl2html`` "
-"では、データセット全体に関する情報（データセットのタイトルや作者、リリース日やデータサイズ等）をRDFで記述し、本ツールへの入力とすることにより、トップページおよびaboutページにおいて、データセットを利用しようとするユーザに対して分かりやすい情報として示すことができます。"
+msgid "In ``ttl2html``, you can include details about the entire dataset (e.g., title, author, release date, data size) in RDF format and input it into this tool. The tool then displays this information on the main and about pages, providing a clear overview for users who are about to utilize the dataset."
+msgstr "``ttl2html`` では、データセット全体に関する情報（データセットのタイトルや作者、リリース日やデータサイズ等）をRDFで記述し、本ツールへの入力とすることにより、トップページおよびaboutページにおいて、データセットを利用しようとするユーザに対して分かりやすい情報として示すことができます。"
 
 #: ../../dataset.rst:6
-msgid ""
-"The dataset metadata expected by this tool is structured as described below."
-" Metadata about the dataset consists of three main parts: overall dataset "
-"metadata, contact information, and version history information. The model "
-"diagram illustrating the basic data structure is shown below:"
-msgstr ""
-"本ツールが想定しているデータセット情報に関するメタデータは以下のような構造を想定していますので、これに従って、作成してください。データセット情報に関するメタデータは、データセット全体のメタデータ、連絡先情報、バージョン履歴情報の3つの部分から構成されます。基本的なデータ構造のモデル図を以下に示します。"
+msgid "The dataset metadata expected by this tool is structured as described below. Metadata about the dataset consists of three main parts: overall dataset metadata, contact information, and version history information. The model diagram illustrating the basic data structure is shown below:"
+msgstr "本ツールが想定しているデータセット情報に関するメタデータは以下のような構造を想定していますので、これに従って、作成してください。データセット情報に関するメタデータは、データセット全体のメタデータ、連絡先情報、バージョン履歴情報の3つの部分から構成されます。基本的なデータ構造のモデル図を以下に示します。"
 
 #: ../../dataset.rst:10
-msgid ""
-"The following table lists the metadata vocabularies and their namespaces "
-"used in the data model diagram above and throughout the following "
-"descriptions:"
+msgid "The following table lists the metadata vocabularies and their namespaces used in the data model diagram above and throughout the following descriptions:"
 msgstr "なお、上記データモデル図および下記の説明で用いるメタデータ語彙とその名前空間は以下の表の通りです："
 
 #: ../../dataset.rst:12
@@ -68,12 +54,8 @@ msgid "Namespace URI"
 msgstr "名前空間URI"
 
 #: ../../dataset.rst:1
-msgid ""
-"`DCMI Metadata Terms <https://www.dublincore.org/specifications/dublin-"
-"core/dcmi-terms/>`_"
-msgstr ""
-"`DCMI Metadata Terms <https://www.dublincore.org/specifications/dublin-"
-"core/dcmi-terms/>`_"
+msgid "`DCMI Metadata Terms <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/>`_"
+msgstr "`DCMI Metadata Terms <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/>`_"
 
 #: ../../dataset.rst:1
 msgid "dct:"
@@ -96,10 +78,8 @@ msgid "http://xmlns.com/foaf/0.1/"
 msgstr "http://xmlns.com/foaf/0.1/"
 
 #: ../../dataset.rst:1
-msgid ""
-"`VoID (Vocabulary of Interlinked Datasets) <http://www.w3.org/TR/void/>`_"
-msgstr ""
-"`VoID (Vocabulary of Interlinked Datasets) <http://www.w3.org/TR/void/>`_"
+msgid "`VoID (Vocabulary of Interlinked Datasets) <http://www.w3.org/TR/void/>`_"
+msgstr "`VoID (Vocabulary of Interlinked Datasets) <http://www.w3.org/TR/void/>`_"
 
 #: ../../dataset.rst:1
 msgid "void:"
@@ -110,12 +90,8 @@ msgid "http://rdfs.org/ns/void#"
 msgstr "http://rdfs.org/ns/void#"
 
 #: ../../dataset.rst:1
-msgid ""
-"`PAV (Provenance Authoring and Versioning ontology) <https://pav-"
-"ontology.github.io/pav/>`_"
-msgstr ""
-"`PAV (Provenance Authoring and Versioning ontology) <https://pav-"
-"ontology.github.io/pav/>`_"
+msgid "`PAV (Provenance Authoring and Versioning ontology) <https://pav-ontology.github.io/pav/>`_"
+msgstr "`PAV (Provenance Authoring and Versioning ontology) <https://pav-ontology.github.io/pav/>`_"
 
 #: ../../dataset.rst:1
 msgid "pav:"
@@ -138,46 +114,23 @@ msgid "http://www.w3.org/ns/prov#"
 msgstr "http://www.w3.org/ns/prov#"
 
 #: ../../dataset.rst:23
-msgid ""
-"The resource labeled \"Entire Dataset\" in the model structure above "
-"represents the overall dataset. This resource has metadata about the dataset"
-" as properties."
-msgstr ""
-"上記のデータモデル図における構造のうち、「Entire "
-"Dataset」と表現されているリソースが、データセット全体を表現するリソースで、このリソースがデータセット全体のメタデータをプロパティとして持ちます。"
+msgid "The resource labeled \"Entire Dataset\" in the model structure above represents the overall dataset. This resource has metadata about the dataset as properties."
+msgstr "上記のデータモデル図における構造のうち、「Entire Dataset」と表現されているリソースが、データセット全体を表現するリソースで、このリソースがデータセット全体のメタデータをプロパティとして持ちます。"
 
 #: ../../dataset.rst:25
-msgid ""
-"A resource linked to this \"Entire Dataset\" resource using the "
-"`dct:publisher` property represents the person or organization responsible "
-"for providing the dataset. This information is displayed as \"contact\" "
-"information in the Linked Data output generated by this tool."
-msgstr ""
-"このデータセット全体のリソースから ``dct:publisher`` "
-"プロパティを用いてつながったリソースは、データセット全体の提供に責任を持つ人や組織を示すリソースとなり、本ツールから出力されるLinked "
-"Dataサイトにおいて「連絡先」として表現されます。"
+msgid "A resource linked to this \"Entire Dataset\" resource using the `dct:publisher` property represents the person or organization responsible for providing the dataset. This information is displayed as \"contact\" information in the Linked Data output generated by this tool."
+msgstr "このデータセット全体のリソースから ``dct:publisher`` プロパティを用いてつながったリソースは、データセット全体の提供に責任を持つ人や組織を示すリソースとなり、本ツールから出力されるLinked Dataサイトにおいて「連絡先」として表現されます。"
 
 #: ../../dataset.rst:27
-msgid ""
-"Additionally, resources linked from the \"Entire Dataset\" resource using "
-"the `pav:hasCurrentVersion` property represent the \"latest release "
-"version\" of the dataset and provide details on the individual Linked Data "
-"datasets available. Similarly, resources linked using the `pav:hasVersion` "
-"property represent \"historical information\" on previous dataset versions."
-msgstr ""
-"また、データセット全体のリソースから ``pav:hasCurrentVersion`` "
-"プロパティを用いてつながったリソースは、「データセットの最新のリリースバージョン」を表現し、提供している個別のLinked "
-"Dataデータセットの情報を提供します。また同様に、 ``pav:hasVersion`` "
-"プロパティによりつながったリソース群は、過去のリリースバージョンの「履歴情報」として表現されます。"
+msgid "Additionally, resources linked from the \"Entire Dataset\" resource using the `pav:hasCurrentVersion` property represent the \"latest release version\" of the dataset and provide details on the individual Linked Data datasets available. Similarly, resources linked using the `pav:hasVersion` property represent \"historical information\" on previous dataset versions."
+msgstr "また、データセット全体のリソースから ``pav:hasCurrentVersion`` プロパティを用いてつながったリソースは、「データセットの最新のリリースバージョン」を表現し、提供している個別のLinked Dataデータセットの情報を提供します。また同様に、 ``pav:hasVersion`` プロパティによりつながったリソース群は、過去のリリースバージョンの「履歴情報」として表現されます。"
 
 #: ../../dataset.rst:30
 msgid "Metadata for the Entire Dataset"
 msgstr "データセット全体のメタデータ"
 
 #: ../../dataset.rst:32
-msgid ""
-"You can describe metadata for the overall dataset using the following "
-"properties:"
+msgid "You can describe metadata for the overall dataset using the following properties:"
 msgstr "データセット全体のメタデータとしては、以下のようなプロパティ項目を使って記述できます。"
 
 #: ../../dataset.rst:35
@@ -261,21 +214,11 @@ msgid "Contact Information"
 msgstr "連絡先情報"
 
 #: ../../dataset.rst:51
-msgid ""
-"You can use the following properties to describe the provider. Suppose the "
-"provider is made up of multiple people. In that case, the resource "
-"representing the overall contact information is represented as a resource of"
-" the ``foaf:Project`` class, and the information of each member is linked "
-"from that resource with the ``foaf:member`` property."
-msgstr ""
-"データセットの提供者に関わる連絡先情報を明示するため、FOAF語彙を使って記述できます。以下のようなプロパティ項目を使って記述できます。なお、提供者が複数名から構成される場合は、全体の連絡先を表現するリソースを"
-" ``foaf:Project`` クラスのリソースとして表現したうえで、そのリソースから各構成メンバーの情報を ``foaf:member`` "
-"プロパティでリンクすることで表現します。"
+msgid "You can use the following properties to describe the provider. Suppose the provider is made up of multiple people. In that case, the resource representing the overall contact information is represented as a resource of the ``foaf:Project`` class, and the information of each member is linked from that resource with the ``foaf:member`` property."
+msgstr "データセットの提供者に関わる連絡先情報を明示するため、FOAF語彙を使って記述できます。以下のようなプロパティ項目を使って記述できます。なお、提供者が複数名から構成される場合は、全体の連絡先を表現するリソースを ``foaf:Project`` クラスのリソースとして表現したうえで、そのリソースから各構成メンバーの情報を ``foaf:member`` プロパティでリンクすることで表現します。"
 
 #: ../../dataset.rst:53
-msgid ""
-"Properties that represent contact information for the entire dataset (for "
-"projects and multiple people)"
+msgid "Properties that represent contact information for the entire dataset (for projects and multiple people)"
 msgstr "データセット全体の連絡先情報を表現するプロパティ（プロジェクト・複数名の場合）"
 
 #: ../../dataset.rst:1
@@ -307,15 +250,11 @@ msgid "``foaf:member``"
 msgstr "``foaf:member``"
 
 #: ../../dataset.rst:1
-msgid ""
-"Member of the project (multiple repetitions possible). Links to resources "
-"that represent individuals below."
+msgid "Member of the project (multiple repetitions possible). Links to resources that represent individuals below."
 msgstr "プロジェクトの構成員（複数繰り返し可能）。リンク先は下記の個人を表現するリソース。"
 
 #: ../../dataset.rst:61
-msgid ""
-"Properties that represent contact information for a dataset (for individuals"
-" and member members)"
+msgid "Properties that represent contact information for a dataset (for individuals and member members)"
 msgstr "データセットの連絡先情報を表現するプロパティ（個人・メンバー構成員を表現する場合）"
 
 #: ../../dataset.rst:1
@@ -347,30 +286,16 @@ msgid "Version History Information"
 msgstr "バージョン履歴情報"
 
 #: ../../dataset.rst:74
-msgid ""
-"Version history information provides details on the revisions of the dataset"
-" over time."
+msgid "Version history information provides details on the revisions of the dataset over time."
 msgstr "バージョン履歴情報は、データセット全体が改版されてきた経緯を履歴情報として提供するための情報です。"
 
 #: ../../dataset.rst:76
-msgid ""
-"This information is managed using the `PAV (Provenance Authoring and "
-"Versioning ontology) <https://pav-ontology.github.io/pav/>`_ vocabulary."
-msgstr ""
-"`PAV (Provenance Authoring and Versioning ontology) <https://pav-"
-"ontology.github.io/pav/>`_語彙を利用して、それらの情報を管理します。"
+msgid "This information is managed using the `PAV (Provenance Authoring and Versioning ontology) <https://pav-ontology.github.io/pav/>`_ vocabulary."
+msgstr "`PAV (Provenance Authoring and Versioning ontology) <https://pav-ontology.github.io/pav/>`_語彙を利用して、それらの情報を管理します。"
 
 #: ../../dataset.rst:78
-msgid ""
-"The resource representing the latest version is linked from the \"Entire "
-"Dataset\" resource using the ``pav:hasCurrentVersion`` property. Version "
-"resources are linked using the ``pav:hasVersion`` properties. The following "
-"properties can be used to describe metadata for each version resource:"
-msgstr ""
-"最新のバージョン情報を示すリソースは、データセット全体を示すリソースから ``pav:hasCurrentVersion`` "
-"プロパティを使ってリンクされ、さらに、最新ではなくなった各履歴バージョン情報のリソースは、データセット全体を示すリソースから "
-"``pav:hasCurrentVersion`` "
-"プロパティを使ってリンクされることを想定します。各バージョン情報のメタデータは下記のプロパティ項目を使って記述します。"
+msgid "The resource representing the latest version is linked from the \"Entire Dataset\" resource using the ``pav:hasCurrentVersion`` property. Version resources are linked using the ``pav:hasVersion`` properties. The following properties can be used to describe metadata for each version resource:"
+msgstr "最新のバージョン情報を示すリソースは、データセット全体を示すリソースから ``pav:hasCurrentVersion`` プロパティを使ってリンクされ、さらに、最新ではなくなった各履歴バージョン情報のリソースは、データセット全体を示すリソースから ``pav:hasCurrentVersion`` プロパティを使ってリンクされることを想定します。各バージョン情報のメタデータは下記のプロパティ項目を使って記述します。"
 
 #: ../../dataset.rst:80
 msgid "Properties for Version History Information"
@@ -425,9 +350,7 @@ msgid "Resource representing revision history details (can be a blank node)"
 msgstr "履歴改変の内容を表現するリソース（ブランクノードを想定）"
 
 #: ../../dataset.rst:92
-msgid ""
-"For the content of revision history information, you can use the following "
-"properties:"
+msgid "For the content of revision history information, you can use the following properties:"
 msgstr "履歴改版の内容を表現する情報は以下のプロパティを使って記述できます："
 
 #: ../../dataset.rst:94

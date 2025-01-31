@@ -2,10 +2,10 @@
 # Copyright (C) 2023, Masao Takaku
 # This file is distributed under the same license as the ttl2html package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Masao Takaku <tmasao@acm.org>, 2024
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
@@ -38,18 +38,11 @@ msgid "Command line usage"
 msgstr "コマンドライン実行方法"
 
 #: ../../usage.rst:18
-msgid ""
-"First, you must create a configuration file named ``config.yml`` with a YAML"
-" format. One required key for the configuration is ``base_uri``:"
-msgstr ""
-"まず始めに、実行時に使うディレクトリ上に ``config.yml`` "
-"というファイル名の設定ファイルが必要です。このファイル内における設定項目では1つの設定項目 ``base_uri`` "
-"だけが必須で、他の設定項目は任意オプションとなっています。 以下のように、設定項目とその値を指定します:"
+msgid "First, you must create a configuration file named ``config.yml`` with a YAML format. One required key for the configuration is ``base_uri``:"
+msgstr "まず始めに、実行時に使うディレクトリ上に ``config.yml`` というファイル名の設定ファイルが必要です。このファイル内における設定項目では1つの設定項目 ``base_uri`` だけが必須で、他の設定項目は任意オプションとなっています。 以下のように、設定項目とその値を指定します:"
 
 #: ../../usage.rst:25
-msgid ""
-"With this configuration file, you can execute a command on the dataset "
-"file(s) :"
+msgid "With this configuration file, you can execute a command on the dataset file(s) :"
 msgstr "上記の設定ファイルを作成したら、以下のようにデータセットのRDF/Turtle形式のファイルを引数に指定して、コマンドを実行します:"
 
 #: ../../usage.rst:31
@@ -65,7 +58,5 @@ msgid "The command ``ttl2html`` accepts the following options:"
 msgstr "コマンド ``ttl2html`` では以下のオプション引数を指定できます:"
 
 #: ../../usage.rst:43
-msgid ""
-"``--config file``: Read the configuration file from file (Default: "
-"``config.yml``)."
+msgid "``--config file``: Read the configuration file from file (Default: ``config.yml``)."
 msgstr "``--config file``: 設定ファイルをfileから読み込みます （Default: ``config.yml`` ）"

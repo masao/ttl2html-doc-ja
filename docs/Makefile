@@ -4,3 +4,7 @@ all:
 	sphinx-build -b gettext . _build/gettext
 	tx push --source
 	tx pull --all
+	for f in locales/*/LC_MESSAGES/*.po; do \
+	  echo "$$f"; \
+	  msgcat --no-wrap -o "$$f" "$$f"; \
+	done
