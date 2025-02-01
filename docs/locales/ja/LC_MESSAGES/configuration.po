@@ -43,7 +43,7 @@ msgstr "全ての設定項目を以下に列挙します:"
 
 #: ../../configuration.rst:0
 msgid "Default"
-msgstr ""
+msgstr "デフォルト値"
 
 #: ../../configuration.rst:27
 msgid "Specified filename is used for documenting schemas of the dataset. It requires SHACL documentation within the dataset. By default, the filename ``about.html`` is used."
@@ -59,7 +59,7 @@ msgstr "フッタ―に表示するデータ提供管理者の名称。"
 
 #: ../../configuration.rst:0
 msgid "Type"
-msgstr ""
+msgstr "値の型"
 
 #: ../../configuration.rst:41
 msgid "``true`` / ``false`` to specify whether to output a table of contents in ``about.html``. The default is ``false``, which means no table of contents."
