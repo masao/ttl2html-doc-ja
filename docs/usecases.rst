@@ -6,13 +6,13 @@ List of Websites
 
 ttl2html is used on several websites. Below are some examples:
 
-* `Textbook LOD <https://w3id.org/jp-textbook/>`_  
+* `Japanese Textbook LOD <https://w3id.org/jp-textbook/>`_
 
-  * Bibliographic and unit information for textbooks is published as an LOD dataset.  
+  * Bibliographic and unit information for textbooks is published as an LOD dataset.
 
-* `Curriculum Guidelines LOD <https://w3id.org/jp-cos/>`_  
+* `Japanse Courses of Study LOD <https://w3id.org/jp-cos/>`_
 
-  * Details of the curriculum guidelines and related information are published as an LOD dataset.  
+  * Details of the courses of study (curriculum guidelines) and related information are published as an LOD dataset.
 
 (Updated periodically)
 

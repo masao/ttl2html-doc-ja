@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the ttl2html package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Masao Takaku <tmasao@acm.org>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-02 12:38+0900\n"
+"POT-Creation-Date: 2025-02-02 12:44+0900\n"
 "PO-Revision-Date: 2025-02-02 03:40+0000\n"
+"Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,56 +23,56 @@ msgstr ""
 
 #: ../../usecases.rst:2
 msgid "Use Cases"
-msgstr ""
+msgstr "利用事例"
 
 #: ../../usecases.rst:5
 msgid "List of Websites"
-msgstr ""
+msgstr "採用サイト一覧"
 
 #: ../../usecases.rst:7
 msgid "ttl2html is used on several websites. Below are some examples:"
-msgstr ""
+msgstr "ttl2htmlは、いくつかのウェブサイトで活用されています。以下はその一例です。"
 
 #: ../../usecases.rst:9
-msgid "`Textbook LOD <https://w3id.org/jp-textbook/>`_"
-msgstr ""
+msgid "`Japanese Textbook LOD <https://w3id.org/jp-textbook/>`_"
+msgstr "`教科書LOD <https://w3id.org/jp-textbook/>`_"
 
 #: ../../usecases.rst:11
 msgid "Bibliographic and unit information for textbooks is published as an LOD dataset."
-msgstr ""
+msgstr "教科書の書誌情報や単元情報などをLODデータセットとして公開している。"
 
 #: ../../usecases.rst:13
-msgid "`Curriculum Guidelines LOD <https://w3id.org/jp-cos/>`_"
-msgstr ""
+msgid "`Japanse Courses of Study LOD <https://w3id.org/jp-cos/>`_"
+msgstr "`学習指導要領LOD <https://w3id.org/jp-cos/>`_"
 
 #: ../../usecases.rst:15
-msgid "Details of the curriculum guidelines and related information are published as an LOD dataset."
-msgstr ""
+msgid "Details of the courses of study (curriculum guidelines) and related information are published as an LOD dataset."
+msgstr "学習指導要領の細目と関連する情報をLODデータセットとして公開している。"
 
 #: ../../usecases.rst:17
 msgid "(Updated periodically)"
-msgstr ""
+msgstr "（以降、随時更新）"
 
 #: ../../usecases.rst:20
 msgid "Adding Usage Examples"
-msgstr ""
+msgstr "利用事例の追加について"
 
 #: ../../usecases.rst:22
 msgid "If you have published linked data using **ttl2html**, we would love to feature it on this page. If you are interested, please :doc:`contact us <contact>` with the following information:"
-msgstr ""
+msgstr "**ttl2html** を利用してリンクトデータを公開している事例がありましたら、このページで紹介したいので、よろしければ、以下の情報を添えて :doc:`連絡先 <contact>`までご連絡ください。"
 
 #: ../../usecases.rst:25
 msgid "Site name / Organization name"
-msgstr ""
+msgstr "サイト名・組織名"
 
 #: ../../usecases.rst:26
 msgid "Public URI"
-msgstr ""
+msgstr "公開URI"
 
 #: ../../usecases.rst:27
 msgid "Brief description of the example"
-msgstr ""
+msgstr "事例の簡単な説明"
 
 #: ../../usecases.rst:29
 msgid "We aim to expand the collection of usage examples and further develop ttl2html into a more useful tool for everyone."
-msgstr ""
+msgstr "今後も活用事例を増やし、より多くの方に役立つツールとして発展させていきたいと思います。"
