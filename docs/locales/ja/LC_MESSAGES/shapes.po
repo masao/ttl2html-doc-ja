@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-2025, Masao Takaku
+# This file is distributed under the same license as the ttl2html package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Masao Takaku <tmasao@acm.org>, 2025
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ttl2html\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-02 22:04+0900\n"
+"PO-Revision-Date: 2025-02-02 13:06+0000\n"
+"Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
+"Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../shapes.rst:2
+msgid "Profile Description Using Shapes"
+msgstr "シェイプを用いたプロファイル記述"
+
+#: ../../shapes.rst:4
+msgid "RDF shapes are a formal language for describing the model contents of RDF data. Two common shape description languages are `ShEx (Shape Expressions) <https://shex.io/>`_ and `SHACL (Shapes Constraint Language) <https://www.w3.org/TR/shacl/>`_. By using ShEx or SHACL, you can verify whether an RDF dataset is correctly structured and provide a detailed description of its contents."
+msgstr "RDFシェイプは、RDFデータのモデル内容を記述するための形式言語で、 `ShEx (Shape Expressions) <https://shex.io/>`_ と `SHACL (Shapes Constraint Language) <https://www.w3.org/TR/shacl/>`_ の2つのシェイプ記述言語が知られています。ShExやSHACLを使うことにより、RDFデータセットが正しく書かれているか検証したり、RDFデータセットの内容説明を加えたりできます。"
+
+#: ../../shapes.rst:7
+msgid "**ttl2html** supports only SHACL, providing two key functions:"
+msgstr "**ttl2html** では、データセット内容に対応するデータモデルを SHACL 形式のシェイプで記述することにより、以下の2つの機能を提供しています:"
+
+#: ../../shapes.rst:9
+msgid "Writing a profile description of the data model by describing the corresponding dataset content in SHACL shape format."
+msgstr "データモデルのプロファイル記述を書き出す機能"
+
+#: ../../shapes.rst:11
+msgid "Assigning labels to property names displayed on the generated site."
+msgstr "生成されたサイト上でのプロパティ名にラベルを与える機能"
+
+#: ../../shapes.rst:14
+msgid "Example of Profile Description Using SHACL"
+msgstr "SHACLによるプロファイル記述例"
+
+#: ../../shapes.rst:16
+msgid "ttl2html performs profile description and labeling for each class, assuming that a shape is described for each class using ``sh:targetClass`` in SHACL."
+msgstr "ttl2htmlでは、SHACLにおける ``sh:targetClass`` によるクラスごとのシェイプ記述がされていることを前提として、各クラスごとのプロファイル記述とラベル付与を行います。"
+
+#: ../../shapes.rst:18
+msgid "In the following example, we use ``SchoolShape``, which represents the \"school type\" in Japanese Textbook LOD, as an example."
+msgstr "以下では、教科書LODにおいて「学校種別」を表現する ``SchoolShape`` を例にして説明します。"
+
+#: ../../shapes.rst:20
+msgid "Here is a sample shape description from your dataset file:"
+msgstr "例えば、データセットに以下のようなシェイプ記述が含まれている場合を例にとって説明します:"
+
+#: ../../shapes.rst:54
+msgid "As explained above, we assume the shape structure described here specifies the class URI of the corresponding dataset using ``sh:targetClass``. Using the ``sh:property`` property, you can describe the property name, characteristics, and constraints that resources of the class should have."
+msgstr "前述した通り、ここで記述されるシェイプの構造は、 ``sh:targetClass`` として対応する当該データセットのクラスURIを指定したうえで、 ``sh:property`` プロパティを使って、当該クラスのリソースが持つべきプロパティの名称や特徴、制約条件を記述していきます。"
+
+#: ../../shapes.rst:57
+msgid "Each ``sh:property`` defines a specific attribute of a resource, specifying its characteristics, constraints, and expected values. This structure helps ensure RDF data is well-organized and adheres to a defined schema."
+msgstr "``sh:property`` 一つにつき、一つのプロパティの説明になり、そのプロパティの特性や制約条件や想定される値を説明します。この構造を使うことで、RDFデータがよりよく整理でき、特定のスキーマに沿っていることを理解しやすくします。"
+
+#: ../../shapes.rst:60
+msgid "In this example, the resource is described as having two properties: ``schema:name`` (http://schema.org/name) and ``owl:sameAs`` (http://www.w3.org/2002/07/owl#sameAs)."
+msgstr "この例では、当該リソースは、2つのプロパティ ``schema:name`` (<http://schema.org/name>) と ``owl:sameAs`` (<http://www.w3.org/2002/07/owl#sameAs)をもつことを記述しています。"
+
+#: ../../shapes.rst:63
+msgid "Explaining Property Description"
+msgstr "各プロパティの記述例"
+
+#: ../../shapes.rst:65
+msgid "``sh:name`` is the name of the property. On the resource page, the value of sh:name is used as the property name. If you add a language tag such as ``@ja`` or ``@en`` to the literal, it will specify that the description will be written differently for each language, and the content in the language matching the site's :confval:`locale` will be used."
+msgstr "``sh:name`` はそのプロパティの名称です。リソースページにおいて、プロパティ名は ``sh:name`` の値をそのまま使います。なお、プロパティ名称のリテラルに ``@ja`` や ``@en`` などの言語タグをつけると、言語ごとの説明記述の書き分けが指定されたことになり、 :confval:`locale` で言語指定したサイトと一致する言語の内容を使うようになります。"
+
+#: ../../shapes.rst:68
+msgid "``skos:example`` gives an example value for that property."
+msgstr "``skos:example`` はそのプロパティの値を例として与えます。"
+
+#: ../../shapes.rst:70
+msgid "``sh:description`` provides a detailed description of that property. When generating the page in HTML, you can embed HTML directly in the RDF to include links and structured information in the description."
+msgstr "``sh:description はそのプロパティの詳細な説明を書きます。最終的にページ生成する際にHTML出力することを利用して、RDF内に直接HTMLを埋め込むことができますので、記述内にリンクや構造化情報を含むことができます。"
+
+#: ../../shapes.rst:73
+msgid "``sh:order`` specifies the order of the properties. This order is used to output the properties when generating the description and the pages corresponding to specific resources."
+msgstr "``sh:order`` はプロパティの順序を指定します。説明記述や、具体的なリソースに対応するページを生成する際にはこの順序を用いてプロパティを出力します。"
+
+#: ../../shapes.rst:76
+msgid "The above profile description is also output as a vocabulary description table in ``about.html`` (you can change the file name with :confval:`about_file`) to make it easier for users of the data model to understand."
+msgstr "上記のプロファイル記述は、データモデル利用者に分かりやすいよう ``about.html`` （ :confval:`about_file` 設定を使うとファイル名を変更できます）に語彙説明の表として出力します。"
+
+#: ../../shapes.rst:78
+msgid "The following figure shows an example of the shape description above written out:"
+msgstr "上記のシェイプ例を書きだした例を以下の図に示します:"
+
+#: ../../shapes.rst:82
+msgid "It is a table with a description of each property on one line."
+msgstr "プロパティごとの説明を一行に示した表になっています。"
+
+#: ../../shapes.rst:84
+msgid "The contents written in ``sh:name`` are displayed in the \"Description\" column. If you add a language tag such as ``@ja`` or ``@en`` to the literal, it will specify that the description will be written differently for each language. Only the content matching the site's language will be displayed. If no language tag is provided, it will be output as-is in all profile descriptions."
+msgstr "``sh:name`` に記述した内容が「説明」列に表示されます。その際、プロパティ名称のリテラルに ``@ja`` や ``@en`` などの言語タグをつけると、言語ごとの説明記述の書き分けが指定されたことになり、 :confval:`locale` で言語指定したサイトと一致する言語の内容のみを書き出すようになります。言語タグが無ければ、そのまま全てのプロファイル記述で出力されます。"
+
+#: ../../shapes.rst:88
+msgid "The content written with ``skos:example`` will be displayed in the \"Example of the property value(s)\" column."
+msgstr "``skos:example`` を記述した内容は「プロパティの値の例」列に表示されます。"
+
+#: ../../shapes.rst:90
+msgid "If you write ``sh:description``, it will be displayed in the \"Notes\" column. You can write both Japanese and English descriptions using language tags (such as ``@ja``)."
+msgstr "``sh:description`` を記述すると「備考」列に表示されます。「名称」列と同様に言語タグ（``@ja``など）で言語ごと説明記述の日本語版、英語版の書き分けができます。"
+
+#: ../../shapes.rst:93
+msgid "Descriptions of ``sh:minCount`` and ``sh:maxCount`` will appear in the \"Required? / Repeatable?\" column. If ``sh:minCount`` has a value of 1 or more, it is shown as a \"Required\" property. If ``sh:minCount`` is absent or set to 0, it is shown as an \"Optional\" property. Similarly, if ``sh:maxCount`` is set to 1, the item is shown as \"Non repeatable\"; if ``sh:maxCount`` is set to 2 or more, the item is shown as \"Repeatable\"."
+msgstr "``sh:minCount``, ``sh:maxCount`` は「必須・省略の別」「繰り返しの有無」の列に説明が表示されます。それぞれ ``sh:minCount`` に1以上の値が指定されていれば「必須」プロパティ項目ですし、``sh:minCount`` が存在しないか、その値に0が指定されていれば、「省略可能」なプロパティ項目ということになります。同様に、``sh:maxCount`` に ``1`` が指定されていれば、「繰り返し無し」ですし、``sh:maxCount`` に ``2`` 以上の値が指定されていれば「繰り返しあり」項目となります。"
+
+#: ../../shapes.rst:98
+msgid "``sh:order`` specifies the order in which the properties are displayed in the vocabulary description table. In this example, the order (``sh:order``) of ``schema:name`` property is set to \"1\", and the order of ``owl:sameAs`` is set to \"2\". Thus, the description of ``schema:name`` appears first, followed by ``owl:sameAs``."
+msgstr "``sh:order`` はこの語彙説明の表内で表示するプロパティの順番を指定します。この例では、``schema:name`` の順序（``sh:order``）が ``1`` 、 ``owl:sameAs`` の順序が ``2`` と指定されているので、それぞれ ``schema:name`` の説明が1行目、 ``owl:sameAs`` の説明が2行目に表示されています。"

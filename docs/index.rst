@@ -21,6 +21,7 @@ Contents
    configuration
    limitations
    dataset
+   shapes
    usecases
    contact
 
