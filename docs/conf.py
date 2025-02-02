@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'ttl2html'
-copyright = '2023-2024, Masao Takaku'
+copyright = '2023-2025, Masao Takaku'
 author = 'Masao Takaku'
 
 # release = '0.1'
