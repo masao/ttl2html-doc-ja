@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-2025, Masao Takaku
+# This file is distributed under the same license as the ttl2html package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ttl2html\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-02 12:38+0900\n"
+"PO-Revision-Date: 2025-02-02 03:40+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../usecases.rst:2
+msgid "Use Cases"
+msgstr ""
+
+#: ../../usecases.rst:5
+msgid "List of Websites"
+msgstr ""
+
+#: ../../usecases.rst:7
+msgid "ttl2html is used on several websites. Below are some examples:"
+msgstr ""
+
+#: ../../usecases.rst:9
+msgid "`Textbook LOD <https://w3id.org/jp-textbook/>`_"
+msgstr ""
+
+#: ../../usecases.rst:11
+msgid "Bibliographic and unit information for textbooks is published as an LOD dataset."
+msgstr ""
+
+#: ../../usecases.rst:13
+msgid "`Curriculum Guidelines LOD <https://w3id.org/jp-cos/>`_"
+msgstr ""
+
+#: ../../usecases.rst:15
+msgid "Details of the curriculum guidelines and related information are published as an LOD dataset."
+msgstr ""
+
+#: ../../usecases.rst:17
+msgid "(Updated periodically)"
+msgstr ""
+
+#: ../../usecases.rst:20
+msgid "Adding Usage Examples"
+msgstr ""
+
+#: ../../usecases.rst:22
+msgid "If you have published linked data using **ttl2html**, we would love to feature it on this page. If you are interested, please :doc:`contact us <contact>` with the following information:"
+msgstr ""
+
+#: ../../usecases.rst:25
+msgid "Site name / Organization name"
+msgstr ""
+
+#: ../../usecases.rst:26
+msgid "Public URI"
+msgstr ""
+
+#: ../../usecases.rst:27
+msgid "Brief description of the example"
+msgstr ""
+
+#: ../../usecases.rst:29
+msgid "We aim to expand the collection of usage examples and further develop ttl2html into a more useful tool for everyone."
+msgstr ""

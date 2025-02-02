@@ -56,3 +56,11 @@ type                   = PO
 minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
+
+[o:ttl2html:p:ttl2html:r:usecases]
+file_filter            = locales/<lang>/LC_MESSAGES/usecases.po
+source_file            = _build/gettext/usecases.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
