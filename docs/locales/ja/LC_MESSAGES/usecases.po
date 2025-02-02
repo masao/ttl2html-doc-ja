@@ -59,7 +59,7 @@ msgstr "利用事例の追加について"
 
 #: ../../usecases.rst:22
 msgid "If you have published linked data using **ttl2html**, we would love to feature it on this page. If you are interested, please :doc:`contact us <contact>` with the following information:"
-msgstr "**ttl2html** を利用してリンクトデータを公開している事例がありましたら、このページで紹介したいので、よろしければ、以下の情報を添えて :doc:`連絡先 <contact>`までご連絡ください。"
+msgstr "**ttl2html** を利用してリンクトデータを公開している事例がありましたら、このページで紹介したいので、よろしければ、以下の情報を添えて :doc:`連絡先 <contact>` までご連絡ください。"
 
 #: ../../usecases.rst:25
 msgid "Site name / Organization name"
