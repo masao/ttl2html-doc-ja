@@ -176,7 +176,7 @@ All configuration keys available are documeted as follows:
      http://example.org/Item:
        http://purl.org/dc/terms/description
 
-  If a resource does not belong to a class specified in ``title_property_perclass``, the :confval:`title_property` setting will be used. If :confval:`title_property` is not set, a title value will be selected from the default properties.
+  If a resource does not belong to a class specified in ``title_property_perclass``, the :confval:`title_property` setting will be used.
 
 .. confval:: top_additional_property
   

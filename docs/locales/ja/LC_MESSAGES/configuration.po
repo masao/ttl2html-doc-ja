@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-02 19:22+0900\n"
+"POT-Creation-Date: 2025-02-02 19:38+0900\n"
 "PO-Revision-Date: 2023-08-15 16:16+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -170,8 +170,8 @@ msgid "For example, in the following case: Resources of the ``foaf:Person`` clas
 msgstr "例えば、以下の指定の場合: ``foaf:Person`` クラスのリソースは ``foaf:name`` プロパティの内容をタイトルとして用いるとし、 ``example:Item`` クラスのリソースは ``dct:description`` プロパティの内容をタイトルとして用いるものです。"
 
 #: ../../configuration.rst:179
-msgid "If a resource does not belong to a class specified in ``title_property_perclass``, the :confval:`title_property` setting will be used. If :confval:`title_property` is not set, a title value will be selected from the default properties."
-msgstr "``title_property_perclass`` に指定したクラスのリソースでない場合: :confval:`title_property` 設定の内容に従い、 :confval:`title_property` が設定されていなかった場合にはデフォルトのプロパティ群からタイトル用のプロパティを選択します。"
+msgid "If a resource does not belong to a class specified in ``title_property_perclass``, the :confval:`title_property` setting will be used."
+msgstr "``title_property_perclass`` に指定したクラスのリソースでない場合、 :confval:`title_property` 設定の内容に従って、タイトル用のプロパティを選択します。"
 
 #: ../../configuration.rst:183
 msgid "For each set of resources expanded by :confval:`top_class` setting, specify a list of additional sub-hierarchies to be expanded. The properties that make up the sub-hierarchy are specified as a list."
