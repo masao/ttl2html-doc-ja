@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-02 17:34+0900\n"
+"POT-Creation-Date: 2025-02-02 19:22+0900\n"
 "PO-Revision-Date: 2023-08-15 16:16+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -162,13 +162,25 @@ msgid "http://www.w3.org/2004/02/skos/core#prefLabel"
 msgstr "http://www.w3.org/2004/02/skos/core#prefLabel"
 
 #: ../../configuration.rst:167
+msgid "This setting specifies property URIs for each class URI. If a specified property exists on a resource, its value will be used as the title of the generated resource page."
+msgstr "指定したクラスURIごとに指定したプロパティURIを、当該リソースページのタイトルとみなし、ページを生成します。"
+
+#: ../../configuration.rst:169
+msgid "For example, in the following case: Resources of the ``foaf:Person`` class use the ``foaf:name`` property as the title, while resources of the ``example:Item`` class use the ``dct:description`` property as the title."
+msgstr "例えば、以下の指定の場合: ``foaf:Person`` クラスのリソースは ``foaf:name`` プロパティの内容をタイトルとして用いるとし、 ``example:Item`` クラスのリソースは ``dct:description`` プロパティの内容をタイトルとして用いるものです。"
+
+#: ../../configuration.rst:179
+msgid "If a resource does not belong to a class specified in ``title_property_perclass``, the :confval:`title_property` setting will be used. If :confval:`title_property` is not set, a title value will be selected from the default properties."
+msgstr "``title_property_perclass`` に指定したクラスのリソースでない場合: :confval:`title_property` 設定の内容に従い、 :confval:`title_property` が設定されていなかった場合にはデフォルトのプロパティ群からタイトル用のプロパティを選択します。"
+
+#: ../../configuration.rst:183
 msgid "For each set of resources expanded by :confval:`top_class` setting, specify a list of additional sub-hierarchies to be expanded. The properties that make up the sub-hierarchy are specified as a list."
 msgstr ":confval:`top_class` 設定で展開されるリソース群に対して、追加でサブ階層として展開されるべきリストを指定する。サブ階層を構成するプロパティをリストとして指定する。"
 
-#: ../../configuration.rst:171
+#: ../../configuration.rst:187
 msgid "Specified URI is the class of the records listed in the top page. By default, this tool does not generate the top page."
 msgstr "トップページに表示すべきレコード一覧に対応するクラスURIを指定する。デフォルトでは指定無しとし、トップページは生成しない。"
 
-#: ../../configuration.rst:175
+#: ../../configuration.rst:191
 msgid "If you want to change the output file names when outputting local files corresponding to a URI, use this setting. You can specify the patterns for the part of paths in a URI and then determine how the matched part of the path has to be changed. For example, when outputting many files in a single directory, you can specify a pattern for the first few characters and the rest of the filename so that each directory contains a separate set of files with different destinations. The example below specifies that a URI path consisting of 16 alphanumeric characters is divided into the first three characters and the rest of the path. Hence, the output files are placed for each two-character directory."
 msgstr "URIに対応するローカルファイルを出力する際、出力ファイル名に操作を加える場合に使用します。例えば、1つのディレクトリ内に大量のファイルが出力されるようなLODデータセットに対応させる場合に、先頭数文字と残りの文字数とで、ディレクトリ毎に保存先が別れたファイル群となるように指定できます。下記の例は、16桁の英数字からなるURIパスを先頭3文字と残りに分けて、3文字フォルダ毎に出力するように指定する例です。"

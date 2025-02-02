@@ -162,6 +162,22 @@ All configuration keys available are documeted as follows:
   * http://schema.org/name
   * http://www.w3.org/2004/02/skos/core#prefLabel
 
+.. confval:: title_property_perclass
+
+  This setting specifies property URIs for each class URI. If a specified property exists on a resource, its value will be used as the title of the generated resource page.
+
+  For example, in the following case: Resources of the ``foaf:Person`` class use the ``foaf:name`` property as the title, while resources of the ``example:Item`` class use the ``dct:description`` property as the title.
+
+  .. code-block:: YAML
+
+   title_property_perclass:
+     http://xmlns.com/foaf/0.1/Person:
+       http://xmlns.com/foaf/0.1/name
+     http://example.org/Item:
+       http://purl.org/dc/terms/description
+
+  If a resource does not belong to a class specified in ``title_property_perclass``, the :confval:`title_property` setting will be used. If :confval:`title_property` is not set, a title value will be selected from the default properties.
+
 .. confval:: top_additional_property
   
   For each set of resources expanded by :confval:`top_class` setting, specify a list of additional sub-hierarchies to be expanded. The properties that make up the sub-hierarchy are specified as a list.
