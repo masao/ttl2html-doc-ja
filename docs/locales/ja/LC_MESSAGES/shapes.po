@@ -103,7 +103,7 @@ msgstr "プロパティごとの説明を一行に示した表になっていま
 
 #: ../../shapes.rst:84
 msgid "The contents written in ``sh:name`` are displayed in the \"Description\" column. If you add a language tag such as ``@ja`` or ``@en`` to the literal, it will specify that the description will be written differently for each language. Only the content matching the site's language (:confval:`locale`) will be displayed. If no language tag is provided, it will be output as-is in all profile descriptions."
-msgstr ""
+msgstr "``sh:name`` に記述した内容が「説明」列に表示されます。その際、プロパティ名称のリテラルに ``@ja`` や ``@en`` などの言語タグをつけると、言語ごとの説明記述の書き分けが指定されたことになり、 :confval:`locale` で言語指定したサイトと一致する言語の内容のみを書き出すようになります。言語タグが無ければ、そのまま全てのプロファイル記述で出力されます。"
 
 #: ../../shapes.rst:88
 msgid "The content written with ``skos:example`` will be displayed in the \"Example of the property value(s)\" column."
