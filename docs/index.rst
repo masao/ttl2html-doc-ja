@@ -21,6 +21,7 @@ Contents
    configuration
    limitations
    dataset
+   contact
 
 .. toctree::
    :hidden:

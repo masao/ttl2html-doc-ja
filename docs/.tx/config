@@ -48,3 +48,11 @@ type                   = PO
 minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
+
+[o:ttl2html:p:ttl2html:r:contact]
+file_filter            = locales/<lang>/LC_MESSAGES/contact.po
+source_file            = _build/gettext/contact.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false

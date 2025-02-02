@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-2024, Masao Takaku
+# This file is distributed under the same license as the ttl2html package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ttl2html\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-02 11:42+0900\n"
+"PO-Revision-Date: 2025-02-02 02:48+0000\n"
+"Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../contact.rst:2
+msgid "Contact"
+msgstr ""
+
+#: ../../contact.rst:4
+msgid "If you have any questions or need assistance with **ttl2html**, please reach out to us using the following methods:"
+msgstr ""
+
+#: ../../contact.rst:6
+msgid "**GitHub repository**: `<https://github.com/masao/ttl2html>`_ * For bug reports, feature requests, or contributions, please use the `GitHub Issues page <https://github.com/masao/ttl2html/issues>`_."
+msgstr ""
+
+#: ../../contact.rst:8
+msgid "**Email**: tmasao@acm.org (Masao Takaku) * If you prefer to ask questions privately, please contact us via email."
+msgstr ""
+
+#: ../../contact.rst:11
+msgid "We appreciate your feedback and will continue improving ttl2html based on your suggestions."
+msgstr ""
