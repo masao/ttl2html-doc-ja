@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-02 11:42+0900\n"
+"POT-Creation-Date: 2025-02-02 11:56+0900\n"
 "PO-Revision-Date: 2025-02-02 02:48+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -30,17 +30,21 @@ msgid "If you have any questions or need assistance with **ttl2html**, please re
 msgstr "**ttl2html** に関するお問い合わせは、以下の方法でご連絡ください。"
 
 #: ../../contact.rst:6
-msgid "**GitHub repository**: `<https://github.com/masao/ttl2html>`_ * For bug reports, feature requests, or contributions, please use the `GitHub Issues page <https://github.com/masao/ttl2html/issues>`_."
-msgstr ""
-"**GitHubリポジトリ**: `<https://github.com/masao/ttl2html>`_ \n"
-"  * 不具合報告、機能要望、貢献に関する情報は `GitHubのIssueページ <https://github.com/masao/ttl2html/issues>`_ をご利用ください。"
+msgid "**GitHub repository**: `<https://github.com/masao/ttl2html>`_"
+msgstr "**GitHubリポジトリ**: `<https://github.com/masao/ttl2html>`_"
 
 #: ../../contact.rst:8
-msgid "**Email**: tmasao@acm.org (Masao Takaku) * If you prefer to ask questions privately, please contact us via email."
-msgstr ""
-"**Email**: tmasao@acm.org (高久 雅生)\n"
-"  * 公開では質問できない情報を含む場合は、上記メールアドレスまで直接お問い合わせください。"
+msgid "For bug reports, feature requests, or contributions, please use the `GitHub Issues page <https://github.com/masao/ttl2html/issues>`_."
+msgstr "不具合報告、機能要望、貢献に関する情報は `GitHubのIssueページ <https://github.com/masao/ttl2html/issues>`_ をご利用ください。"
 
-#: ../../contact.rst:11
+#: ../../contact.rst:10
+msgid "**Email**: tmasao@acm.org (Masao Takaku)"
+msgstr "**Email**: tmasao@acm.org (高久 雅生)"
+
+#: ../../contact.rst:12
+msgid "If you prefer to ask questions privately, please contact us via email."
+msgstr "公開では質問できない情報を含む場合は、上記メールアドレスまで直接お問い合わせください。"
+
+#: ../../contact.rst:14
 msgid "We appreciate your feedback and will continue improving ttl2html based on your suggestions."
 msgstr "皆さまのフィードバックをもとに、ttl2htmlをより良いツールにしていきたいと思います。"
