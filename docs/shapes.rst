@@ -82,7 +82,7 @@ The following figure shows an example of the shape description above written out
 It is a table with a description of each property on one line.
 
 The contents written in ``sh:name`` are displayed in the "Description" column.
-If you add a language tag such as ``@ja`` or ``@en`` to the literal, it will specify that the description will be written differently for each language. Only the content matching the site's language will be displayed.
+If you add a language tag such as ``@ja`` or ``@en`` to the literal, it will specify that the description will be written differently for each language. Only the content matching the site's language (:confval:`locale`) will be displayed.
 If no language tag is provided, it will be output as-is in all profile descriptions.
 
 The content written with ``skos:example`` will be displayed in the "Example of the property value(s)" column.

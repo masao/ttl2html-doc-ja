@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2023-2024, Masao Takaku
+# Copyright (C) 2023-2025, Masao Takaku
 # This file is distributed under the same license as the ttl2html package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Masao Takaku <tmasao@acm.org>, 2024
+# Masao Takaku <tmasao@acm.org>, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-16 12:02+0900\n"
+"POT-Creation-Date: 2025-02-02 12:38+0900\n"
 "PO-Revision-Date: 2024-11-16 02:16+0000\n"
-"Last-Translator: Masao Takaku <tmasao@acm.org>, 2024\n"
+"Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -291,7 +291,7 @@ msgstr "バージョン履歴情報は、データセット全体が改版され
 
 #: ../../dataset.rst:76
 msgid "This information is managed using the `PAV (Provenance Authoring and Versioning ontology) <https://pav-ontology.github.io/pav/>`_ vocabulary."
-msgstr "`PAV (Provenance Authoring and Versioning ontology) <https://pav-ontology.github.io/pav/>`_語彙を利用して、それらの情報を管理します。"
+msgstr "`PAV (Provenance Authoring and Versioning ontology) <https://pav-ontology.github.io/pav/>`_ 語彙を利用して、それらの情報を管理します。"
 
 #: ../../dataset.rst:78
 msgid "The resource representing the latest version is linked from the \"Entire Dataset\" resource using the ``pav:hasCurrentVersion`` property. Version resources are linked using the ``pav:hasVersion`` properties. The following properties can be used to describe metadata for each version resource:"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-02 22:04+0900\n"
+"POT-Creation-Date: 2025-02-02 22:42+0900\n"
 "PO-Revision-Date: 2025-02-02 13:06+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -67,7 +67,7 @@ msgstr "``sh:property`` 一つにつき、一つのプロパティの説明に�
 
 #: ../../shapes.rst:60
 msgid "In this example, the resource is described as having two properties: ``schema:name`` (http://schema.org/name) and ``owl:sameAs`` (http://www.w3.org/2002/07/owl#sameAs)."
-msgstr "この例では、当該リソースは、2つのプロパティ ``schema:name`` (<http://schema.org/name>) と ``owl:sameAs`` (<http://www.w3.org/2002/07/owl#sameAs)をもつことを記述しています。"
+msgstr "この例では、当該リソースは、2つのプロパティ ``schema:name`` (<http://schema.org/name>) と ``owl:sameAs`` (<http://www.w3.org/2002/07/owl#sameAs>)をもつことを記述しています。"
 
 #: ../../shapes.rst:63
 msgid "Explaining Property Description"
@@ -83,7 +83,7 @@ msgstr "``skos:example`` はそのプロパティの値を例として与えま�
 
 #: ../../shapes.rst:70
 msgid "``sh:description`` provides a detailed description of that property. When generating the page in HTML, you can embed HTML directly in the RDF to include links and structured information in the description."
-msgstr "``sh:description はそのプロパティの詳細な説明を書きます。最終的にページ生成する際にHTML出力することを利用して、RDF内に直接HTMLを埋め込むことができますので、記述内にリンクや構造化情報を含むことができます。"
+msgstr "``sh:description`` はそのプロパティの詳細な説明を書きます。最終的にページ生成する際にHTML出力することを利用して、RDF内に直接HTMLを埋め込むことができますので、記述内にリンクや構造化情報を含むことができます。"
 
 #: ../../shapes.rst:73
 msgid "``sh:order`` specifies the order of the properties. This order is used to output the properties when generating the description and the pages corresponding to specific resources."
@@ -102,8 +102,8 @@ msgid "It is a table with a description of each property on one line."
 msgstr "プロパティごとの説明を一行に示した表になっています。"
 
 #: ../../shapes.rst:84
-msgid "The contents written in ``sh:name`` are displayed in the \"Description\" column. If you add a language tag such as ``@ja`` or ``@en`` to the literal, it will specify that the description will be written differently for each language. Only the content matching the site's language will be displayed. If no language tag is provided, it will be output as-is in all profile descriptions."
-msgstr "``sh:name`` に記述した内容が「説明」列に表示されます。その際、プロパティ名称のリテラルに ``@ja`` や ``@en`` などの言語タグをつけると、言語ごとの説明記述の書き分けが指定されたことになり、 :confval:`locale` で言語指定したサイトと一致する言語の内容のみを書き出すようになります。言語タグが無ければ、そのまま全てのプロファイル記述で出力されます。"
+msgid "The contents written in ``sh:name`` are displayed in the \"Description\" column. If you add a language tag such as ``@ja`` or ``@en`` to the literal, it will specify that the description will be written differently for each language. Only the content matching the site's language (:confval:`locale`) will be displayed. If no language tag is provided, it will be output as-is in all profile descriptions."
+msgstr ""
 
 #: ../../shapes.rst:88
 msgid "The content written with ``skos:example`` will be displayed in the \"Example of the property value(s)\" column."
@@ -111,7 +111,7 @@ msgstr "``skos:example`` を記述した内容は「プロパティの値の例�
 
 #: ../../shapes.rst:90
 msgid "If you write ``sh:description``, it will be displayed in the \"Notes\" column. You can write both Japanese and English descriptions using language tags (such as ``@ja``)."
-msgstr "``sh:description`` を記述すると「備考」列に表示されます。「名称」列と同様に言語タグ（``@ja``など）で言語ごと説明記述の日本語版、英語版の書き分けができます。"
+msgstr "``sh:description`` を記述すると「備考」列に表示されます。「名称」列と同様に言語タグ（ ``@ja`` など）で言語ごと説明記述の日本語版、英語版の書き分けができます。"
 
 #: ../../shapes.rst:93
 msgid "Descriptions of ``sh:minCount`` and ``sh:maxCount`` will appear in the \"Required? / Repeatable?\" column. If ``sh:minCount`` has a value of 1 or more, it is shown as a \"Required\" property. If ``sh:minCount`` is absent or set to 0, it is shown as an \"Optional\" property. Similarly, if ``sh:maxCount`` is set to 1, the item is shown as \"Non repeatable\"; if ``sh:maxCount`` is set to 2 or more, the item is shown as \"Repeatable\"."
