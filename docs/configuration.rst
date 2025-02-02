@@ -61,7 +61,7 @@ All configuration keys available are documeted as follows:
 
 .. confval:: copyright_year
   
-  Copyright year statement displayed at the footer along with the ``admin_name`` parameter above.
+  Copyright year statement displayed at the footer along with the :confval:`admin_name` parameter above.
 
 .. confval:: css_file
   
@@ -96,6 +96,7 @@ All configuration keys available are documeted as follows:
   Mappings for the custom property labels.
 
 .. confval:: locale
+  :default: ``en``
   
   Locale name for the output messages. Default: ``en`` (e.g. ``ja``, ``en``)
 
@@ -122,7 +123,8 @@ All configuration keys available are documeted as follows:
       type: article
 
 .. confval:: output_dir
-  
+  :default: ``.``
+
   Output directory for the dataset. If not specified, the current working directory is used for the outputs.
 
 .. confval:: output_turtle
@@ -133,7 +135,7 @@ All configuration keys available are documeted as follows:
 
 .. confval:: shape_orders
   
-  This configuration option controls the order in which resource descriptions are output to about.html. The descriptions are output in the order of the resource shapes listed here. If not set, the default is alphabetical order of shape URIs. Set as a list, as in the following example:
+  This configuration option controls the order in which resource descriptions are output to :confval:`about_file`. The descriptions are output in the order of the resource shapes listed here. If not set, the default is alphabetical order of shape URIs. Set as a list, as in the following example:
 
   .. code-block:: YAML
 
@@ -146,6 +148,7 @@ All configuration keys available are documeted as follows:
   Main title for the whole website.
 
 .. confval:: template_dir
+  :default: ``templates/``
   
   Local template directory to find a template file. Default template files are available at `here <https://github.com/masao/ttl2html/tree/master/templates>`_. To overwrite the contents of the original template, copy the original file to the directory specified here and rewrite it.
 
@@ -161,7 +164,7 @@ All configuration keys available are documeted as follows:
 
 .. confval:: top_additional_property
   
-  For each set of resources expanded by ``top_class`` setting, specify a list of additional sub-hierarchies to be expanded. The properties that make up the sub-hierarchy are specified as a list.
+  For each set of resources expanded by :confval:`top_class` setting, specify a list of additional sub-hierarchies to be expanded. The properties that make up the sub-hierarchy are specified as a list.
 
 .. confval:: top_class
   

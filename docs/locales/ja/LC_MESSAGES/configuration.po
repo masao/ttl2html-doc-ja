@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2023-2024, Masao Takaku
+# Copyright (C) 2023-2025, Masao Takaku
 # This file is distributed under the same license as the ttl2html package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-31 00:40+0900\n"
+"POT-Creation-Date: 2025-02-02 17:34+0900\n"
 "PO-Revision-Date: 2023-08-15 16:16+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -74,8 +74,8 @@ msgid "Configuration for creating a hierarchical breadcrumb list of multiple res
 msgstr "複数のリソースを階層化したパンくずリストを作るための設定。当該リソースの上位階層リソースまたは関連リソースにあたるプロパティをリストとして定義します。下記の例では ``schema:hasPart`` プロパティ、 ``jp-cos:couseOfStudy`` プロパティそれぞれの順でもし存在すれば、当該リソースの上位階層とみなしてナビゲーションメニューを構築します。また、パンくずリスト上の表示ラベルはデフォルトでは「タイトル」を用いますが、 ``label`` キーが指定されていれば、当該 ``label`` キーに指定されたプロパティ値をパンくずリンクの表示文字列として用いることができます。また、 ``inverse`` キーがある場合は、当該リソースのプロパティを述語としてもつリソースを上位階層とみなします。また、空ノード等で多段階の関係をまたいだリソースを指定することもできます。その場合、 ``property`` キーにリストを追加してその下位アイテムにも同様に ``property`` キーを追加します。下記の例では、当該リソースの ``schema:workExample`` プロパティ指定先リソースのさらに ``schema:isPartOf`` プロパティ先のリソースをナビゲーションリソースとして用いることができます。"
 
 #: ../../configuration.rst:64
-msgid "Copyright year statement displayed at the footer along with the ``admin_name`` parameter above."
-msgstr "上記 ``admin_name`` と一緒に出力する著作権表示年を指定します。"
+msgid "Copyright year statement displayed at the footer along with the :confval:`admin_name` parameter above."
+msgstr "上記 :confval:`admin_name` と一緒に出力する著作権表示年を指定します。"
 
 #: ../../configuration.rst:68
 msgid "The path of the CSS stylesheet file to use locally."
@@ -101,74 +101,74 @@ msgstr "ローカルで用いるJavaScriptファイルのパスを指定しま�
 msgid "Mappings for the custom property labels."
 msgstr "個別プロパティの出力ラベル名を指定します。プロパティURIをキーとし、ラベル名称を値とする形式で指定します。"
 
-#: ../../configuration.rst:100
+#: ../../configuration.rst:101
 msgid "Locale name for the output messages. Default: ``en`` (e.g. ``ja``, ``en``)"
 msgstr "出力メッセージの言語指定。デフォルトは ``en`` （例: ``ja``, ``en``）"
 
-#: ../../configuration.rst:104
+#: ../../configuration.rst:105
 msgid "The logo image file to be displayed on the menu. Specify the file path or URL."
 msgstr "トップメニューに表示するロゴ。ファイルパスまたはURLを指定する。"
 
-#: ../../configuration.rst:108
+#: ../../configuration.rst:109
 msgid "Specifies the class setting for displaying the navigation bar at the top of the screen. If not specified, ``navbar-light`` is used. Use this if you want to specify a black background color as follows:"
 msgstr "画面上部に配置するナビゲーションバーの表示用クラス設定を指定します。指定がなければ ``navbar-light`` が指定されたものとみなします。以下のように黒色系の背景色を指定したい場合に用います:"
 
-#: ../../configuration.rst:116
+#: ../../configuration.rst:117
 msgid "Specify `OGP (Open Graph Protocol) <https://ogp.me>`_ settings if you have additional logo settings for social networking sites, etc. You can specify ``ogp:image``, ``ogp:type``, etc."
 msgstr "`OGP (Open Graph Protocol) <https://ogp.me>`_ 設定を指定します。SNS等で用いるための追加のロゴ設定などがあれば、こちらを指定してください。``ogp:image``, ``ogp:type`` などの指定が可能です。"
 
-#: ../../configuration.rst:126
+#: ../../configuration.rst:128
 msgid "Output directory for the dataset. If not specified, the current working directory is used for the outputs."
 msgstr "静的ファイル群を生成するディレクトリを指定します。何も指定されていない場合は現在の作業ディレクトリに生成したファイル群を出力します。"
 
-#: ../../configuration.rst:132
+#: ../../configuration.rst:134
 msgid "Whether to output the RDF/Turtle format file corresponding to each resource URI, as ``true`` / ``false``. Default is ``true`` (i.e. output RDF/Turtle format files)."
 msgstr "各リソースURIに対応するRDF/Turtle形式のファイルを出力するかどうかを ``true`` / ``false`` で指定します。デフォルトは ``true`` です（つまりRDF/Turtle形式を出力します）。"
 
-#: ../../configuration.rst:136
-msgid "This configuration option controls the order in which resource descriptions are output to about.html. The descriptions are output in the order of the resource shapes listed here. If not set, the default is alphabetical order of shape URIs. Set as a list, as in the following example:"
-msgstr "``about.html`` に出力されるリソース説明の順序を制御する。ここに一覧されたリソースシェイプの順に説明が出力される。設定されない場合、デフォルトではシェイプURIのアルファベット順に出力される。以下の例のようにリストとして設定する:"
+#: ../../configuration.rst:138
+msgid "This configuration option controls the order in which resource descriptions are output to :confval:`about_file`. The descriptions are output in the order of the resource shapes listed here. If not set, the default is alphabetical order of shape URIs. Set as a list, as in the following example:"
+msgstr ":confval:`about_html` に出力されるリソース説明の順序を制御する。ここに一覧されたリソースシェイプの順に説明が出力される。設定されない場合、デフォルトではシェイプURIのアルファベット順に出力される。以下の例のようにリストとして設定する:"
 
-#: ../../configuration.rst:146
+#: ../../configuration.rst:148
 msgid "Main title for the whole website."
 msgstr "ウェブサイト全体のメインタイトルを指定します。"
 
-#: ../../configuration.rst:150
+#: ../../configuration.rst:153
 msgid "Local template directory to find a template file. Default template files are available at `here <https://github.com/masao/ttl2html/tree/master/templates>`_. To overwrite the contents of the original template, copy the original file to the directory specified here and rewrite it."
 msgstr "ローカルのテンプレートディレクトリ。未指定の場合はカレントディレクトリ内の ``templates/`` ディレクトリを用いる。なお、テンプレートを上書きするには、`標準のテンプレートファイル群 <https://github.com/masao/ttl2html/tree/master/templates>`_ のうち必要なファイルをローカルのテンプレートディレクトリにコピーしてきて、内容を書き換えること。"
 
-#: ../../configuration.rst:154
+#: ../../configuration.rst:157
 msgid "Specified URI is regarded as a title property for the resource. In default, a title is matched with the following properties:"
 msgstr "指定したURIをタイトル用のプロパティとして指定します。指定されていない場合、もしくは指定したプロパティが存在しない場合は、以下のプロパティが存在するか確認し、もしあれば、その値をタイトルとみなします:"
 
-#: ../../configuration.rst:156
+#: ../../configuration.rst:159
 msgid "https://www.w3.org/TR/rdf-schema/#label"
 msgstr "https://www.w3.org/TR/rdf-schema/#label"
 
-#: ../../configuration.rst:157
+#: ../../configuration.rst:160
 msgid "http://purl.org/dc/terms/title"
 msgstr "http://purl.org/dc/terms/title"
 
-#: ../../configuration.rst:158
+#: ../../configuration.rst:161
 msgid "http://purl.org/dc/elements/1.1/title"
 msgstr "http://purl.org/dc/elements/1.1/title"
 
-#: ../../configuration.rst:159
+#: ../../configuration.rst:162
 msgid "http://schema.org/name"
 msgstr "http://schema.org/name"
 
-#: ../../configuration.rst:160
+#: ../../configuration.rst:163
 msgid "http://www.w3.org/2004/02/skos/core#prefLabel"
 msgstr "http://www.w3.org/2004/02/skos/core#prefLabel"
 
-#: ../../configuration.rst:164
-msgid "For each set of resources expanded by ``top_class`` setting, specify a list of additional sub-hierarchies to be expanded. The properties that make up the sub-hierarchy are specified as a list."
-msgstr "``top_class`` 設定で展開されるリソース群に対して、追加でサブ階層として展開されるべきリストを指定する。サブ階層を構成するプロパティをリストとして指定する。"
+#: ../../configuration.rst:167
+msgid "For each set of resources expanded by :confval:`top_class` setting, specify a list of additional sub-hierarchies to be expanded. The properties that make up the sub-hierarchy are specified as a list."
+msgstr ":confval:`top_class` 設定で展開されるリソース群に対して、追加でサブ階層として展開されるべきリストを指定する。サブ階層を構成するプロパティをリストとして指定する。"
 
-#: ../../configuration.rst:168
+#: ../../configuration.rst:171
 msgid "Specified URI is the class of the records listed in the top page. By default, this tool does not generate the top page."
 msgstr "トップページに表示すべきレコード一覧に対応するクラスURIを指定する。デフォルトでは指定無しとし、トップページは生成しない。"
 
-#: ../../configuration.rst:172
+#: ../../configuration.rst:175
 msgid "If you want to change the output file names when outputting local files corresponding to a URI, use this setting. You can specify the patterns for the part of paths in a URI and then determine how the matched part of the path has to be changed. For example, when outputting many files in a single directory, you can specify a pattern for the first few characters and the rest of the filename so that each directory contains a separate set of files with different destinations. The example below specifies that a URI path consisting of 16 alphanumeric characters is divided into the first three characters and the rest of the path. Hence, the output files are placed for each two-character directory."
 msgstr "URIに対応するローカルファイルを出力する際、出力ファイル名に操作を加える場合に使用します。例えば、1つのディレクトリ内に大量のファイルが出力されるようなLODデータセットに対応させる場合に、先頭数文字と残りの文字数とで、ディレクトリ毎に保存先が別れたファイル群となるように指定できます。下記の例は、16桁の英数字からなるURIパスを先頭3文字と残りに分けて、3文字フォルダ毎に出力するように指定する例です。"
