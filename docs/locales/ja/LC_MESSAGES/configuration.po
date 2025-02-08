@@ -135,7 +135,7 @@ msgstr "より詳細なラベル付けを行う方法に :doc:`シェイプを�
 
 #: ../../configuration.rst:131
 msgid "Also, if you don't need to distinguish between classes, specify it using the :confval:`labels` setting."
-msgstr "また、クラスごとの区別が必要なければ :conval:`labels` 設定を使うだけで指定できます。"
+msgstr "また、クラスごとの区別が必要なければ :confval:`labels` 設定を使うだけで指定できます。"
 
 #: ../../configuration.rst:136
 msgid "Locale name for the output messages. Default: ``en`` (e.g. ``ja``, ``en``)"
