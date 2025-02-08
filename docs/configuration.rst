@@ -116,15 +116,15 @@ All configuration keys available are documeted as follows:
 
   The name is specified with the class URI as the key and each property URI and its name as the value.
 
-  For example, in the following example, the ``dct:description`` property is represented as "detailed text" for resources of the ``ex:Item`` class, and "Item details" for resources of the ``ex:Work`` class:
+  For example, in the following example, the ``dct:description`` property is represented as "Item details" for resources of the ``ex:Item`` class, and "Detailed text" for resources of the ``ex:Work`` class:
 
   .. code:: yaml
 
     labels_with_class:
       https://example.org/Item:
-        http://purl.org/dc/terms/description: detailed text
+        http://purl.org/dc/terms/description: Item details
       https://example.org/Work:
-        http://purl.org/dc/terms/description: description
+        http://purl.org/dc/terms/description: Detailed text
 
   There is a method for more detailed labeling, :doc:`using shapes <shapes>`.
 
