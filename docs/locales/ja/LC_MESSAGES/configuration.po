@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-02 19:38+0900\n"
+"POT-Creation-Date: 2025-02-08 09:20+0900\n"
 "PO-Revision-Date: 2023-08-15 16:16+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -98,89 +98,125 @@ msgid "The path of the JavaScript file to use locally."
 msgstr "ローカルで用いるJavaScriptファイルのパスを指定します。"
 
 #: ../../configuration.rst:96
-msgid "Mappings for the custom property labels."
+msgid "Specify the custom label name for each property. Specify the property URI as the key and the label name as the value."
 msgstr "個別プロパティの出力ラベル名を指定します。プロパティURIをキーとし、ラベル名称を値とする形式で指定します。"
 
-#: ../../configuration.rst:101
+#: ../../configuration.rst:99
+msgid "For example, the following setting specifies that the ``dct:description`` property should be displayed as \"Item details\":"
+msgstr "例えば、以下の設定は ``dct:description`` プロパティを「Item details」と表示するよう指定します:"
+
+#: ../../configuration.rst:106
+msgid "If you need to change the label for each class, use the :confval:`labels_with_class` setting or the :doc:`shape method <shapes>`."
+msgstr "クラスごとに表記を変える必要がある場合は :confval:`labels_with_class` 設定を使うか、 :doc:`シェイプを使う方法 <shapes>` を使ってください。"
+
+#: ../../configuration.rst:108
+msgid "If you do not specify a name for the property using these settings (default), the string at the end of the property URI with the first letter capitalized will be displayed."
+msgstr "また、これらの設定を使ってプロパティに対応する名称を指定しない場合（デフォルト）では、プロパティURI末尾の文字列の先頭を大文字化した文字列が表示されます。"
+
+#: ../../configuration.rst:110
+msgid "For example, ``dct:description`` will be displayed as \"Description,\" and ``schema:name`` will be displayed as \"Name\"."
+msgstr "例えば ``dct:description`` の場合は「Description」、 ``schema:name`` は「Name」と表示されます。"
+
+#: ../../configuration.rst:114
+msgid "labels_with_class is a configuration item that specifies the property name for resources belonging to a specific RDF class. Use this when you want to give different names to the same property for each class."
+msgstr "labels_with_class は、特定のRDFクラスに属するリソースにおけるプロパティ名称を指定する設定項目です。同一のプロパティに対して、クラスごとに異なる名称を与えたい場合に使います。"
+
+#: ../../configuration.rst:117
+msgid "The name is specified with the class URI as the key and each property URI and its name as the value."
+msgstr "指定する名称は、クラスURIをキーとして、各プロパティURIとその名称を値とする形で指定します。"
+
+#: ../../configuration.rst:119
+msgid "For example, in the following example, the ``dct:description`` property is represented as \"detailed text\" for resources of the ``ex:Item`` class, and \"Item details\" for resources of the ``ex:Work`` class:"
+msgstr "例えば以下の例では、 ``dct:description`` プロパティを、 ``ex:Item`` クラスのリソースの場合は「detailed text」、 ``ex:Work`` クラスの場合は「Item details」といった感じで区別した名称で表記します:"
+
+#: ../../configuration.rst:129
+msgid "There is a method for more detailed labeling, :doc:`using shapes <shapes>`."
+msgstr "より詳細なラベル付けを行う方法に :doc:`シェイプを利用した方法 <shapes>` があります。"
+
+#: ../../configuration.rst:131
+msgid "Also, if you don't need to distinguish between classes, specify it using the :confval:`labels` setting."
+msgstr "また、クラスごとの区別が必要なければ :conval:`labels` 設定を使うだけで指定できます。"
+
+#: ../../configuration.rst:136
 msgid "Locale name for the output messages. Default: ``en`` (e.g. ``ja``, ``en``)"
 msgstr "出力メッセージの言語指定。デフォルトは ``en`` （例: ``ja``, ``en``）"
 
-#: ../../configuration.rst:105
+#: ../../configuration.rst:140
 msgid "The logo image file to be displayed on the menu. Specify the file path or URL."
 msgstr "トップメニューに表示するロゴ。ファイルパスまたはURLを指定する。"
 
-#: ../../configuration.rst:109
+#: ../../configuration.rst:144
 msgid "Specifies the class setting for displaying the navigation bar at the top of the screen. If not specified, ``navbar-light`` is used. Use this if you want to specify a black background color as follows:"
 msgstr "画面上部に配置するナビゲーションバーの表示用クラス設定を指定します。指定がなければ ``navbar-light`` が指定されたものとみなします。以下のように黒色系の背景色を指定したい場合に用います:"
 
-#: ../../configuration.rst:117
+#: ../../configuration.rst:152
 msgid "Specify `OGP (Open Graph Protocol) <https://ogp.me>`_ settings if you have additional logo settings for social networking sites, etc. You can specify ``ogp:image``, ``ogp:type``, etc."
 msgstr "`OGP (Open Graph Protocol) <https://ogp.me>`_ 設定を指定します。SNS等で用いるための追加のロゴ設定などがあれば、こちらを指定してください。``ogp:image``, ``ogp:type`` などの指定が可能です。"
 
-#: ../../configuration.rst:128
+#: ../../configuration.rst:163
 msgid "Output directory for the dataset. If not specified, the current working directory is used for the outputs."
 msgstr "静的ファイル群を生成するディレクトリを指定します。何も指定されていない場合は現在の作業ディレクトリに生成したファイル群を出力します。"
 
-#: ../../configuration.rst:134
+#: ../../configuration.rst:169
 msgid "Whether to output the RDF/Turtle format file corresponding to each resource URI, as ``true`` / ``false``. Default is ``true`` (i.e. output RDF/Turtle format files)."
 msgstr "各リソースURIに対応するRDF/Turtle形式のファイルを出力するかどうかを ``true`` / ``false`` で指定します。デフォルトは ``true`` です（つまりRDF/Turtle形式を出力します）。"
 
-#: ../../configuration.rst:138
+#: ../../configuration.rst:173
 msgid "This configuration option controls the order in which resource descriptions are output to :confval:`about_file`. The descriptions are output in the order of the resource shapes listed here. If not set, the default is alphabetical order of shape URIs. Set as a list, as in the following example:"
 msgstr ":confval:`about_html` に出力されるリソース説明の順序を制御する。ここに一覧されたリソースシェイプの順に説明が出力される。設定されない場合、デフォルトではシェイプURIのアルファベット順に出力される。以下の例のようにリストとして設定する:"
 
-#: ../../configuration.rst:148
+#: ../../configuration.rst:183
 msgid "Main title for the whole website."
 msgstr "ウェブサイト全体のメインタイトルを指定します。"
 
-#: ../../configuration.rst:153
+#: ../../configuration.rst:188
 msgid "Local template directory to find a template file. Default template files are available at `here <https://github.com/masao/ttl2html/tree/master/templates>`_. To overwrite the contents of the original template, copy the original file to the directory specified here and rewrite it."
 msgstr "ローカルのテンプレートディレクトリ。未指定の場合はカレントディレクトリ内の ``templates/`` ディレクトリを用いる。なお、テンプレートを上書きするには、`標準のテンプレートファイル群 <https://github.com/masao/ttl2html/tree/master/templates>`_ のうち必要なファイルをローカルのテンプレートディレクトリにコピーしてきて、内容を書き換えること。"
 
-#: ../../configuration.rst:157
+#: ../../configuration.rst:192
 msgid "Specified URI is regarded as a title property for the resource. In default, a title is matched with the following properties:"
 msgstr "指定したURIをタイトル用のプロパティとして指定します。指定されていない場合、もしくは指定したプロパティが存在しない場合は、以下のプロパティが存在するか確認し、もしあれば、その値をタイトルとみなします:"
 
-#: ../../configuration.rst:159
+#: ../../configuration.rst:194
 msgid "https://www.w3.org/TR/rdf-schema/#label"
 msgstr "https://www.w3.org/TR/rdf-schema/#label"
 
-#: ../../configuration.rst:160
+#: ../../configuration.rst:195
 msgid "http://purl.org/dc/terms/title"
 msgstr "http://purl.org/dc/terms/title"
 
-#: ../../configuration.rst:161
+#: ../../configuration.rst:196
 msgid "http://purl.org/dc/elements/1.1/title"
 msgstr "http://purl.org/dc/elements/1.1/title"
 
-#: ../../configuration.rst:162
+#: ../../configuration.rst:197
 msgid "http://schema.org/name"
 msgstr "http://schema.org/name"
 
-#: ../../configuration.rst:163
+#: ../../configuration.rst:198
 msgid "http://www.w3.org/2004/02/skos/core#prefLabel"
 msgstr "http://www.w3.org/2004/02/skos/core#prefLabel"
 
-#: ../../configuration.rst:167
+#: ../../configuration.rst:202
 msgid "This setting specifies property URIs for each class URI. If a specified property exists on a resource, its value will be used as the title of the generated resource page."
 msgstr "指定したクラスURIごとに指定したプロパティURIを、当該リソースページのタイトルとみなし、ページを生成します。"
 
-#: ../../configuration.rst:169
+#: ../../configuration.rst:204
 msgid "For example, in the following case: Resources of the ``foaf:Person`` class use the ``foaf:name`` property as the title, while resources of the ``example:Item`` class use the ``dct:description`` property as the title."
 msgstr "例えば、以下の指定の場合: ``foaf:Person`` クラスのリソースは ``foaf:name`` プロパティの内容をタイトルとして用いるとし、 ``example:Item`` クラスのリソースは ``dct:description`` プロパティの内容をタイトルとして用いるものです。"
 
-#: ../../configuration.rst:179
+#: ../../configuration.rst:214
 msgid "If a resource does not belong to a class specified in ``title_property_perclass``, the :confval:`title_property` setting will be used."
 msgstr "``title_property_perclass`` に指定したクラスのリソースでない場合、 :confval:`title_property` 設定の内容に従って、タイトル用のプロパティを選択します。"
 
-#: ../../configuration.rst:183
+#: ../../configuration.rst:218
 msgid "For each set of resources expanded by :confval:`top_class` setting, specify a list of additional sub-hierarchies to be expanded. The properties that make up the sub-hierarchy are specified as a list."
 msgstr ":confval:`top_class` 設定で展開されるリソース群に対して、追加でサブ階層として展開されるべきリストを指定する。サブ階層を構成するプロパティをリストとして指定する。"
 
-#: ../../configuration.rst:187
+#: ../../configuration.rst:222
 msgid "Specified URI is the class of the records listed in the top page. By default, this tool does not generate the top page."
 msgstr "トップページに表示すべきレコード一覧に対応するクラスURIを指定する。デフォルトでは指定無しとし、トップページは生成しない。"
 
-#: ../../configuration.rst:191
+#: ../../configuration.rst:226
 msgid "If you want to change the output file names when outputting local files corresponding to a URI, use this setting. You can specify the patterns for the part of paths in a URI and then determine how the matched part of the path has to be changed. For example, when outputting many files in a single directory, you can specify a pattern for the first few characters and the rest of the filename so that each directory contains a separate set of files with different destinations. The example below specifies that a URI path consisting of 16 alphanumeric characters is divided into the first three characters and the rest of the path. Hence, the output files are placed for each two-character directory."
 msgstr "URIに対応するローカルファイルを出力する際、出力ファイル名に操作を加える場合に使用します。例えば、1つのディレクトリ内に大量のファイルが出力されるようなLODデータセットに対応させる場合に、先頭数文字と残りの文字数とで、ディレクトリ毎に保存先が別れたファイル群となるように指定できます。下記の例は、16桁の英数字からなるURIパスを先頭3文字と残りに分けて、3文字フォルダ毎に出力するように指定する例です。"
