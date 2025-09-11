@@ -65,11 +65,30 @@ All configuration keys available are documeted as follows:
 
 .. confval:: css_file
   
-  The path of the CSS stylesheet file to use locally.
+  The path of the CSS stylesheet file(s) to use.
+  You can specify either a single file or multiple files:
+
+  .. code-block:: YAML
+    :caption: Specifying a single file
+
+    css_file: style.css
+
+  .. code-block:: YAML
+    :caption: Specifying multiple files
+
+    css_file:
+      - reset.css
+      - layout.css
+      - theme.css
 
 .. confval:: custom_css
   
-  Specify the code snippet of the CSS stylesheet (e.g. ``nav.navbar {background-color: pink}``).
+  Specify the code snippet of the CSS stylesheet.
+
+  .. code-block:: YAML
+    :caption: Example of `custom_css` setting
+
+    custom_css: "nav.navbar { background-color: pink }"
 
 .. confval:: google_analytics
   
@@ -89,7 +108,21 @@ All configuration keys available are documeted as follows:
 
 .. confval:: javascript_file
   
-  The path of the JavaScript file to use locally.
+  The path of the custom JavaScript file(s) to use.
+  You can specify either a single file or multiple files:
+
+  .. code-block:: YAML
+    :caption: Specifying a single JavaScript file
+
+    javascript_file: public/script.js
+
+  .. code-block:: YAML
+    :caption: Specifying multiple JavaScript files
+
+    javascript_file:
+      - lib/jquery.min.js
+      - lib/d3.min.js
+      - custom.js
 
 .. confval:: labels
   
