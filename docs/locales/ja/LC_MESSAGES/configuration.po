@@ -80,22 +80,24 @@ msgstr "上記 :confval:`admin_name` と一緒に出力する著作権表示年�
 #: ../../configuration.rst:68
 msgid "The path of the CSS stylesheet file(s) to use. You can specify either a single file or multiple files:"
 msgstr ""
+"使用するCSSスタイルシートファイルのパス名。\n"
+"1つのファイルまたは複数のファイルを指定できます。"
 
 #: ../../configuration.rst:71
 msgid "Specifying a single file"
-msgstr ""
+msgstr "1ファイルを指定"
 
 #: ../../configuration.rst:76
 msgid "Specifying multiple files"
-msgstr ""
+msgstr "複数ファイルを指定"
 
 #: ../../configuration.rst:86
 msgid "Specify the code snippet of the CSS stylesheet."
-msgstr ""
+msgstr "CSSスタイルシートのコードを直接設定できます。"
 
 #: ../../configuration.rst:88
 msgid "Example of `custom_css` setting"
-msgstr ""
+msgstr "`custom_css`の設定例"
 
 #: ../../configuration.rst:95
 msgid "Google tracking code for usage statistics by `Google Analytics <https://analytics.google.com>`_."
@@ -108,14 +110,16 @@ msgstr "`Googleカスタム検索 <https://developers.google.com/custom-search>`
 #: ../../configuration.rst:111
 msgid "The path of the custom JavaScript file(s) to use. You can specify either a single file or multiple files:"
 msgstr ""
+"使用するJavaScriptファイルのパス名。\n"
+"1つのファイルまたは複数のファイルを指定できます。"
 
 #: ../../configuration.rst:114
 msgid "Specifying a single JavaScript file"
-msgstr ""
+msgstr "1ファイルを指定"
 
 #: ../../configuration.rst:119
 msgid "Specifying multiple JavaScript files"
-msgstr ""
+msgstr "複数ファイルを指定"
 
 #: ../../configuration.rst:129
 msgid "Specify the custom label name for each property. Specify the property URI as the key and the label name as the value."
