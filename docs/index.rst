@@ -19,6 +19,7 @@ Contents
    
    usage
    configuration
+   templates
    limitations
    dataset
    shapes
