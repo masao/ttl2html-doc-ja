@@ -228,6 +228,7 @@ All configuration keys available are documeted as follows:
   :confval:`subtitle_property` and :confval:`subtitle_property_perclass` are settings that control which property value is used for the subtitle.
 
   Subtitles can be displayed in two places:
+
   - Directly below the header on the resource details page
   - As an auxiliary display for each resource link in the resource details table.
 

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-11 18:11+0900\n"
+"POT-Creation-Date: 2025-09-22 16:43+0900\n"
 "PO-Revision-Date: 2023-08-15 16:16+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -198,49 +198,73 @@ msgid "Local template directory to find a template file. Default template files 
 msgstr "ローカルのテンプレートディレクトリ。未指定の場合はカレントディレクトリ内の ``templates/`` ディレクトリを用いる。なお、テンプレートを上書きするには、`標準のテンプレートファイル群 <https://github.com/masao/ttl2html/tree/master/templates>`_ のうち必要なファイルをローカルのテンプレートディレクトリにコピーしてきて、内容を書き換えること。"
 
 #: ../../configuration.rst:225
+msgid "Specifies the property to be used globally (common to all classes) as a `subtitle`. While the title (settings from :confval:`title_property` or :confval:`title_property_perclass`) is usually displayed in the header of an individual resource, there are times when you may want to include additional information (e.g., volume number, edition, date, title, etc.) as a subtitle on the same or following line."
+msgstr "全体（全クラス共通）で「サブタイトル」として使うプロパティを指定する。個別リソースの見出しには通常タイトルラベルが表示されます（:confval:`title_property` または :confval:`title_property_perclass` 設定による）が、補助情報（例: 巻号・版・日付・肩書など）を サブタイトル として同じ行や次行に併記したい場面があります。"
+
+#: ../../configuration.rst:228
+msgid ":confval:`subtitle_property` and :confval:`subtitle_property_perclass` are settings that control which property value is used for the subtitle."
+msgstr ":confval:`subtitle_property` と :confval:`subtitle_property_perclass` は、そのサブタイトルに どのプロパティの値を使うか を制御する設定です。"
+
+#: ../../configuration.rst:230
+msgid "Subtitles can be displayed in two places:"
+msgstr ""
+
+#: ../../configuration.rst:232
+msgid "Directly below the header on the resource details page"
+msgstr ""
+
+#: ../../configuration.rst:233
+msgid "As an auxiliary display for each resource link in the resource details table."
+msgstr ""
+
+#: ../../configuration.rst:237
+msgid "Specifies the property to be used per class (priority) as a `subtitle`."
+msgstr ""
+
+#: ../../configuration.rst:241
 msgid "Specified URI is regarded as a title property for the resource. In default, a title is matched with the following properties:"
 msgstr "指定したURIをタイトル用のプロパティとして指定します。指定されていない場合、もしくは指定したプロパティが存在しない場合は、以下のプロパティが存在するか確認し、もしあれば、その値をタイトルとみなします:"
 
-#: ../../configuration.rst:227
+#: ../../configuration.rst:243
 msgid "https://www.w3.org/TR/rdf-schema/#label"
 msgstr "https://www.w3.org/TR/rdf-schema/#label"
 
-#: ../../configuration.rst:228
+#: ../../configuration.rst:244
 msgid "http://purl.org/dc/terms/title"
 msgstr "http://purl.org/dc/terms/title"
 
-#: ../../configuration.rst:229
+#: ../../configuration.rst:245
 msgid "http://purl.org/dc/elements/1.1/title"
 msgstr "http://purl.org/dc/elements/1.1/title"
 
-#: ../../configuration.rst:230
+#: ../../configuration.rst:246
 msgid "http://schema.org/name"
 msgstr "http://schema.org/name"
 
-#: ../../configuration.rst:231
+#: ../../configuration.rst:247
 msgid "http://www.w3.org/2004/02/skos/core#prefLabel"
 msgstr "http://www.w3.org/2004/02/skos/core#prefLabel"
 
-#: ../../configuration.rst:235
+#: ../../configuration.rst:251
 msgid "This setting specifies property URIs for each class URI. If a specified property exists on a resource, its value will be used as the title of the generated resource page."
 msgstr "指定したクラスURIごとに指定したプロパティURIを、当該リソースページのタイトルとみなし、ページを生成します。"
 
-#: ../../configuration.rst:237
+#: ../../configuration.rst:253
 msgid "For example, in the following case: Resources of the ``foaf:Person`` class use the ``foaf:name`` property as the title, while resources of the ``example:Item`` class use the ``dct:description`` property as the title."
 msgstr "例えば、以下の指定の場合: ``foaf:Person`` クラスのリソースは ``foaf:name`` プロパティの内容をタイトルとして用いるとし、 ``example:Item`` クラスのリソースは ``dct:description`` プロパティの内容をタイトルとして用いるものです。"
 
-#: ../../configuration.rst:247
+#: ../../configuration.rst:263
 msgid "If a resource does not belong to a class specified in ``title_property_perclass``, the :confval:`title_property` setting will be used."
 msgstr "``title_property_perclass`` に指定したクラスのリソースでない場合、 :confval:`title_property` 設定の内容に従って、タイトル用のプロパティを選択します。"
 
-#: ../../configuration.rst:251
+#: ../../configuration.rst:267
 msgid "For each set of resources expanded by :confval:`top_class` setting, specify a list of additional sub-hierarchies to be expanded. The properties that make up the sub-hierarchy are specified as a list."
 msgstr ":confval:`top_class` 設定で展開されるリソース群に対して、追加でサブ階層として展開されるべきリストを指定する。サブ階層を構成するプロパティをリストとして指定する。"
 
-#: ../../configuration.rst:255
+#: ../../configuration.rst:271
 msgid "Specified URI is the class of the records listed in the top page. By default, this tool does not generate the top page."
 msgstr "トップページに表示すべきレコード一覧に対応するクラスURIを指定する。デフォルトでは指定無しとし、トップページは生成しない。"
 
-#: ../../configuration.rst:259
+#: ../../configuration.rst:275
 msgid "If you want to change the output file names when outputting local files corresponding to a URI, use this setting. You can specify the patterns for the part of paths in a URI and then determine how the matched part of the path has to be changed. For example, when outputting many files in a single directory, you can specify a pattern for the first few characters and the rest of the filename so that each directory contains a separate set of files with different destinations. The example below specifies that a URI path consisting of 16 alphanumeric characters is divided into the first three characters and the rest of the path. Hence, the output files are placed for each two-character directory."
 msgstr "URIに対応するローカルファイルを出力する際、出力ファイル名に操作を加える場合に使用します。例えば、1つのディレクトリ内に大量のファイルが出力されるようなLODデータセットに対応させる場合に、先頭数文字と残りの文字数とで、ディレクトリ毎に保存先が別れたファイル群となるように指定できます。下記の例は、16桁の英数字からなるURIパスを先頭3文字と残りに分けて、3文字フォルダ毎に出力するように指定する例です。"
