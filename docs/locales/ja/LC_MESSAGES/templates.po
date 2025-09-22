@@ -1,0 +1,418 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-2025, Masao Takaku
+# This file is distributed under the same license as the ttl2html package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Masao Takaku <tmasao@acm.org>, 2025
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ttl2html\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-22 13:53+0900\n"
+"PO-Revision-Date: 2025-09-22 05:21+0000\n"
+"Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
+"Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../templates.rst:2
+msgid "Template Function"
+msgstr "テンプレート機能"
+
+#: ../../templates.rst:5
+msgid "Overview"
+msgstr "概要"
+
+#: ../../templates.rst:7
+msgid "The template function in **ttl2html** allows you to customize the HTML templates that determine the appearance and structure of the generated static website. The tool comes with built-in templates that define the basic structure and appearance of the output, so you can build a static site without any customization. By default, the HTML output displays the triples of a resource on its page as an organized list of properties. By preparing custom templates, you can embed additional site-specific information, change the design and appearance, or add extra functionality."
+msgstr "**ttl2html** におけるテンプレート機能とは、静的サイトを生成する際に、出力の見た目や構造を決定するHTMLテンプレートをカスタマイズする機能です。本ツールでは、HTMLの構造や見た目を決める基本テンプレートを同梱しており、基本的に、何もカスタマイズせずに、静的サイトを構築できます。特に、デフォルトのHTML出力では、特定のリソースページにおける、当該リソースがもつトリプル情報を、プロパティの一覧として整理して表示しますが、カスタマイズ用のテンプレートを用意すれば、サイト独自の追加情報を埋め込んだり、デザイン変更して独自の見た目を加えたり、追加機能を加えたりできます。"
+
+#: ../../templates.rst:14
+msgid "Using the template function, you can replace the basic template shared across all pages, embed HTML fragments into resource pages, or build pages that combine JavaScript and CSS to provide dynamic features. For example, the following customizations are possible:"
+msgstr "テンプレート機能を利用すると、カスタマイズ項目としては、すべてのページで共有している基本テンプレートそのものを置き換えたり、またはリソースページの一部にHTML片を埋め込んだり、JavaScriptやCSSを組み合わせて動的な機能を持つページを構成できます。例えば、以下のようなカスタマイズが可能です。"
+
+#: ../../templates.rst:17
+msgid "**Layout changes**: Define the HTML structure freely and adjust the overall page design to suit your purpose."
+msgstr "**レイアウトの変更**: HTMLの構造を自由に定義し、ページ全体の見た目も用途に適したデザインに調整できます。"
+
+#: ../../templates.rst:18
+msgid "**Integration with external databases**: Automatically generate links to external databases by using identifiers in the data."
+msgstr "**外部データベースとの連携**: データ中の識別子を利用して、外部のデータベースへのリンクを自動生成することも可能です。"
+
+#: ../../templates.rst:20
+msgid "By leveraging this feature, you can go beyond simple RDF-to-HTML conversion and provide flexible information according to your needs."
+msgstr "このテンプレート機能を活用することで、単なるRDFデータの変換を超え、目的に応じた柔軟な情報提供が可能になります。"
+
+#: ../../templates.rst:22
+msgid "You can also add custom elements to special pages such as the top page or ``about.html``."
+msgstr "また、トップページや ``about.html`` といった個別の機能を持つページにも独自の要素を足すことができます。"
+
+#: ../../templates.rst:24
+msgid "Customization can be achieved by overriding parts of the basic templates or by adding new templates to change the content of the generated pages."
+msgstr "カスタマイズ方法は、基本テンプレートの一部を上書き変更する内容を加えたり、追加テンプレートを加えることにより、対応する生成ページの内容に変化を付けることができます。"
+
+#: ../../templates.rst:27
+msgid "Basic Structure of Templates"
+msgstr "テンプレートの基本構造"
+
+#: ../../templates.rst:31
+msgid "Templates in ttl2html allow you to freely customize layout and design when converting Turtle (TTL) data into HTML. They are written in `ERB (Embedded Ruby) format <https://en.wikipedia.org/wiki/ERuby>`_, which lets you embed Ruby code within HTML for flexible data rendering."
+msgstr "ttl2htmlのテンプレートは、Turtle（TTL）形式のデータをHTMLとして出力する際に、レイアウトやデザインを自由にカスタマイズするための仕組みです。テンプレートには `ERB (Embedded Ruby) 形式 <https://en.wikipedia.org/wiki/ERuby>`_ を使用しており、HTMLの中にRubyのコードを埋め込むことで、柔軟なデータ表示が可能になります。"
+
+#: ../../templates.rst:34
+msgid "The basic structure of the HTML output templates is shown below."
+msgstr "HTML出力用テンプレートの基本構造を下図に示します。"
+
+#: ../../templates.rst:38
+msgid "File structure of template pages"
+msgstr "テンプレートページを構成するファイル構造"
+
+#: ../../templates.rst:40
+msgid "Templates in ttl2html consist of the following three files:"
+msgstr "ttl2htmlのテンプレートは、以下の3つのファイルで構成されます:"
+
+#: ../../templates.rst:42
+msgid "layout.html.erb (overall layout)"
+msgstr "layout.html.erb （レイアウト全体）"
+
+#: ../../templates.rst:44
+msgid "``layout.html.erb`` defines the overall structure of all output HTML files. It sets metadata in the ``<head>`` element, includes CSS and JavaScript, and controls the general ``<body>`` layout where other templates are embedded."
+msgstr "``layout.html.erb`` は出力する全てのHTMLの基本構造を規定しており、``<head>`` 要素のメタ情報やCSS、JavaScriptの読み込みを設定します。``<body>`` の基本レイアウトを管理し、他の個別テンプレートを埋め込みます。"
+
+#: ../../templates.rst:46
+msgid "default.html.erb (per-page template)"
+msgstr "default.html.erb （ページごとのテンプレート）"
+
+#: ../../templates.rst:48
+msgid "``default.html.erb`` renders the content of each resource page and defines how RDF data is displayed."
+msgstr "個別リソースページの内容は ``default.html.erb`` が描画し、RDFデータをどのように表示するかを定義します。"
+
+#: ../../templates.rst:50
+msgid "_default.html.erb (partial template; for additional elements)"
+msgstr "_default.html.erb （部分テンプレート; 追加要素が必要な場合）"
+
+#: ../../templates.rst:52
+msgid "``_default.html.erb`` (note the leading underscore) can be added to include additional elements for individual resource pages."
+msgstr "個別のページごとに追加的な要素を加える場合は、 ``_default.html.erb`` ファイル（先頭にアンダーバー (_) が付きます）を追加することでカスタマイズを加えることができます。"
+
+#: ../../templates.rst:54
+msgid "Among these three, the standard distribution includes ``layout.html.erb`` and ``default.html.erb``. If you do not need customization, you can use them as they are. ``_default.html.erb`` is not included; if you need page-specific insertions, create it in your project. The standard templates are available at the `templates directory in the GitHub repository <https://github.com/masao/ttl2html/tree/main/templates>`_. It is recommended to refer to these, copy them into your project, and then modify as needed."
+msgstr "これら3つのうち、標準配布には ``layout.html.erb`` と ``default.html.erb`` が同梱されています。カスタマイズが不要であれば、そのまま利用できます。 ``_default.html.erb`` は同梱されていないため、ページ固有の差し込みが必要な場合はプロジェクト側で新規に作成してください。標準配布のテンプレートは `GitHubリポジトリ内のtemplatesディレクトリ <https://github.com/masao/ttl2html/tree/main/templates>`_ に置かれています。必要に応じてこれを参照し、コピーしてから内容をプロジェクトにあわせて変更して使うことをお勧めします。"
+
+#: ../../templates.rst:62
+msgid "Variables Available in Templates"
+msgstr "テンプレート内で利用できる変数"
+
+#: ../../templates.rst:64
+msgid "Within templates, you can access RDF data and configuration values through the ``param`` variable."
+msgstr "テンプレート内では、``param`` 変数を介して RDF データや設定値を参照できます。"
+
+#: ../../templates.rst:70
+msgid "Variable"
+msgstr "変数名"
+
+#: ../../templates.rst:71
+msgid "Description"
+msgstr "説明"
+
+#: ../../templates.rst:72
+msgid "``param[:uri]``"
+msgstr "``param[:uri]``"
+
+#: ../../templates.rst:73
+msgid "URI of the resource"
+msgstr "当該リソースのURI"
+
+#: ../../templates.rst:74
+msgid "``param[:turtle_uri]``"
+msgstr "``param[:turtle_uri]``"
+
+#: ../../templates.rst:75
+msgid "URI of the resource in Turtle format"
+msgstr "Turtle形式のリソースURI"
+
+#: ../../templates.rst:76
+msgid "``param[:title]``"
+msgstr "``param[:title]``"
+
+#: ../../templates.rst:77
+msgid "Title label of the resource"
+msgstr "リソースのタイトルラベル"
+
+#: ../../templates.rst:78
+msgid "``param[:data]``"
+msgstr "``param[:data]``"
+
+#: ../../templates.rst:79
+msgid "Triples where the resource is the subject"
+msgstr "当該リソースを主語とするトリプルの情報"
+
+#: ../../templates.rst:80
+msgid "``param[:data_inverse]``"
+msgstr "``param[:data_inverse]``"
+
+#: ../../templates.rst:81
+msgid "Triples where the resource is the object"
+msgstr "当該リソースを目的語とするトリプルの情報"
+
+#: ../../templates.rst:82
+msgid "``param[:site_title]`` etc."
+msgstr "``param[:site_title]`` など"
+
+#: ../../templates.rst:83
+msgid "Custom values defined in ``config.yml``"
+msgstr "``config.yml`` で定義した任意の設定値"
+
+#: ../../templates.rst:85
+msgid "Values specified in the configuration file ``config.yml`` can also be accessed through ``param``. For example: ``param[:site_title]``, ``param[:admin_name]`` (see :doc:`configuration`)."
+msgstr "設定ファイル ``config.yml`` で指定された設定値にも、 ``param`` 変数を通じてアクセスできます。例えば、 ``param[:site_title]``, ``param[:admin_name]`` などの設定値にアクセスできます（:doc:`configuration` 参照）。"
+
+#: ../../templates.rst:89
+msgid "Examples"
+msgstr "利用例"
+
+#: ../../templates.rst:91
+msgid "**Display title**"
+msgstr "**タイトルの出力**"
+
+#: ../../templates.rst:97
+msgid "**Link to Turtle**"
+msgstr "**Turtle形式へのリンク**"
+
+#: ../../templates.rst:105
+msgid "**Display property list**"
+msgstr "**プロパティ一覧の表示**"
+
+#: ../../templates.rst:122
+msgid "Wrapping values with ``Array(values)`` ensures safe iteration, even when a property has only a single value."
+msgstr "``Array(values)`` のように配列化してからループすると、単一値でも安全に処理できます。"
+
+#: ../../templates.rst:125
+msgid "Structure of Other Pages"
+msgstr "その他のページの構造"
+
+#: ../../templates.rst:127
+msgid "In addition to individual resource pages derived from RDF data, the tool automatically generates two other pages: a dataset description page (``about.html``; see :confval:`about_file`) and the top page (``index.html``). Their structures are as follows."
+msgstr "RDFデータとして与えられる個別のリソースページ以外に、本ツールが独自に生成するページとして、データセットの説明ページ ``about.html`` （:confval:`about_file`）とトップページ ``index.html`` の2つがあります。これらのページの構造は以下のようになっています。"
+
+#: ../../templates.rst:132
+msgid "About Page"
+msgstr "aboutページの構造"
+
+#: ../../templates.rst:134
+msgid "The about page follows the same pattern as the basic template: ``layout.html.erb`` defines the overall structure, and ``about.html.erb`` renders the page-specific content. If you want to add extra site-specific explanations, you can create an ``about.html`` file. If a ``description.html`` file exists, its contents are inserted at the beginning of the page."
+msgstr "aboutページのHTML構造は、基本テンプレートと同様、 ``layout.html.erb`` が全体のHTML構造を規定しており、ページ固有の内容は ``about.html.erb`` が描画し、サイト特有の追加的な説明を加える場合は、 ``about.html`` ファイルを追加することで追加の説明文を加えられます。また、冒頭の見出し節内に追加的な説明文を加えるために ``description.html`` ファイルがあれば、その内容が差し込まれます。"
+
+#: ../../templates.rst:141
+msgid "HTML structure of the about page"
+msgstr "aboutページのHTML構造"
+
+#: ../../templates.rst:143
+msgid "As with resource pages, the standard distribution includes ``layout.html.erb`` and ``about.html.erb``. If no customization is needed, they can be used as is."
+msgstr "個別のリソースページと同様、標準配布には ``layout.html.erb`` と ``about.html.erb`` が同梱されています。カスタマイズが不要であれば、そのまま利用できます。"
+
+#: ../../templates.rst:146
+msgid "The tail section of the about page may include LOD vocabulary descriptions generated by the :doc:`shapes` feature, and version history information generated by the :doc:`dataset` feature."
+msgstr "また、末尾のLOD語彙の説明については :doc:`shapes` の機能により生成される内容、バージョン履歴情報については :doc:`dataset` の機能により生成される内容になります。"
+
+#: ../../templates.rst:149
+msgid "Top Page"
+msgstr "トップページの構造"
+
+#: ../../templates.rst:151
+msgid "The top page also follows the basic pattern: ``layout.html.erb`` defines the overall structure, and ``index.html.erb`` renders the page-specific content. If you want to add additional elements, you can create an ``index-list.html`` file. If a ``description.html`` file exists, its contents are inserted at the beginning of the page, similar to the about page."
+msgstr "トップページのHTML構造は、基本テンプレートと同様、 ``layout.html.erb`` が全体のHTML構造を規定しており、ページ固有の内容は ``index.html.erb`` が描画し、個別のページごとに追加的な要素を加える場合は、 ``index-list.html`` ファイルを追加することで追加的な説明文などを加えることができます。また、先述した ``about.html`` と同様、冒頭の見出し節内に追加的な説明文を加えるために ``description.html`` ファイルがあれば、その内容が差し込まれます。"
+
+#: ../../templates.rst:158
+msgid "HTML structure of the top page (index.html)"
+msgstr "トップページ（index.html）のHTML構造"
+
+#: ../../templates.rst:160
+msgid "As with resource pages, the standard distribution includes ``layout.html.erb`` and ``index-list.html.erb``. If no customization is needed, they can be used as is."
+msgstr "個別のリソースページと同様、標準配布には ``layout.html.erb`` と ``index-list.html.erb`` が同梱されています。カスタマイズが不要であれば、そのまま利用できます。"
+
+#: ../../templates.rst:163
+msgid "The tail section of the top page may include the latest version information, license information, and SPARQL endpoint information generated by the :doc:`dataset` feature."
+msgstr "また、末尾の最新バージョン情報、ライセンス情報、SPARQLエンドポイント情報の追加要素については :doc:`dataset` の機能により生成される内容になります。"
+
+#: ../../templates.rst:166
+msgid "Customizing Default Templates"
+msgstr "デフォルトテンプレートのカスタマイズ方法"
+
+#: ../../templates.rst:168
+msgid "Although the default templates included with ttl2html can be used as is, in many cases you may want to change the appearance or displayed content. This section explains where to place templates, the resolution order, and how to customize them."
+msgstr "ttl2html では、標準で同梱されているテンプレートをそのまま利用できますが、多くの場合は見た目や表示内容を独自に変更したい場面もあります。ここでは、テンプレートの配置場所・解決順序とあわせて、デフォルトテンプレートのカスタマイズ手順を説明します。"
+
+#: ../../templates.rst:172
+msgid "Template Resolution Order"
+msgstr "テンプレート解決順序"
+
+#: ../../templates.rst:174
+msgid "ttl2html uses the built-in templates as a base, but if a file with the same name exists under the project’s ``templates/`` directory, the project file takes precedence. A typical resolution order is as follows:"
+msgstr "ttl2html は 同梱の標準テンプレート を基準にしつつ、プロジェクト側の ``templates/`` 配下に同名テンプレートファイルがあれば、プロジェクト側のテンプレートファイルが優先されます。典型的な解決順序は次の通りです。"
+
+#: ../../templates.rst:177
+msgid "If ``templates/layout.html.erb`` exists, it is used. Otherwise, the built-in file is used."
+msgstr "プロジェクト側に ``templates/layout.html.erb`` があれば、それを用いる。なければ、標準同梱の同名ファイルを使用する。"
+
+#: ../../templates.rst:178
+msgid "If ``templates/default.html.erb`` exists, it is used. Otherwise, the built-in file is used."
+msgstr "各ページの描画にはプロジェクト側に  ``templates/default.html.erb`` があれば、それを用いる。なければ、標準同梱の同名ファイルを使用する。"
+
+#: ../../templates.rst:179
+msgid "For page rendering, if a partial template (e.g., ``_default.html.erb``) exists, it will be inserted at the defined position in ``default.html.erb``."
+msgstr "ページごとのカスタム差し込み内容がある場合は、同名の部分テンプレートを探し、存在すれば ``default.html.erb`` の定義位置でレンダリングします（例： ``_default.html.erb``）。"
+
+#: ../../templates.rst:182
+msgid "``_default.html.erb`` is not included in the standard distribution. Create it in your project if you need page-specific elements."
+msgstr "``_default.html.erb`` は標準配布には含まれません。ページ固有の追加要素が必要な場合は、プロジェクト側 ``templates/`` に作成してください。"
+
+#: ../../templates.rst:185
+msgid "In principle, everything works with the defaults without any configuration. You can customize incrementally by overriding only the necessary parts. Remember only that “project files take precedence,” and you can safely experiment."
+msgstr "基本的には、何も設定しなくても標準のままで動作します。必要箇所だけ差し替えるだけで段階的にカスタマイズできます。また、同名ファイルは「プロジェクト側を優先」だけ覚えておけば、必要な箇所のみ変更しながら安全に試行できます。"
+
+#: ../../templates.rst:190
+msgid "Directory Structure and Placement"
+msgstr "ディレクトリ構成と配置場所"
+
+#: ../../templates.rst:192
+msgid "A recommended project structure is shown below. Templates placed under ``templates/`` override the built-in ones."
+msgstr "ttl2html プロジェクトでの推奨ディレクトリ構成を以下に示します。テンプレートは ``templates/`` ディレクトリに置くと、標準のテンプレートより優先して利用されます。"
+
+#: ../../templates.rst:210
+msgid "``templates/``: ERB templates. Project files take precedence over built-ins."
+msgstr "``templates/``: ERB テンプレート置き場。同名ファイルがある場合は標準よりもこちらが優先されます。"
+
+#: ../../templates.rst:211
+msgid "``assets/``: Static resources such as CSS, JavaScript, and images. These are loaded in ``layout.html.erb``."
+msgstr "``assets/``: CSS, JavaScript, 画像などの静的リソースを配置します。``layout.html.erb`` から読み込みます。"
+
+#: ../../templates.rst:212
+msgid "Files beginning with an underscore (e.g., ``_default.html.erb``) are partial templates used to insert page-specific elements."
+msgstr "``_default.html.erb`` などのファイルは部分テンプレートで、ページ固有の追加要素を差し込みたい場合に使用します。"
+
+#: ../../templates.rst:215
+msgid "Getting the Default Templates"
+msgstr "デフォルトテンプレートの取得方法"
+
+#: ../../templates.rst:217
+msgid "The default templates are available in the `templates/ directory of the GitHub repository <https://github.com/masao/ttl2html/tree/main/templates>`_. Create a ``templates/`` directory in your project, copy the necessary files, and then customize them. Copying ensures that your modifications are not affected by future updates to the defaults."
+msgstr "標準配布のテンプレートは `GitHub リポジトリ内 templates/ ディレクトリ <https://github.com/masao/ttl2html/tree/main/templates>`_ にあります。プロジェクト側で ``templates/`` ディレクトリを作成し、そこにファイルをコピーしたうえでカスタマイズしてください。コピーして修正することで、標準テンプレートが更新されても影響を受けずに済みます。"
+
+#: ../../templates.rst:223
+msgid "Editable Parts and Limitations"
+msgstr "変更できる部分と制約"
+
+#: ../../templates.rst:225
+msgid "The HTML structure can be freely modified, but removing ``param`` calls will prevent RDF data from being displayed."
+msgstr "HTML構造は自由に変更できますが、 ``param`` 変数の呼び出しを削除するとRDFデータが表示されなくなりますので、注意してください。"
+
+#: ../../templates.rst:226
+msgid "Accessing undefined keys may cause errors; wrapping with ``Array(...)`` is recommended for safety."
+msgstr "存在しない変数キーを呼び出すとエラーになるため、 ``Array(...)`` で安全にラップするなどの工夫を推奨します。"
+
+#: ../../templates.rst:227
+msgid "Do not edit the built-in files directly; always copy them before modifying."
+msgstr "直接標準ファイルを編集せず、必ずコピーして修正してください。"
+
+#: ../../templates.rst:230
+msgid "Customization Examples"
+msgstr "カスタマイズ例"
+
+#: ../../templates.rst:232
+msgid "**Example 1**: Adding external database links."
+msgstr "**例1**: 以下は外部データベースへのリンク出力を追加する例です。"
+
+#: ../../templates.rst:234
+msgid "For example, if the resource has a ``dcterms:identifier`` property, you can generate links to an external database using its values:"
+msgstr "たとえば当該リソースが ``dcterms:identifier`` プロパティをもつときに、当該プロパティの値をつかって外部データベースへのリンクを付与する例です。"
+
+#: ../../templates.rst:249
+msgid "**Example 2**: Adding links only for resources belonging to a specific class."
+msgstr "**例2**: 例1のリンク出力を特定のクラスに属するリソースにのみ追加する例です。"
+
+#: ../../templates.rst:251
+msgid "For example, only when the resource belongs to ``<https://schema.org/Book>``, links are generated:"
+msgstr "たとえば当該リソースが ``<https://schema.org/Book>`` クラスに属するときにのみ、当該プロパティの値をつかって外部データベースへのリンクを付与する例です。"
+
+#: ../../templates.rst:270
+msgid "Advanced Customization"
+msgstr "高度なカスタマイズ"
+
+#: ../../templates.rst:273
+msgid "Conditional branching and iteration in ERB"
+msgstr "ERBの条件分岐と繰り返し"
+
+#: ../../templates.rst:286
+msgid "Using inverse links"
+msgstr "逆リンクの活用"
+
+#: ../../templates.rst:288
+msgid "``param[:data_inverse]`` can be used to list resources that reference the current one."
+msgstr "``param[:data_inverse]`` を用いて、参照元のリソースを一覧できます。"
+
+#: ../../templates.rst:291
+msgid "Troubleshooting"
+msgstr "トラブルシューティング"
+
+#: ../../templates.rst:294
+msgid "Common errors and solutions"
+msgstr "よくあるエラーと解決策"
+
+#: ../../templates.rst:296
+msgid "**Nothing is displayed**: Check if you confused ``<%=`` with ``<%``."
+msgstr "**何も表示されない**: ``<%=`` と ``<%`` を取り違えていないか確認してください。"
+
+#: ../../templates.rst:297
+msgid "**Undefined error**: Accessing a non-existent key may return nil. RDF data may have missing values or multiple triples."
+msgstr "**未定義エラー**: 存在しないキーを参照している場合、値が未定義 (nil) となることがあります。トリプルデータは値に抜けがあったり、複数トリプルが追加されている場合があるので、注意してください。"
+
+#: ../../templates.rst:298
+msgid "**Crash in loops**: If the value is nil, wrap with ``Array(...)`` to avoid errors."
+msgstr "**ループでクラッシュ**: 値が未定義 (nil) になっている場合があるので ``Array(...)`` でくくるのが安全です。"
+
+#: ../../templates.rst:301
+msgid "When a template is not applied"
+msgstr "テンプレートが適用されない場合"
+
+#: ../../templates.rst:303
+msgid "Check file names and extensions."
+msgstr "ファイル名・拡張子を確認する。"
+
+#: ../../templates.rst:304
+msgid "Ensure the file is placed under ``templates/``."
+msgstr "``templates/`` 配下に配置しているか確認する。"
+
+#: ../../templates.rst:305
+msgid "Inspect the generated HTML to confirm changes."
+msgstr "出力HTMLを開いて差分を確認する。"
+
+#: ../../templates.rst:308
+msgid "Debug Tips"
+msgstr "デバッグTips"
+
+#: ../../templates.rst:310
+msgid "Insert ``<pre><%= param.inspect %></pre>`` to check variable contents."
+msgstr "``<pre><%= param.inspect %></pre>`` で変数内容を確認"
+
+#: ../../templates.rst:311
+msgid "Use browser developer tools to inspect the DOM."
+msgstr "ブラウザの開発者ツールで DOM を確認"
+
+#: ../../templates.rst:314
+msgid "References"
+msgstr "参考情報"
+
+#: ../../templates.rst:316
+msgid "ERB reference: `<https://en.wikipedia.org/wiki/ERuby>`_"
+msgstr "ERB リファレンス: `<https://en.wikipedia.org/wiki/ERuby>`_"
+
+#: ../../templates.rst:317
+msgid "Standard templates: `<https://github.com/masao/ttl2html/tree/main/templates>`_"
+msgstr "標準テンプレート: `<https://github.com/masao/ttl2html/tree/main/templates>`_"
