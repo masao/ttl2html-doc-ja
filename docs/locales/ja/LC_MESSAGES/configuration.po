@@ -207,19 +207,19 @@ msgstr ":confval:`subtitle_property` と :confval:`subtitle_property_perclass` �
 
 #: ../../configuration.rst:230
 msgid "Subtitles can be displayed in two places:"
-msgstr ""
+msgstr "サブタイトルは以下の2つの場所に表示されます:"
 
 #: ../../configuration.rst:232
 msgid "Directly below the header on the resource details page"
-msgstr ""
+msgstr "リソース詳細ページのタイトル見出し直下"
 
 #: ../../configuration.rst:233
 msgid "As an auxiliary display for each resource link in the resource details table."
-msgstr ""
+msgstr "リソース詳細一覧表の各リソースへのリンクの補助表示"
 
 #: ../../configuration.rst:237
 msgid "Specifies the property to be used per class (priority) as a `subtitle`."
-msgstr ""
+msgstr "特定のクラスに属するリソース共通で「サブタイトル」として使うプロパティを指定する。"
 
 #: ../../configuration.rst:241
 msgid "Specified URI is regarded as a title property for the resource. In default, a title is matched with the following properties:"
