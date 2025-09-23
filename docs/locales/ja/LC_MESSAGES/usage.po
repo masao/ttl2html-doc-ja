@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2023, Masao Takaku
+# Copyright (C) 2023-2025, Masao Takaku
 # This file is distributed under the same license as the ttl2html package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Masao Takaku <tmasao@acm.org>, 2024
+# Masao Takaku <tmasao@acm.org>, 2025
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-30 14:34+0900\n"
+"POT-Creation-Date: 2025-09-23 22:08+0900\n"
 "PO-Revision-Date: 2023-08-15 16:16+0000\n"
-"Last-Translator: Masao Takaku <tmasao@acm.org>, 2024\n"
+"Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,25 +38,77 @@ msgid "Command line usage"
 msgstr "コマンドライン実行方法"
 
 #: ../../usage.rst:18
-msgid "First, you must create a configuration file named ``config.yml`` with a YAML format. One required key for the configuration is ``base_uri``:"
-msgstr "まず始めに、実行時に使うディレクトリ上に ``config.yml`` というファイル名の設定ファイルが必要です。このファイル内における設定項目では1つの設定項目 ``base_uri`` だけが必須で、他の設定項目は任意オプションとなっています。 以下のように、設定項目とその値を指定します:"
+msgid "First, you must create a configuration file named ``config.yml`` in YAML format. One required key for the configuration is ``base_uri``:"
+msgstr "まず始めに、実行時に使うディレクトリ上に ``config.yml`` というファイル名のYAML形式の設定ファイルが必要です。このファイル内における設定項目では1つの設定項目 ``base_uri`` だけが必須で、他の設定項目は任意オプションとなっています。 以下のように、設定項目とその値を指定します:"
 
 #: ../../usage.rst:25
 msgid "With this configuration file, you can execute a command on the dataset file(s) :"
 msgstr "上記の設定ファイルを作成したら、以下のようにデータセットのRDF/Turtle形式のファイルを引数に指定して、コマンドを実行します:"
 
 #: ../../usage.rst:31
-msgid "The command parses the dataset file(s) and generate HTML files."
+msgid "The command parses the dataset file(s) and generates HTML files."
 msgstr "コマンドが正常に終了すれば、HTMLファイル群が生成されます。"
 
-#: ../../usage.rst:35
+#: ../../usage.rst:34
+msgid "Input File Specification"
+msgstr "入力ファイルの指定"
+
+#: ../../usage.rst:36
+msgid "The command sequentially reads one or more Turtle files given as command-line arguments. The following forms are supported:"
+msgstr "ttl2html はコマンドライン引数で与えた 1個以上のTurtleファイルを順番に読み込みます。以下の指定方法をサポートしています:"
+
+#: ../../usage.rst:39
+msgid "**Single file**: ``ttl2html data.ttl``"
+msgstr "**単一ファイル**: ``ttl2html data.ttl``"
+
+#: ../../usage.rst:40
+msgid "**Multiple files (processed in order)**: ``ttl2html a.ttl b.ttl c.ttl``"
+msgstr "**複数ファイル**: ``ttl2html a.ttl b.ttl c.ttl``"
+
+#: ../../usage.rst:41
+msgid "**Gzip-compressed file**: ``ttl2html data.ttl.gz`` (files ending with ``.gz`` are automatically decompressed, and then read)"
+msgstr "**Gzip圧縮ファイル**: ``ttl2html data.ttl.gz`` (末尾が ``.gz`` のファイルは自動的に解凍して処理実行)"
+
+#: ../../usage.rst:43
+msgid "**Shell wildcard expansion**: ``ttl2html data/*.ttl`` (the shell expands the list of files, which are then processed sequentially)"
+msgstr "**シェルのワイルドカード展開**: ``ttl2html data/*.ttl`` (シェル側で展開されたファイル群を順次処理)"
+
+#: ../../usage.rst:46
+msgid "During execution, messages such as ``loading <path>...`` are printed to standard error. After loading, the number of triples and subjects is shown: ``<N> triples. <M> subjects.``"
+msgstr "実行時、標準エラー出力に ``loading <path>...`` 、読込完了後に ``<N> triples. <M> subjects.`` （トリプル数とユニーク主語数）を表示します。"
+
+#: ../../usage.rst:50
+msgid "Supported format"
+msgstr "対応フォーマット"
+
+#: ../../usage.rst:52
+msgid "Only the **Turtle** format is supported."
+msgstr "**Turtle**形式のみに対応しています。"
+
+#: ../../usage.rst:53
+msgid "Even if the file extension is not ``.ttl``, the file content **must** be Turtle."
+msgstr "拡張子が .ttl でなくてもかまいませんが、内容は Turtle 形式である必要があります。"
+
+#: ../../usage.rst:54
+msgid "Other formats such as RDF/XML or N-Triples are **not supported**."
+msgstr "RDF/XML や N-Triples などの他のRDF形式には対応していません。"
+
+#: ../../usage.rst:57
+msgid "Multiple files"
+msgstr "複数ファイル"
+
+#: ../../usage.rst:59
+msgid "If multiple files are provided, they are merged into a single internal dataset. When merging, all the values are appended for the same subject and predicate, and **duplicates are not removed.**"
+msgstr "複数ファイルを渡すと すべてを単一の内部データセットにマージします。この際、同一主語・述語の値は追加され、重複の除去は行いませんので、注意してください。"
+
+#: ../../usage.rst:63
 msgid "Command line options"
 msgstr "コマンドラインオプション"
 
-#: ../../usage.rst:41
+#: ../../usage.rst:69
 msgid "The command ``ttl2html`` accepts the following options:"
 msgstr "コマンド ``ttl2html`` では以下のオプション引数を指定できます:"
 
-#: ../../usage.rst:43
+#: ../../usage.rst:71
 msgid "``--config file``: Read the configuration file from file (Default: ``config.yml``)."
 msgstr "``--config file``: 設定ファイルをfileから読み込みます （Default: ``config.yml`` ）"
