@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-30 11:55+0900\n"
+"POT-Creation-Date: 2025-12-30 13:28+0900\n"
 "PO-Revision-Date: 2024-11-16 02:16+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -440,3 +440,43 @@ msgstr "``rdfs:seeAlso``"
 #: ../../dataset.rst:1
 msgid "URI with more details on the revision (if available)"
 msgstr "改訂履歴の詳細についてのウェブページ（もしあれば）"
+
+#: ../../dataset.rst:185
+msgid "License Information"
+msgstr "ライセンス情報"
+
+#: ../../dataset.rst:187
+msgid "License information can be expressed not only as a single URI, but also as an extended representation that adds explanatory text to the URI."
+msgstr "ライセンス情報としては、単一のURIでの表現以外に、URIに説明テキストなどを加えた拡張表現も可能です。"
+
+#: ../../dataset.rst:189
+msgid "License Information Properties"
+msgstr "ライセンス情報用のプロパティ"
+
+#: ../../dataset.rst:1
+msgid "``rdf:value``"
+msgstr "``rdf:value``"
+
+#: ../../dataset.rst:1
+msgid "URI representing the license itself"
+msgstr "ライセンスそのものを表現するURI"
+
+#: ../../dataset.rst:1
+msgid "``rdfs:label``"
+msgstr "``rdfs:label``"
+
+#: ../../dataset.rst:1
+msgid "Descriptive text describing the license"
+msgstr "ライセンスの説明テキスト"
+
+#: ../../dataset.rst:1
+msgid "``foaf:thumbnail``"
+msgstr "``foaf:thumbnail``"
+
+#: ../../dataset.rst:1
+msgid "URI of a thumbnail image of the license information"
+msgstr "ライセンス情報のサムネイル画像のURI"
+
+#: ../../dataset.rst:209
+msgid "License information can also be expressed using blank nodes as follows:"
+msgstr "なお、ライセンス情報はブランクノードを使って表現することも可能です。"

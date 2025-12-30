@@ -180,3 +180,40 @@ The value of ``prov:qualifiedRevision`` may contain the following properties:
    ``rdf:type``, ``prov:Revision``
    ``rdfs:comment``, Description of the revision
    ``rdfs:seeAlso``, URI with more details on the revision (if available)
+
+License Information
+-------------------
+
+License information can be expressed not only as a single URI, but also as an extended representation that adds explanatory text to the URI.
+
+.. csv-table:: License Information Properties
+   :header: Property, Description
+   :widths: auto
+
+   ``rdf:value``, URI representing the license itself
+   ``rdfs:label``, Descriptive text describing the license
+   ``foaf:thumbnail``, URI of a thumbnail image of the license information
+
+.. code-block:: turtle
+
+   ex:dataset1 a void:Dataset ;
+      ...
+      dct:license ex:license ;
+      ... .
+
+   ex:license
+      rdf:value <https://creativecommons.org/licenses/by/4.0/>;
+      rdfs:label "Creative Commons Attribution-ShareAlike (CC BY-SA)";
+      foaf:thumbnail ex:license.png .
+
+License information can also be expressed using blank nodes as follows:
+
+.. code-block:: turtle
+
+   ex:dataset1 a void:Dataset ;
+      ...
+      dct:license [
+         rdf:value <https://creativecommons.org/licenses/by/4.0/>;
+         rdfs:label "Creative Commons Attribution-ShareAlike (CC BY-SA)";
+         foaf:thumbnail ex:license.png
+      ] ;
