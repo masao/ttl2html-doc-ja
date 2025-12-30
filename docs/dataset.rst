@@ -133,6 +133,7 @@ The following properties can be used for each version resource:
 
    ``rdf:type``, ``prov:Dataset``
    ``dct:title``, Version title
+   ``dct:issued``, Release date of the version
    ``pav:version``, Version number
    ``dcat:bytesize``, File size of the dataset
    ``void:triples``, Number of triples in the dataset
@@ -147,6 +148,7 @@ The following properties can be used for each version resource:
    ex:dataset1-v2 a prov:Dataset ;
        dct:title "Dataset Version 2.0" ;
        pav:version "2.0" ;
+       dct:issued "2025-12-25" ;
        dcat:byteSize 123456 ;
        void:triples 50000 ;
        void:dataDump <http://example.org/dataset/v2/dump.nt.gz> ;

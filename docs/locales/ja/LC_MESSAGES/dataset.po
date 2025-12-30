@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-30 11:34+0900\n"
+"POT-Creation-Date: 2025-12-30 11:55+0900\n"
 "PO-Revision-Date: 2024-11-16 02:16+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -249,7 +249,7 @@ msgstr "``dct:publisher``"
 msgid "Dataset publisher (see contact information below)"
 msgstr "データセットの公開提供者（下記の連絡先情報を参照のこと）"
 
-#: ../../dataset.rst:58 ../../dataset.rst:100 ../../dataset.rst:143
+#: ../../dataset.rst:58 ../../dataset.rst:100 ../../dataset.rst:144
 msgid "**Example (Turtle):**"
 msgstr "**Turtle形式の例:**"
 
@@ -354,6 +354,14 @@ msgid "Version title"
 msgstr "バージョンのタイトル"
 
 #: ../../dataset.rst:1
+msgid "``dct:issued``"
+msgstr "``dct:issued``"
+
+#: ../../dataset.rst:1
+msgid "Release date of the version"
+msgstr "当該バージョンのリリース日"
+
+#: ../../dataset.rst:1
 msgid "``pav:version``"
 msgstr "``pav:version``"
 
@@ -401,15 +409,15 @@ msgstr "``prov:wasDerivedFrom``"
 msgid "Source resource from which the data was obtained (can be a blank node)"
 msgstr "データの入手元を表現するリソース（ブランクノードを想定）"
 
-#: ../../dataset.rst:170
+#: ../../dataset.rst:172
 msgid "Revision Details"
 msgstr "改訂履歴の詳細"
 
-#: ../../dataset.rst:172
+#: ../../dataset.rst:174
 msgid "The value of ``prov:qualifiedRevision`` may contain the following properties:"
 msgstr "``prov:qualifiedRevision`` プロパティ値として表現される改訂履歴リソースは以下のプロパティを用います:"
 
-#: ../../dataset.rst:174
+#: ../../dataset.rst:176
 msgid "Properties for revision details"
 msgstr "改訂履歴情報のプロパティ"
 
