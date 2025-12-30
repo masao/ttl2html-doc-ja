@@ -23,9 +23,11 @@ The table below lists the metadata vocabularies and their namespaces used in the
    :widths: auto
 
    `DCMI Metadata Terms <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/>`_, dct:, http://purl.org/dc/terms/
+   `RDF Schema <https://www.w3.org/TR/rdf11-schema/>`, rdfs:, http://www.w3.org/2000/01/rdf-schema#
    `FOAF (Friend of a Friend) Vocabulary <http://xmlns.com/foaf/spec/>`_, foaf:, http://xmlns.com/foaf/0.1/
    `VoID (Vocabulary of Interlinked Datasets) <http://www.w3.org/TR/void/>`_, void:, http://rdfs.org/ns/void#
    `PAV (Provenance Authoring and Versioning ontology) <https://pav-ontology.github.io/pav/>`_, pav:, http://purl.org/pav/
+   `DCAT (Data Catalog Vocabulary) <https://www.w3.org/TR/vocab-dcat-3/>`_, dcat:, http://www.w3.org/ns/dcat#
    `PROV-O (PROV ontology) <https://www.w3.org/TR/prov-o/>`_, prov:, http://www.w3.org/ns/prov#
 
 
@@ -35,8 +37,8 @@ Metadata for the Entire Dataset
 The resource labeled "Entire Dataset" in the model represents the dataset as a whole. 
 Metadata about the dataset is attached as properties of this resource.
 
+- A resource linked with ``pav:hasCurrentVersion`` represents the "latest release version" of the dataset and contains details of the available Linked Data. When a resource with this ``pav:hasCurrentVersion`` property is found, this tool determines that dataset information is included and automatically writes out the dataset information.
 - A resource linked with ``dct:publisher`` represents the person or organization providing the dataset. This information is displayed as "contact information" in the Linked Data output.
-- A resource linked with ``pav:hasCurrentVersion`` represents the "latest release version" of the dataset and contains details of the available Linked Data.
 - Resources linked with ``pav:hasVersion`` represent "previous versions" and serve as historical information.
 
 The following properties are available for describing the overall dataset:
@@ -63,8 +65,7 @@ The following properties are available for describing the overall dataset:
    @prefix pav:  <http://purl.org/pav/> .
    @prefix ex:   <http://example.org/dataset/> .
 
-   ex:dataset1
-       a void:Dataset ;
+   ex:dataset1 a void:Dataset ;
        dct:title "Sample RDF Dataset"@en ;
        dct:description "An example dataset for demonstrating ttl2html metadata"@en ;
        dct:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -100,20 +101,17 @@ If the provider consists of multiple people, the contact resource should be repr
 
 .. code-block:: turtle
 
-   ex:project1
-       a foaf:Project ;
+   ex:project1 a foaf:Project ;
        foaf:name "Example Project" ;
        foaf:member ex:alice ;
        foaf:member ex:bob .
 
-   ex:alice
-       a foaf:Person ;
+   ex:alice a foaf:Person ;
        foaf:name "Alice Example" ;
        foaf:mbox <mailto:alice@example.org> ;
        <http://www.w3.org/2006/vcard/ns#organization-name> "Example University" .
 
-   ex:bob
-       a foaf:Person ;
+   ex:bob a foaf:Person ;
        foaf:name "Bob Example" ;
        foaf:mbox <mailto:bob@example.org> .
 
@@ -146,11 +144,10 @@ The following properties can be used for each version resource:
 
 .. code-block:: turtle
 
-   ex:dataset1-v2
-       a prov:Dataset ;
+   ex:dataset1-v2 a prov:Dataset ;
        dct:title "Dataset Version 2.0" ;
        pav:version "2.0" ;
-       <http://www.w3.org/ns/dcat#byteSize> "123456" ;
+       dcat:byteSize 123456 ;
        void:triples 50000 ;
        void:dataDump <http://example.org/dataset/v2/dump.nt.gz> ;
        prov:qualifiedRevision ex:revnote-v2 ;
@@ -159,13 +156,11 @@ The following properties can be used for each version resource:
          rdf:label "Project Report 2022-2024" .
        ] .
 
-   ex:revnote-v2
-       a prov:Revision ;
+   ex:revnote-v2 a prov:Revision ;
        rdfs:comment "Second release: added new data and fixed errors in metadata"@en ;
        rdfs:seeAlso <http://example.org/dataset/v2/changelog> .
 
-   ex:dataset1-v1
-       a prov:Revision ;
+   ex:dataset1-v1 a prov:Revision ;
        dct:title "Dataset Version 1.0" ;
        pav:version "1.0" ;
        void:triples 30000 ;
