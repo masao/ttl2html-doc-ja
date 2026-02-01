@@ -547,4 +547,4 @@ msgstr "方法B: void:sparqlEndpoint を使って表現する"
 
 #: ../../dataset.rst:275
 msgid "Note that when using void:sparqlEndpoint, you can only add endpoint URIs for machine access; you cannot describe search or description pages for humans."
-msgstr ""
+msgstr "なお、`void:sparqlEndpoint` を用いる場合は機械アクセスのためのエンドポイントURIのみを追加でき、人間向けの検索ページや説明ページの情報は記述できないことに注意してください。"
