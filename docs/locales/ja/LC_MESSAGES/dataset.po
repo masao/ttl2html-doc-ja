@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Masao Takaku <tmasao@acm.org>, 2025
+# Masao Takaku <tmasao@acm.org>, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-30 13:28+0900\n"
+"POT-Creation-Date: 2026-02-01 17:15+0900\n"
 "PO-Revision-Date: 2024-11-16 02:16+0000\n"
-"Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
+"Last-Translator: Masao Takaku <tmasao@acm.org>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -480,3 +480,75 @@ msgstr "ライセンス情報のサムネイル画像のURI"
 #: ../../dataset.rst:209
 msgid "License information can also be expressed using blank nodes as follows:"
 msgstr "なお、ライセンス情報はブランクノードを使って表現することも可能です。"
+
+#: ../../dataset.rst:222
+msgid "SPARQL Endpoint Information"
+msgstr "SPARQLエンドポイント情報"
+
+#: ../../dataset.rst:224
+msgid "In ttl2html, information about the location of a SPARQL endpoint can be displayed on the top page and the about page by describing it in the input RDF triples (Turtle)."
+msgstr "ttl2htmlでは、SPARQLエンドポイントの所在情報をRDFトリプル（Turtle）として入力TTLに記述することにより、トップページとaboutページに表示できます。"
+
+#: ../../dataset.rst:226
+msgid "To express the endpoint location in RDF, use one of the following methods:"
+msgstr "エンドポイントの所在をRDFで表現するには、次のどちらかの書き方を使ってください。"
+
+#: ../../dataset.rst:228
+msgid "Method A (recommended): Express as a DataService using DCAT's `dcat:accessService`."
+msgstr "方法A（推奨）：DCAT の `dcat:accessService` を使って DataService として表現する"
+
+#: ../../dataset.rst:230
+msgid "You can specify not only the endpoint URL but also the landing page."
+msgstr "エンドポイントURLだけでなく、ランディングページも同時に指定できます。"
+
+#: ../../dataset.rst:232
+msgid "Method B (simplified): Write only VoID's `void:sparqlEndpoint`."
+msgstr "方法B（簡易）：VoID の `void:sparqlEndpoint` だけを書く"
+
+#: ../../dataset.rst:234
+msgid "This provides a minimal endpoint URI, but no landing page."
+msgstr "最小限のエンドポイントURIを示せますが、ランディングページの情報は示せません。"
+
+#: ../../dataset.rst:236
+msgid "In the following example, `_:toplevel` is expressed as an entity representing the entire dataset."
+msgstr "以下の例では `_ :toplevel` をデータセット全体を表現するエンティティとして表現しています。"
+
+#: ../../dataset.rst:239
+msgid "Method A: Express using dcat:accessService (DataService)"
+msgstr "方法A: dcat:accessService（DataService）を使って表現する"
+
+#: ../../dataset.rst:241 ../../dataset.rst:266
+msgid "The following RDF triple expression can be added as part of the metadata for the entire dataset."
+msgstr "以下のようなRDFトリプル表現により、データセット全体のメタデータの一部として追加できます。"
+
+#: ../../dataset.rst:255
+msgid "The meanings of the properties in the above example can be understood as follows:"
+msgstr "上記の例におけるプロパティの意味は以下のような形にとらえられます:"
+
+#: ../../dataset.rst:257
+msgid "`dcat:accessService`: Service for accessing this dataset"
+msgstr "`dcat:accessService`：このデータセットにアクセスするためのサービス"
+
+#: ../../dataset.rst:258
+msgid "`a dcat:DataService`: Type of service (DataService)"
+msgstr "`a dcat:DataService`：サービスの種類（DataService）"
+
+#: ../../dataset.rst:259
+msgid "`dcat:description`: Service description (multiple descriptions possible with language tags)"
+msgstr ""
+
+#: ../../dataset.rst:260
+msgid "`dcat:endpointURL`: SPARQL endpoint URL"
+msgstr "dcat:endpointURL：SPARQLエンドポイントのURL"
+
+#: ../../dataset.rst:261
+msgid "`dcat:landingPage`: Landing page for humans (e.g., query UI, description page)"
+msgstr "`dcat:landingPage`：人間向けの入口ページ（例：クエリUI、説明ページ）"
+
+#: ../../dataset.rst:264
+msgid "Method B: Express using void:sparqlEndpoint"
+msgstr "方法B: void:sparqlEndpoint を使って表現する"
+
+#: ../../dataset.rst:276
+msgid "Note that when using void:sparqlEndpoint, you can only add endpoint URIs for machine access; you cannot access search or description pages for humans."
+msgstr "なお、`void:sparqlEndpoint` を用いる場合は機械アクセスのためのエンドポイントURIのみを追加でき、人間向けの検索ページや説明ページの情報は記述できないことに注意してください。"
