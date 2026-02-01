@@ -217,3 +217,60 @@ License information can also be expressed using blank nodes as follows:
          rdfs:label "Creative Commons Attribution-ShareAlike (CC BY-SA)";
          foaf:thumbnail ex:license.png
       ] ;
+
+SPARQL Endpoint Information
+---------------------------
+
+In ttl2html, information about the location of a SPARQL endpoint can be displayed on the top page and the about page by describing it in the input RDF triples (Turtle).
+
+To express the endpoint location in RDF, use one of the following methods:
+
+- Method A (recommended): Express as a DataService using DCAT's `dcat:accessService`.
+
+  You can specify not only the endpoint URL but also the landing page.
+
+- Method B (simplified): Write only VoID's `void:sparqlEndpoint`.
+
+  This provides a minimal endpoint URI, but no landing page.
+
+In the following example, `_:toplevel` is expressed as an entity representing the entire dataset.
+
+Method A: Express using dcat:accessService (DataService)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The following RDF triple expression can be added as part of the metadata for the entire dataset.
+
+.. code-block:: turtle
+
+   @prefix void: <http://rdfs.org/ns/void#> .
+   @prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+   _:toplevel a void:Dataset, dcat:Dataset ;
+      dcat:accessService [
+         a dcat:DataService;
+         dcat:endpointURL <https://dydra.com/masao/jp-naaa/sparql>;
+         dcat:landingPage <https://dydra.com/masao/jp-naaa/@query>
+      ] .
+
+The meanings of the properties in the above example can be understood as follows:
+
+- `dcat:accessService`: Service for accessing this dataset
+- `a dcat:DataService`: Type of service (DataService)
+- `dcat:description`: Service description (multiple descriptions possible with language tags)
+- `dcat:endpointURL`: SPARQL endpoint URL
+- `dcat:landingPage`: Landing page for humans (e.g., query UI, description page)
+
+Method B: Express using void:sparqlEndpoint
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The following RDF triple expression can be added as part of the metadata for the entire dataset.
+
+.. code-block:: turtle
+
+   @prefix void: <http://rdfs.org/ns/void#> .
+   @prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+   _:toplevel a void:Dataset, dcat:Dataset ;
+      void:sparqlEndpoint <https://dydra.com/masao/jp-naaa/sparql> .
+
+Note that when using void:sparqlEndpoint, you can only add endpoint URIs for machine access; you cannot access search or description pages for humans.
