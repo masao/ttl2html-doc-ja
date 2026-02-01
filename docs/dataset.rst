@@ -256,7 +256,6 @@ The meanings of the properties in the above example can be understood as follows
 
 - `dcat:accessService`: Service for accessing this dataset
 - `a dcat:DataService`: Type of service (DataService)
-- `dcat:description`: Service description (multiple descriptions possible with language tags)
 - `dcat:endpointURL`: SPARQL endpoint URL
 - `dcat:landingPage`: Landing page for humans (e.g., query UI, description page)
 
@@ -273,4 +272,4 @@ The following RDF triple expression can be added as part of the metadata for the
    _:toplevel a void:Dataset, dcat:Dataset ;
       void:sparqlEndpoint <https://dydra.com/masao/jp-naaa/sparql> .
 
-Note that when using void:sparqlEndpoint, you can only add endpoint URIs for machine access; you cannot access search or description pages for humans.
+Note that when using void:sparqlEndpoint, you can only add endpoint URIs for machine access; you cannot describe search or description pages for humans.

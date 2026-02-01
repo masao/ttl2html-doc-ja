@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-01 17:15+0900\n"
+"POT-Creation-Date: 2026-02-01 17:35+0900\n"
 "PO-Revision-Date: 2024-11-16 02:16+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -517,7 +517,7 @@ msgstr "以下の例では `_ :toplevel` をデータセット全体を表現す
 msgid "Method A: Express using dcat:accessService (DataService)"
 msgstr "方法A: dcat:accessService（DataService）を使って表現する"
 
-#: ../../dataset.rst:241 ../../dataset.rst:266
+#: ../../dataset.rst:241 ../../dataset.rst:265
 msgid "The following RDF triple expression can be added as part of the metadata for the entire dataset."
 msgstr "以下のようなRDFトリプル表現により、データセット全体のメタデータの一部として追加できます。"
 
@@ -534,21 +534,17 @@ msgid "`a dcat:DataService`: Type of service (DataService)"
 msgstr "`a dcat:DataService`：サービスの種類（DataService）"
 
 #: ../../dataset.rst:259
-msgid "`dcat:description`: Service description (multiple descriptions possible with language tags)"
-msgstr ""
-
-#: ../../dataset.rst:260
 msgid "`dcat:endpointURL`: SPARQL endpoint URL"
 msgstr "dcat:endpointURL：SPARQLエンドポイントのURL"
 
-#: ../../dataset.rst:261
+#: ../../dataset.rst:260
 msgid "`dcat:landingPage`: Landing page for humans (e.g., query UI, description page)"
 msgstr "`dcat:landingPage`：人間向けの入口ページ（例：クエリUI、説明ページ）"
 
-#: ../../dataset.rst:264
+#: ../../dataset.rst:263
 msgid "Method B: Express using void:sparqlEndpoint"
 msgstr "方法B: void:sparqlEndpoint を使って表現する"
 
-#: ../../dataset.rst:276
-msgid "Note that when using void:sparqlEndpoint, you can only add endpoint URIs for machine access; you cannot access search or description pages for humans."
-msgstr "なお、`void:sparqlEndpoint` を用いる場合は機械アクセスのためのエンドポイントURIのみを追加でき、人間向けの検索ページや説明ページの情報は記述できないことに注意してください。"
+#: ../../dataset.rst:275
+msgid "Note that when using void:sparqlEndpoint, you can only add endpoint URIs for machine access; you cannot describe search or description pages for humans."
+msgstr ""
