@@ -29,6 +29,7 @@ Contents
 .. toctree::
    :hidden:
 
+   catttl
    xlsx2shape
 
 See also

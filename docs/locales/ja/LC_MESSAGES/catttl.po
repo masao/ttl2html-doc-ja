@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023-2025, Masao Takaku
+# This file is distributed under the same license as the ttl2html package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Masao Takaku <tmasao@acm.org>, 2026
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ttl2html\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-28 18:12+0900\n"
+"PO-Revision-Date: 2026-04-28 09:14+0000\n"
+"Last-Translator: Masao Takaku <tmasao@acm.org>, 2026\n"
+"Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../catttl.rst:2
+msgid "catttl"
+msgstr ""
+
+#: ../../catttl.rst:5
+msgid "Overview"
+msgstr "概要"
+
+#: ../../catttl.rst:7
+msgid "``catttl`` is a simple command-line tool for safely concatenating multiple RDF/Turtle (ttl) files."
+msgstr ""
+
+#: ../../catttl.rst:9
+msgid "If you simply concatenate Turtle files using the `cat <https://en.wikipedia.org/wiki/Cat_(Unix)>`_ command, the following issues may occur:"
+msgstr ""
+
+#: ../../catttl.rst:11
+msgid "Duplicate or conflicting ``@prefix`` declarations"
+msgstr ""
+
+#: ../../catttl.rst:12
+msgid "Generation of syntactically invalid Turtle"
+msgstr ""
+
+#: ../../catttl.rst:14
+msgid "``catttl`` avoids these problems and merges files while preserving RDF validity."
+msgstr ""
+
+#: ../../catttl.rst:17
+msgid "Key Features"
+msgstr ""
+
+#: ../../catttl.rst:19
+msgid "Concatenates multiple Turtle files into one"
+msgstr ""
+
+#: ../../catttl.rst:20
+msgid "Normalizes and merges prefix declarations"
+msgstr ""
+
+#: ../../catttl.rst:23
+msgid "Use Cases"
+msgstr "利用事例"
+
+#: ../../catttl.rst:25
+msgid "Merging partitioned RDF datasets"
+msgstr ""
+
+#: ../../catttl.rst:26
+msgid "Combining Turtle files collected from multiple sources"
+msgstr ""
+
+#: ../../catttl.rst:29
+msgid "Basic Usage"
+msgstr ""
+
+#: ../../catttl.rst:31
+msgid "To concatenate multiple Turtle files, run:"
+msgstr ""
+
+#: ../../catttl.rst:37
+msgid "This command reads ``dataset1.ttl`` and ``dataset2.ttl``, and writes the merged Turtle output to ``all-dataset.ttl``."
+msgstr ""
+
+#: ../../catttl.rst:39
+msgid "If no output file is specified, the result is written to standard output:"
+msgstr ""
+
+#: ../../catttl.rst:46
+msgid "Options"
+msgstr ""
+
+#: ../../catttl.rst:48
+msgid "``catttl`` provides command-line options to control how input files are handled."
+msgstr ""
+
+#: ../../catttl.rst:55
+msgid "Options List"
+msgstr ""
+
+#: ../../catttl.rst:65
+msgid "-f, --no-expand Option"
+msgstr ""
+
+#: ../../catttl.rst:67
+msgid "Suppresses filename expansion."
+msgstr ""
+
+#: ../../catttl.rst:69
+msgid "By default, ``catttl`` interprets version numbers at the end of filenames (excluding extensions) and automatically selects the latest available version among matching files."
+msgstr ""
+
+#: ../../catttl.rst:71
+msgid "When this option is specified, such expansion is disabled, and the given strings are treated as literal filenames."
+msgstr ""
+
+#: ../../catttl.rst:74
+msgid "Example"
+msgstr ""
+
+#: ../../catttl.rst:80
+msgid "In this case, suppose the working directory contains multiple files such as:"
+msgstr ""
+
+#: ../../catttl.rst:82
+msgid "dataset-20260401.ttl"
+msgstr ""
+
+#: ../../catttl.rst:83
+msgid "dataset-20260501.ttl"
+msgstr ""
+
+#: ../../catttl.rst:84
+msgid "dataset-partA-001.ttl"
+msgstr ""
+
+#: ../../catttl.rst:85
+msgid "dataset-partA-010.ttl"
+msgstr ""
+
+#: ../../catttl.rst:87
+msgid "The numeric suffix at the end of each filename is interpreted as a version number. ``catttl`` automatically selects the highest versions (in this example, 20260501 and 010)."
+msgstr ""
+
+#: ../../catttl.rst:90
+msgid "As a result, ``dataset-20260501.ttl`` and ``dataset-partA-010.ttl`` are selected and passed to ``catttl``."
+msgstr ""
+
+#: ../../catttl.rst:92
+msgid "On the other hand, when the ``--no-expand`` option is specified:"
+msgstr ""
+
+#: ../../catttl.rst:98
+msgid "The string ``dataset-*.ttl`` is treated as a literal filename. No pattern or version expansion is performed."
+msgstr ""
+
+#: ../../catttl.rst:102
+msgid "Typical Use Cases"
+msgstr ""
+
+#: ../../catttl.rst:104
+msgid "Handling filename patterns in scripts"
+msgstr ""
+
+#: ../../catttl.rst:105
+msgid "Disabling automatic version resolution in ``catttl``"
+msgstr ""
+
+#: ../../catttl.rst:106
+msgid "Managing file lists externally"
+msgstr ""
+
+#: ../../catttl.rst:109
+msgid "-h, --help Option"
+msgstr ""
+
+#: ../../catttl.rst:111
+msgid "Displays the help message."
+msgstr ""
+
+#: ../../catttl.rst:122
+msgid "Related Information"
+msgstr ""
+
+#: ../../catttl.rst:124
+msgid "`RDF 1.1 Turtle <https://www.w3.org/TR/turtle/>`_ (W3C Recommendation, 25 February 2014)"
+msgstr ""
