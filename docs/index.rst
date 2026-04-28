@@ -27,7 +27,8 @@ Contents
    contact
 
 .. toctree::
-   :hidden:
+   :maxdepth: 1
+   :caption: Command line tools
 
    catttl
    xlsx2shape
