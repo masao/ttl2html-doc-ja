@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-02 22:42+0900\n"
+"POT-Creation-Date: 2026-04-29 15:09+0900\n"
 "PO-Revision-Date: 2025-02-02 13:06+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -66,8 +66,8 @@ msgid "Each ``sh:property`` defines a specific attribute of a resource, specifyi
 msgstr "``sh:property`` 一つにつき、一つのプロパティの説明になり、そのプロパティの特性や制約条件や想定される値を説明します。この構造を使うことで、RDFデータがよりよく整理でき、特定のスキーマに沿っていることを理解しやすくします。"
 
 #: ../../shapes.rst:60
-msgid "In this example, the resource is described as having two properties: ``schema:name`` (http://schema.org/name) and ``owl:sameAs`` (http://www.w3.org/2002/07/owl#sameAs)."
-msgstr "この例では、当該リソースは、2つのプロパティ ``schema:name`` (<http://schema.org/name>) と ``owl:sameAs`` (<http://www.w3.org/2002/07/owl#sameAs>)をもつことを記述しています。"
+msgid "In this example, the resource is described as having two properties: ``schema:name`` (https://schema.org/name) and ``owl:sameAs`` (http://www.w3.org/2002/07/owl#sameAs)."
+msgstr ""
 
 #: ../../shapes.rst:63
 msgid "Explaining Property Description"

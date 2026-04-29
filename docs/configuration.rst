@@ -11,10 +11,10 @@ The example below is a basic configuration for ttl2html:
   output_dir: /var/www/html/dataset/
   labels:
     http://www.w3.org/1999/02/22-rdf-syntax-ns#type: Class
-    http://schema.org/name: Title
+    https://schema.org/name: Title
   site_title: A sample dataset
-  title_property: http://example.org/title
-  top_class: http://schema.org/Book
+  title_property: https://example.org/title
+  top_class: https://schema.org/Book
 
 Configuration parameters
 ------------------------
@@ -51,13 +51,13 @@ All configuration keys available are documeted as follows:
   .. code-block:: YAML
 
     breadcrumbs:
-      - property: http://schema.org/hasPart
+      - property: https://schema.org/hasPart
         inverse: true
         label: https://w3id.org/jp-cos/sectionNumber
       - property: https://w3id.org/jp-cos/courseOfStudy
       - property:
-        - property: http://schema.org/workExample
-        - property: http://schema.org/isPartOf
+        - property: https://schema.org/workExample
+        - property: https://schema.org/isPartOf
 
 .. confval:: copyright_year
   
@@ -243,7 +243,7 @@ All configuration keys available are documeted as follows:
   * https://www.w3.org/TR/rdf-schema/#label
   * http://purl.org/dc/terms/title
   * http://purl.org/dc/elements/1.1/title
-  * http://schema.org/name
+  * https://schema.org/name
   * http://www.w3.org/2004/02/skos/core#prefLabel
 
 .. confval:: title_property_perclass

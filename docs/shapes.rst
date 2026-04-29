@@ -22,7 +22,7 @@ Here is a sample shape description from your dataset file:
 .. code-block:: turtle
 
   @prefix owl: <http://www.w3.org/2002/07/owl#>.
-  @prefix schema: <http://schema.org/>.
+  @prefix schema: <https://schema.org/>.
   @prefix sh: <http://www.w3.org/ns/shacl#>.
   
   <https://w3id.org/jp-textbook/SchoolShape> a sh:NodeShape;
@@ -57,7 +57,7 @@ Using the ``sh:property`` property, you can describe the property name, characte
 Each ``sh:property`` defines a specific attribute of a resource, specifying its characteristics, constraints, and expected values.
 This structure helps ensure RDF data is well-organized and adheres to a defined schema.
 
-In this example, the resource is described as having two properties: ``schema:name`` (http://schema.org/name) and ``owl:sameAs`` (http://www.w3.org/2002/07/owl#sameAs).
+In this example, the resource is described as having two properties: ``schema:name`` (https://schema.org/name) and ``owl:sameAs`` (http://www.w3.org/2002/07/owl#sameAs).
 
 Explaining Property Description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
