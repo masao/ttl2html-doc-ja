@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../index.rst:29
 msgid "Command line tools"
-msgstr ""
+msgstr "コマンドラインツール"
 
 #: ../../index.rst:2
 msgid "Welcome to ttl2html documentation!"

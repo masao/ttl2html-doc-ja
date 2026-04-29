@@ -111,7 +111,7 @@ msgstr "ファイル名の展開を行わない"
 
 #: ../../catttl.rst:69
 msgid "By default, ``catttl`` interprets version numbers at the end of filenames (excluding extensions) and automatically selects the latest available version among matching files."
-msgstr "通常、``catttl``は指定されたファイル名に対して、拡張子を除く末尾のバージョン番号を解釈し、利用可能なファイルの中から最新のものを選択して処理します。"
+msgstr "通常、``catttl`` は指定されたファイル名に対して、拡張子を除く末尾のバージョン番号を解釈し、利用可能なファイルの中から最新のものを選択して処理します。"
 
 #: ../../catttl.rst:71
 msgid "When this option is specified, such expansion is disabled, and the given strings are treated as literal filenames."
