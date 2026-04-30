@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Masao Takaku <tmasao@acm.org>, 2025
+# Masao Takaku <tmasao@acm.org>, 2026
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-02 12:44+0900\n"
+"POT-Creation-Date: 2026-04-30 12:42+0900\n"
 "PO-Revision-Date: 2025-02-02 03:40+0000\n"
-"Last-Translator: Masao Takaku <tmasao@acm.org>, 2025\n"
+"Last-Translator: Masao Takaku <tmasao@acm.org>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -50,29 +50,37 @@ msgid "Details of the courses of study (curriculum guidelines) and related infor
 msgstr "学習指導要領の細目と関連する情報をLODデータセットとして公開している。"
 
 #: ../../usecases.rst:17
+msgid "`National Assessment of Academic Ability LOD <https://w3id.org/jp-naaa/>`_"
+msgstr "`全国学力調査LOD <https://w3id.org/jp-naaa/>`_"
+
+#: ../../usecases.rst:19
+msgid "This dataset organizes questions and explanations from Japan’s National Assessment of Academic Ability as Linked Open Data (LOD)."
+msgstr "「全国学力・学習状況調査」の問題や解説などを整理したLinked Open Data（LOD）データセットです"
+
+#: ../../usecases.rst:21
 msgid "(Updated periodically)"
 msgstr "（以降、随時更新）"
 
-#: ../../usecases.rst:20
+#: ../../usecases.rst:24
 msgid "Adding Usage Examples"
 msgstr "利用事例の追加について"
 
-#: ../../usecases.rst:22
+#: ../../usecases.rst:26
 msgid "If you have published linked data using **ttl2html**, we would love to feature it on this page. If you are interested, please :doc:`contact us <contact>` with the following information:"
 msgstr "**ttl2html** を利用してリンクトデータを公開している事例がありましたら、このページで紹介したいので、よろしければ、以下の情報を添えて :doc:`連絡先 <contact>` までご連絡ください。"
 
-#: ../../usecases.rst:25
+#: ../../usecases.rst:29
 msgid "Site name / Organization name"
 msgstr "サイト名・組織名"
 
-#: ../../usecases.rst:26
+#: ../../usecases.rst:30
 msgid "Public URI"
 msgstr "公開URI"
 
-#: ../../usecases.rst:27
+#: ../../usecases.rst:31
 msgid "Brief description of the example"
 msgstr "事例の簡単な説明"
 
-#: ../../usecases.rst:29
+#: ../../usecases.rst:33
 msgid "We aim to expand the collection of usage examples and further develop ttl2html into a more useful tool for everyone."
 msgstr "今後も活用事例を増やし、より多くの方に役立つツールとして発展させていきたいと思います。"

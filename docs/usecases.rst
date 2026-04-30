@@ -14,6 +14,10 @@ ttl2html is used on several websites. Below are some examples:
 
   * Details of the courses of study (curriculum guidelines) and related information are published as an LOD dataset.
 
+* `National Assessment of Academic Ability LOD <https://w3id.org/jp-naaa/>`_
+
+  * This dataset organizes questions and explanations from Japan’s National Assessment of Academic Ability as Linked Open Data (LOD).
+
 (Updated periodically)
 
 Adding Usage Examples
