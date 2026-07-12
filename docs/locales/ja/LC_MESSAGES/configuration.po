@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-29 15:09+0900\n"
+"POT-Creation-Date: 2026-07-12 14:46+0200\n"
 "PO-Revision-Date: 2023-08-15 16:16+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -70,201 +70,225 @@ msgid "**[required]** Base URI for the dataset. Base URI is considered as the pr
 msgstr "**[必須]** データセット用のベースURIを指定します。ベースURIは出力されるファイル群に対する接頭辞とみなし、先頭一致したURIリソースのみが生成の対象となります。"
 
 #: ../../configuration.rst:49
-msgid "Configuration for creating a hierarchical breadcrumb list of multiple resources. Define a list of properties that are higher level resources or related resources of the resource. In the example below, the ``schema:hasPart`` and ``jp-cos:hasOfStudy`` properties, if present, respectively, are used to construct the navigation menu by considering resources linked from the current resource to be higher-level resources. The default display label on the breadcrumb list is \"title\", but if the ``label`` attribute is defined, the value of the property defined in the ``label`` attribute can be used as a breadcrumb link. Also, if the ``inverse`` attribute is present, then the resource being transitioned to as a property to the current resource is considered to be a higher level. It is also possible to specify a resource that spans a multi-level relationship with an empty node, etc. In that case, add a list to the ``property`` attribute and add a ``property`` attribute to its subordinate items as well. At the end of the example below, the ``schema:isPartOf`` property of the resource to which the ``schema:workExample`` property of the resource in question is specified can be used as a navigation resource."
-msgstr "複数のリソースを階層化したパンくずリストを作るための設定。当該リソースの上位階層リソースまたは関連リソースにあたるプロパティをリストとして定義します。下記の例では ``schema:hasPart`` プロパティ、 ``jp-cos:couseOfStudy`` プロパティそれぞれの順でもし存在すれば、当該リソースの上位階層とみなしてナビゲーションメニューを構築します。また、パンくずリスト上の表示ラベルはデフォルトでは「タイトル」を用いますが、 ``label`` キーが指定されていれば、当該 ``label`` キーに指定されたプロパティ値をパンくずリンクの表示文字列として用いることができます。また、 ``inverse`` キーがある場合は、当該リソースのプロパティを述語としてもつリソースを上位階層とみなします。また、空ノード等で多段階の関係をまたいだリソースを指定することもできます。その場合、 ``property`` キーにリストを追加してその下位アイテムにも同様に ``property`` キーを追加します。下記の例では、当該リソースの ``schema:workExample`` プロパティ指定先リソースのさらに ``schema:isPartOf`` プロパティ先のリソースをナビゲーションリソースとして用いることができます。"
+msgid "This setting is used to generate breadcrumb navigation based on hierarchical relationships between multiple resources. For each entry, the ``property`` key specifies a property that identifies a parent or related resource."
+msgstr "複数のリソース間の階層関係に基づいて、パンくずリストを生成するための設定です。各項目の ``property`` キーには、当該リソースの上位階層または関連リソースを示すプロパティを指定します。"
 
-#: ../../configuration.rst:64
+#: ../../configuration.rst:51
+msgid "When multiple entries are specified, ttl2html checks them in the configured order and uses the first matching relationship to build the breadcrumb trail. In the example below, it first checks the inverse relationship of ``schema:hasPart``. If no matching resource is found, it then checks ``jp-cos:courseOfStudy``."
+msgstr "複数の項目を指定した場合は、設定された順にプロパティの有無を確認し、最初に見つかった関係を用いてパンくずリストを構築します。下記の例では、まず ``schema:hasPart`` の逆方向の関係を確認し、該当しない場合は ``jp-cos:courseOfStudy`` を確認します。"
+
+#: ../../configuration.rst:53
+msgid "By default, the resource title is used as the label displayed in the breadcrumb. If the ``label`` key is specified, the value of the specified property is used as the link text."
+msgstr "パンくずリストに表示するラベルには、デフォルトでリソースのタイトルが使用されます。 ``label`` キーを指定すると、指定したプロパティの値をパンくずリンクの表示文字列として使用できます。"
+
+#: ../../configuration.rst:55
+msgid "The ``label`` key may contain either a single property or a list of properties. When multiple properties are specified, ttl2html checks them in order and uses the value of the first property that is present. If none of the configured properties has a value, the default resource title is used."
+msgstr "``label`` キーには、単一のプロパティだけでなく、複数のプロパティをリストとして指定することもできます。複数指定した場合は、リストの先頭から順にプロパティを確認し、最初に値が見つかったプロパティの値を使用します。いずれのプロパティにも値がない場合は、そのリソースのデフォルトタイトルを使用します。"
+
+#: ../../configuration.rst:57
+msgid "In the first entry below, ttl2html first uses the value of ``jp-cos:sectionNumber`` as the breadcrumb label. If that property has no value, it then uses the value of ``schema:alternateName``. If neither property has a value, the default resource title is used."
+msgstr "下記の最初の設定では、パンくずリストのラベルとして、まず ``jp-cos:sectionNumber`` の値を使用します。このプロパティに値がない場合は、次に ``schema:alternateName`` の値を使用します。どちらにも値がない場合は、リソースのデフォルトタイトルが使用されます。"
+
+#: ../../configuration.rst:59
+msgid "If ``inverse: true`` is specified, resources that refer to the current resource using the specified property are treated as parent resources."
+msgstr "``inverse`` キーに ``true`` を指定した場合は、指定したプロパティを述語として当該リソースを参照しているリソースを、上位階層のリソースとして扱います。"
+
+#: ../../configuration.rst:61
+msgid "It is also possible to specify a resource reached through a multi-step relationship, such as one involving blank nodes. In this case, specify a list under the ``property`` key, with each item containing another ``property`` key. In the example below, ttl2html follows the current resource's ``schema:workExample`` property and then the referenced resource's ``schema:isPartOf`` property. The final resource is used as a parent resource in the breadcrumb trail."
+msgstr "また、空ノードなどを介した多段階の関係をたどって、パンくずリストに使用するリソースを指定することもできます。その場合は、``property`` キーの値としてリストを指定し、各要素にさらに ``property`` キーを設定します。下記の例では、当該リソースの ``schema:workExample`` プロパティの参照先から、さらに ``schema:isPartOf`` プロパティをたどったリソースを、パンくずリストの上位階層として使用します。"
+
+#: ../../configuration.rst:79
 msgid "Copyright year statement displayed at the footer along with the :confval:`admin_name` parameter above."
 msgstr "上記 :confval:`admin_name` と一緒に出力する著作権表示年を指定します。"
 
-#: ../../configuration.rst:68
+#: ../../configuration.rst:83
 msgid "The path of the CSS stylesheet file(s) to use. You can specify either a single file or multiple files:"
 msgstr ""
 "使用するCSSスタイルシートファイルのパス名。\n"
 "1つのファイルまたは複数のファイルを指定できます。"
 
-#: ../../configuration.rst:71
+#: ../../configuration.rst:86
 msgid "Specifying a single file"
 msgstr "1ファイルを指定"
 
-#: ../../configuration.rst:76
+#: ../../configuration.rst:91
 msgid "Specifying multiple files"
 msgstr "複数ファイルを指定"
 
-#: ../../configuration.rst:86
+#: ../../configuration.rst:101
 msgid "Specify the code snippet of the CSS stylesheet."
 msgstr "CSSスタイルシートのコードを直接設定できます。"
 
-#: ../../configuration.rst:88
+#: ../../configuration.rst:103
 msgid "Example of `custom_css` setting"
 msgstr "`custom_css`の設定例"
 
-#: ../../configuration.rst:95
+#: ../../configuration.rst:110
 msgid "Google tracking code for usage statistics by `Google Analytics <https://analytics.google.com>`_."
 msgstr "`Googleアナリティクス <https://analytics.google.com>`_ による利用統計用の設定コードを指定します。"
 
-#: ../../configuration.rst:103
+#: ../../configuration.rst:118
 msgid "Specify the search engine ID for setting up a site search form using `Google Custom Search <https://developers.google.com/custom-search>`_."
 msgstr "`Googleカスタム検索 <https://developers.google.com/custom-search>`_ を利用したサイト内検索フォームを設置するための検索エンジンIDを指定します。"
 
-#: ../../configuration.rst:111
+#: ../../configuration.rst:126
 msgid "The path of the custom JavaScript file(s) to use. You can specify either a single file or multiple files:"
 msgstr ""
 "使用するJavaScriptファイルのパス名。\n"
 "1つのファイルまたは複数のファイルを指定できます。"
 
-#: ../../configuration.rst:114
+#: ../../configuration.rst:129
 msgid "Specifying a single JavaScript file"
 msgstr "1ファイルを指定"
 
-#: ../../configuration.rst:119
+#: ../../configuration.rst:134
 msgid "Specifying multiple JavaScript files"
 msgstr "複数ファイルを指定"
 
-#: ../../configuration.rst:129
+#: ../../configuration.rst:144
 msgid "Specify the custom label name for each property. Specify the property URI as the key and the label name as the value."
 msgstr "個別プロパティの出力ラベル名を指定します。プロパティURIをキーとし、ラベル名称を値とする形式で指定します。"
 
-#: ../../configuration.rst:132
+#: ../../configuration.rst:147
 msgid "For example, the following setting specifies that the ``dct:description`` property should be displayed as \"Item details\":"
 msgstr "例えば、以下の設定は ``dct:description`` プロパティを「Item details」と表示するよう指定します:"
 
-#: ../../configuration.rst:139
+#: ../../configuration.rst:154
 msgid "If you need to change the label for each class, use the :confval:`labels_with_class` setting or the :doc:`shape method <shapes>`."
 msgstr "クラスごとに表記を変える必要がある場合は :confval:`labels_with_class` 設定を使うか、 :doc:`シェイプを使う方法 <shapes>` を使ってください。"
 
-#: ../../configuration.rst:141
+#: ../../configuration.rst:156
 msgid "If you do not specify a name for the property using these settings (default), the string at the end of the property URI with the first letter capitalized will be displayed."
 msgstr "また、これらの設定を使ってプロパティに対応する名称を指定しない場合（デフォルト）では、プロパティURI末尾の文字列の先頭を大文字化した文字列が表示されます。"
 
-#: ../../configuration.rst:143
+#: ../../configuration.rst:158
 msgid "For example, ``dct:description`` will be displayed as \"Description,\" and ``schema:name`` will be displayed as \"Name\"."
 msgstr "例えば ``dct:description`` の場合は「Description」、 ``schema:name`` は「Name」と表示されます。"
 
-#: ../../configuration.rst:147
+#: ../../configuration.rst:162
 msgid "labels_with_class is a configuration item that specifies the property name for resources belonging to a specific RDF class. Use this when you want to give different names to the same property for each class."
 msgstr "labels_with_class は、特定のRDFクラスに属するリソースにおけるプロパティ名称を指定する設定項目です。同一のプロパティに対して、クラスごとに異なる名称を与えたい場合に使います。"
 
-#: ../../configuration.rst:150
+#: ../../configuration.rst:165
 msgid "The name is specified with the class URI as the key and each property URI and its name as the value."
 msgstr "指定する名称は、クラスURIをキーとして、各プロパティURIとその名称を値とする形で指定します。"
 
-#: ../../configuration.rst:152
+#: ../../configuration.rst:167
 msgid "For example, in the following example, the ``dct:description`` property is represented as \"Item details\" for resources of the ``ex:Item`` class, and \"Detailed text\" for resources of the ``ex:Work`` class:"
 msgstr "例えば以下の例では、 ``dct:description`` プロパティを、 ``ex:Item`` クラスのリソースの場合は「Item details」、 ``ex:Work`` クラスの場合は「Detailed text」といった感じで区別した名称で表記します:"
 
-#: ../../configuration.rst:162
+#: ../../configuration.rst:177
 msgid "There is a method for more detailed labeling, :doc:`using shapes <shapes>`."
 msgstr "より詳細なラベル付けを行う方法に :doc:`シェイプを利用した方法 <shapes>` があります。"
 
-#: ../../configuration.rst:164
+#: ../../configuration.rst:179
 msgid "Also, if you don't need to distinguish between classes, specify it using the :confval:`labels` setting."
 msgstr "また、クラスごとの区別が必要なければ :confval:`labels` 設定を使うだけで指定できます。"
 
-#: ../../configuration.rst:169
+#: ../../configuration.rst:184
 msgid "Locale name for the output messages. Default: ``en`` (e.g. ``ja``, ``en``)"
 msgstr "出力メッセージの言語指定。デフォルトは ``en`` （例: ``ja``, ``en``）"
 
-#: ../../configuration.rst:173
+#: ../../configuration.rst:188
 msgid "The logo image file to be displayed on the menu. Specify the file path or URL."
 msgstr "トップメニューに表示するロゴ。ファイルパスまたはURLを指定する。"
 
-#: ../../configuration.rst:177
+#: ../../configuration.rst:192
 msgid "Specifies the class setting for displaying the navigation bar at the top of the screen. If not specified, ``navbar-light`` is used. Use this if you want to specify a black background color as follows:"
 msgstr "画面上部に配置するナビゲーションバーの表示用クラス設定を指定します。指定がなければ ``navbar-light`` が指定されたものとみなします。以下のように黒色系の背景色を指定したい場合に用います:"
 
-#: ../../configuration.rst:185
+#: ../../configuration.rst:200
 msgid "Specify `OGP (Open Graph Protocol) <https://ogp.me>`_ settings if you have additional logo settings for social networking sites, etc. You can specify ``ogp:image``, ``ogp:type``, etc."
 msgstr "`OGP (Open Graph Protocol) <https://ogp.me>`_ 設定を指定します。SNS等で用いるための追加のロゴ設定などがあれば、こちらを指定してください。``ogp:image``, ``ogp:type`` などの指定が可能です。"
 
-#: ../../configuration.rst:196
+#: ../../configuration.rst:211
 msgid "Output directory for the dataset. If not specified, the current working directory is used for the outputs."
 msgstr "静的ファイル群を生成するディレクトリを指定します。何も指定されていない場合は現在の作業ディレクトリに生成したファイル群を出力します。"
 
-#: ../../configuration.rst:202
+#: ../../configuration.rst:217
 msgid "Whether to output the RDF/Turtle format file corresponding to each resource URI, as ``true`` / ``false``. Default is ``true`` (i.e. output RDF/Turtle format files)."
 msgstr "各リソースURIに対応するRDF/Turtle形式のファイルを出力するかどうかを ``true`` / ``false`` で指定します。デフォルトは ``true`` です（つまりRDF/Turtle形式を出力します）。"
 
-#: ../../configuration.rst:206
+#: ../../configuration.rst:221
 msgid "This configuration option controls the order in which resource descriptions are output to :confval:`about_file`. The descriptions are output in the order of the resource shapes listed here. If not set, the default is alphabetical order of shape URIs. Set as a list, as in the following example:"
 msgstr ":confval:`about_html` に出力されるリソース説明の順序を制御する。ここに一覧されたリソースシェイプの順に説明が出力される。設定されない場合、デフォルトではシェイプURIのアルファベット順に出力される。以下の例のようにリストとして設定する:"
 
-#: ../../configuration.rst:216
+#: ../../configuration.rst:231
 msgid "Main title for the whole website."
 msgstr "ウェブサイト全体のメインタイトルを指定します。"
 
-#: ../../configuration.rst:221
+#: ../../configuration.rst:236
 msgid "Local template directory to find a template file. Default template files are available at `here <https://github.com/masao/ttl2html/tree/master/templates>`_. To overwrite the contents of the original template, copy the original file to the directory specified here and rewrite it."
 msgstr "ローカルのテンプレートディレクトリ。未指定の場合はカレントディレクトリ内の ``templates/`` ディレクトリを用いる。なお、テンプレートを上書きするには、`標準のテンプレートファイル群 <https://github.com/masao/ttl2html/tree/master/templates>`_ のうち必要なファイルをローカルのテンプレートディレクトリにコピーしてきて、内容を書き換えること。"
 
-#: ../../configuration.rst:225
+#: ../../configuration.rst:240
 msgid "Specifies the property to be used globally (common to all classes) as a `subtitle`. While the title (settings from :confval:`title_property` or :confval:`title_property_perclass`) is usually displayed in the header of an individual resource, there are times when you may want to include additional information (e.g., volume number, edition, date, title, etc.) as a subtitle on the same or following line."
 msgstr "全体（全クラス共通）で「サブタイトル」として使うプロパティを指定する。個別リソースの見出しには通常タイトルラベルが表示されます（:confval:`title_property` または :confval:`title_property_perclass` 設定による）が、補助情報（例: 巻号・版・日付・肩書など）を サブタイトル として同じ行や次行に併記したい場面があります。"
 
-#: ../../configuration.rst:228
+#: ../../configuration.rst:243
 msgid ":confval:`subtitle_property` and :confval:`subtitle_property_perclass` are settings that control which property value is used for the subtitle."
 msgstr ":confval:`subtitle_property` と :confval:`subtitle_property_perclass` は、そのサブタイトルに どのプロパティの値を使うか を制御する設定です。"
 
-#: ../../configuration.rst:230
+#: ../../configuration.rst:245
 msgid "Subtitles can be displayed in two places:"
 msgstr "サブタイトルは以下の2つの場所に表示されます:"
 
-#: ../../configuration.rst:232
+#: ../../configuration.rst:247
 msgid "Directly below the header on the resource details page"
 msgstr "リソース詳細ページのタイトル見出し直下"
 
-#: ../../configuration.rst:233
+#: ../../configuration.rst:248
 msgid "As an auxiliary display for each resource link in the resource details table."
 msgstr "リソース詳細一覧表の各リソースへのリンクの補助表示"
 
-#: ../../configuration.rst:237
+#: ../../configuration.rst:252
 msgid "Specifies the property to be used per class (priority) as a `subtitle`."
 msgstr "特定のクラスに属するリソース共通で「サブタイトル」として使うプロパティを指定する。"
 
-#: ../../configuration.rst:241
+#: ../../configuration.rst:256
 msgid "Specified URI is regarded as a title property for the resource. In default, a title is matched with the following properties:"
 msgstr "指定したURIをタイトル用のプロパティとして指定します。指定されていない場合、もしくは指定したプロパティが存在しない場合は、以下のプロパティが存在するか確認し、もしあれば、その値をタイトルとみなします:"
 
-#: ../../configuration.rst:243
+#: ../../configuration.rst:258
 msgid "https://www.w3.org/TR/rdf-schema/#label"
 msgstr "https://www.w3.org/TR/rdf-schema/#label"
 
-#: ../../configuration.rst:244
+#: ../../configuration.rst:259
 msgid "http://purl.org/dc/terms/title"
 msgstr "http://purl.org/dc/terms/title"
 
-#: ../../configuration.rst:245
+#: ../../configuration.rst:260
 msgid "http://purl.org/dc/elements/1.1/title"
 msgstr "http://purl.org/dc/elements/1.1/title"
 
-#: ../../configuration.rst:246
+#: ../../configuration.rst:261
 msgid "https://schema.org/name"
 msgstr "https://schema.org/name"
 
-#: ../../configuration.rst:247
+#: ../../configuration.rst:262
 msgid "http://www.w3.org/2004/02/skos/core#prefLabel"
 msgstr "http://www.w3.org/2004/02/skos/core#prefLabel"
 
-#: ../../configuration.rst:251
+#: ../../configuration.rst:266
 msgid "This setting specifies property URIs for each class URI. If a specified property exists on a resource, its value will be used as the title of the generated resource page."
 msgstr "指定したクラスURIごとに指定したプロパティURIを、当該リソースページのタイトルとみなし、ページを生成します。"
 
-#: ../../configuration.rst:253
+#: ../../configuration.rst:268
 msgid "For example, in the following case: Resources of the ``foaf:Person`` class use the ``foaf:name`` property as the title, while resources of the ``example:Item`` class use the ``dct:description`` property as the title."
 msgstr "例えば、以下の指定の場合: ``foaf:Person`` クラスのリソースは ``foaf:name`` プロパティの内容をタイトルとして用いるとし、 ``example:Item`` クラスのリソースは ``dct:description`` プロパティの内容をタイトルとして用いるものです。"
 
-#: ../../configuration.rst:263
+#: ../../configuration.rst:278
 msgid "If a resource does not belong to a class specified in ``title_property_perclass``, the :confval:`title_property` setting will be used."
 msgstr "``title_property_perclass`` に指定したクラスのリソースでない場合、 :confval:`title_property` 設定の内容に従って、タイトル用のプロパティを選択します。"
 
-#: ../../configuration.rst:267
+#: ../../configuration.rst:282
 msgid "For each set of resources expanded by :confval:`top_class` setting, specify a list of additional sub-hierarchies to be expanded. The properties that make up the sub-hierarchy are specified as a list."
 msgstr ":confval:`top_class` 設定で展開されるリソース群に対して、追加でサブ階層として展開されるべきリストを指定する。サブ階層を構成するプロパティをリストとして指定する。"
 
-#: ../../configuration.rst:271
+#: ../../configuration.rst:286
 msgid "Specified URI is the class of the records listed in the top page. By default, this tool does not generate the top page."
 msgstr "トップページに表示すべきレコード一覧に対応するクラスURIを指定する。デフォルトでは指定無しとし、トップページは生成しない。"
 
-#: ../../configuration.rst:275
+#: ../../configuration.rst:290
 msgid "If you want to change the output file names when outputting local files corresponding to a URI, use this setting. You can specify the patterns for the part of paths in a URI and then determine how the matched part of the path has to be changed. For example, when outputting many files in a single directory, you can specify a pattern for the first few characters and the rest of the filename so that each directory contains a separate set of files with different destinations. The example below specifies that a URI path consisting of 16 alphanumeric characters is divided into the first three characters and the rest of the path. Hence, the output files are placed for each two-character directory."
 msgstr "URIに対応するローカルファイルを出力する際、出力ファイル名に操作を加える場合に使用します。例えば、1つのディレクトリ内に大量のファイルが出力されるようなLODデータセットに対応させる場合に、先頭数文字と残りの文字数とで、ディレクトリ毎に保存先が別れたファイル群となるように指定できます。下記の例は、16桁の英数字からなるURIパスを先頭3文字と残りに分けて、3文字フォルダ毎に出力するように指定する例です。"

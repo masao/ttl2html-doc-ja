@@ -103,7 +103,7 @@ msgstr "オプション一覧"
 
 #: ../../catttl.rst:58
 msgid "Option"
-msgstr ""
+msgstr "オプション引数"
 
 #: ../../catttl.rst:58
 msgid "Description"
@@ -111,19 +111,19 @@ msgstr "説明"
 
 #: ../../catttl.rst:60
 msgid "-f, --no-expand"
-msgstr ""
+msgstr "-f, --no-expand"
 
 #: ../../catttl.rst:60
 msgid "Do not expand filenames"
-msgstr ""
+msgstr "ファイル名を拡張しない"
 
 #: ../../catttl.rst:61
 msgid "-h, --help"
-msgstr ""
+msgstr "-h, --help"
 
 #: ../../catttl.rst:61
 msgid "Show this help message"
-msgstr ""
+msgstr "ヘルプメッセージを表示する"
 
 #: ../../catttl.rst:65
 msgid "-f, --no-expand Option"
