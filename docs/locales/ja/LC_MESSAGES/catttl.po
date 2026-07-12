@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ttl2html\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 18:12+0900\n"
+"POT-Creation-Date: 2026-07-12 14:49+0200\n"
 "PO-Revision-Date: 2026-04-28 09:14+0000\n"
 "Last-Translator: Masao Takaku <tmasao@acm.org>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/ttl2html/teams/174226/ja/)\n"
@@ -100,6 +100,30 @@ msgstr "``catttl`` は、コマンドラインオプションによって入力�
 #: ../../catttl.rst:55
 msgid "Options List"
 msgstr "オプション一覧"
+
+#: ../../catttl.rst:58
+msgid "Option"
+msgstr ""
+
+#: ../../catttl.rst:58
+msgid "Description"
+msgstr "説明"
+
+#: ../../catttl.rst:60
+msgid "-f, --no-expand"
+msgstr ""
+
+#: ../../catttl.rst:60
+msgid "Do not expand filenames"
+msgstr ""
+
+#: ../../catttl.rst:61
+msgid "-h, --help"
+msgstr ""
+
+#: ../../catttl.rst:61
+msgid "Show this help message"
+msgstr ""
 
 #: ../../catttl.rst:65
 msgid "-f, --no-expand Option"

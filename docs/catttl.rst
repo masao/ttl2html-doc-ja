@@ -54,12 +54,12 @@ Options
 Options List
 ^^^^^^^^^^^^
 
-==========  ===============================
-Option      Description
-==========  ===============================
+===============  ===============================
+Option           Description
+===============  ===============================
 -f, --no-expand  Do not expand filenames
 -h, --help       Show this help message
-==========  ===============================
+===============  ===============================
 
 -f, --no-expand Option
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -99,7 +99,7 @@ The string ``dataset-*.ttl`` is treated as a literal filename.
 No pattern or version expansion is performed.
 
 Typical Use Cases
-................
+.................
 
 * Handling filename patterns in scripts
 * Disabling automatic version resolution in ``catttl``
@@ -119,7 +119,7 @@ Displays the help message.
       -h, --help       Show this help message
 
 Related Information
-------------------
+-------------------
 
 * `RDF 1.1 Turtle <https://www.w3.org/TR/turtle/>`_ (W3C Recommendation, 25 February 2014)
 
