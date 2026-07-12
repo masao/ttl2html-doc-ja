@@ -46,18 +46,33 @@ All configuration keys available are documeted as follows:
 
 .. confval:: breadcrumbs
   
-  Configuration for creating a hierarchical breadcrumb list of multiple resources. Define a list of properties that are higher level resources or related resources of the resource. In the example below, the ``schema:hasPart`` and ``jp-cos:hasOfStudy`` properties, if present, respectively, are used to construct the navigation menu by considering resources linked from the current resource to be higher-level resources. The default display label on the breadcrumb list is "title", but if the ``label`` attribute is defined, the value of the property defined in the ``label`` attribute can be used as a breadcrumb link. Also, if the ``inverse`` attribute is present, then the resource being transitioned to as a property to the current resource is considered to be a higher level. It is also possible to specify a resource that spans a multi-level relationship with an empty node, etc. In that case, add a list to the ``property`` attribute and add a ``property`` attribute to its subordinate items as well. At the end of the example below, the ``schema:isPartOf`` property of the resource to which the ``schema:workExample`` property of the resource in question is specified can be used as a navigation resource.
+  This setting is used to generate breadcrumb navigation based on hierarchical relationships between multiple resources. For each entry, the ``property`` key specifies a property that identifies a parent or related resource.
+
+  When multiple entries are specified, ttl2html checks them in the configured order and uses the first matching relationship to build the breadcrumb trail. In the example below, it first checks the inverse relationship of ``schema:hasPart``. If no matching resource is found, it then checks ``jp-cos:courseOfStudy``.
+
+  By default, the resource title is used as the label displayed in the breadcrumb. If the ``label`` key is specified, the value of the specified property is used as the link text.
+
+  The ``label`` key may contain either a single property or a list of properties. When multiple properties are specified, ttl2html checks them in order and uses the value of the first property that is present. If none of the configured properties has a value, the default resource title is used.
+
+  In the first entry below, ttl2html first uses the value of ``jp-cos:sectionNumber`` as the breadcrumb label. If that property has no value, it then uses the value of ``schema:alternateName``. If neither property has a value, the default resource title is used.
+
+  If ``inverse: true`` is specified, resources that refer to the current resource using the specified property are treated as parent resources.
+
+  It is also possible to specify a resource reached through a multi-step relationship, such as one involving blank nodes. In this case, specify a list under the ``property`` key, with each item containing another ``property`` key. In the example below, ttl2html follows the current resource's ``schema:workExample`` property and then the referenced resource's ``schema:isPartOf`` property. The final resource is used as a parent resource in the breadcrumb trail.
 
   .. code-block:: YAML
 
     breadcrumbs:
       - property: https://schema.org/hasPart
         inverse: true
-        label: https://w3id.org/jp-cos/sectionNumber
+        label:
+          - https://w3id.org/jp-cos/sectionNumber
+          - https://schema.org/alternateName
       - property: https://w3id.org/jp-cos/courseOfStudy
+        label: https://w3id.org/jp-cos/sectionNumber
       - property:
-        - property: https://schema.org/workExample
-        - property: https://schema.org/isPartOf
+          - property: https://schema.org/workExample
+          - property: https://schema.org/isPartOf
 
 .. confval:: copyright_year
   
